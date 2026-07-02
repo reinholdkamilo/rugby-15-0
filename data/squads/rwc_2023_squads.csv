@@ -1,0 +1,701 @@
+year,country,player_name,position,secondary_positions,captain,source_url
+2023,Argentina,Agustín Creevy,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Eduardo Bello,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Emiliano Boffelli,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Facundo Isa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Francisco Gómez Kodela,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Gonzalo Bertranou,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Guido Petti,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Ignacio Ruiz,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Jerónimo de la Fuente,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Joaquín Oviedo,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Joel Sclavi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Juan Cruz Mallía,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Juan Imhoff,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Juan Martín González,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Julián Montoya,HK,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Lautaro Bazán,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Lucas Paulos,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Lucio Cinti,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Marcos Kremer,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Martín Bogado,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Mateo Carreras,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Matías Alemanno,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Matías Moroni,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Mayco Vivas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Nahuel Tetaz Chaparro,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Nicolás Sánchez,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Pablo Matera,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Pedro Rubiolo,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Rodrigo Bruni,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Rodrigo Isgró,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Santiago Carreras,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Santiago Chocobares,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Santiago Grondona,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Thomas Gallo,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Tomás Cubelli,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Argentina,Tomás Lavanini,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Andrew Kellaway,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Angus Bell,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Ben Donaldson,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Blake Schoupp,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Carter Gordon,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Dave Porecki,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Fraser McReight,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Issak Fines-Leleiwasa,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Izaia Perese,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,James Slipper,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Jordan Petaia,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Jordan Uelese,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Josh Kemeny,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Lalakai Foketi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Langi Gleeson,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Marika Koroibete,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Mark Nawaqanitawase,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Matt Faessler,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Matt Philip,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Max Jorgensen,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Nic White,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Nick Frost,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Pone Fa'amausili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Richie Arnold,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Rob Leota,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Rob Valetini,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Samu Kerevi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Suliasi Vunivalu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Taniela Tupou,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Tate McDermott ( cc ),SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Tom Hooper,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Will Skelton ( cc ),LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Australia,Zane Nonggorr,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Alfonso Escobar,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Augusto Böhme,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Augusto Sarmiento,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Benjamín Videla,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Clemente Saavedra,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Cristóbal Game Jiménez,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Diego Escobar,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Domingo Saavedra,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Esteban Inostroza,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Francisco Urroz,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Franco Velarde,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Ignacio Silva,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Iñaki Ayarza,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Iñaki Gurruchaga,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Javier Carrasco,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Javier Eissmann,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,José Ignacio Larenas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Lukas Carvallo,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Marcelo Torrealba,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Martín Sigren,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Matías Dittus,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Matías Garafulic,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Nicolás Garafulic,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Nicolás Herreros,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Pablo Casas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Pablo Huete,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Raimundo Martínez,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Rodrigo Fernández,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Salvador Lues,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Santiago Pedrero,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Santiago Videla,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Thomas Orchard,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Tomás Dussaillant,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Chile,Vittorio Lastra,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Alex Mitchell,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Anthony Watson,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Ben Earl,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Ben Youngs,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Bevan Rodd,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Billy Vunipola,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Courtney Lawes ( vc ),LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Dan Cole,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Danny Care,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,David Ribbans,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Elliot Daly,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Ellis Genge ( vc ),TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Freddie Steward,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,George Ford,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,George Martin,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Henry Arundell,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Jack Walker,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Jack Willis,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Jack van Poortvliet,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Jamie George,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Joe Marchant,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Joe Marler,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Jonny May,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Kyle Sinckler,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Lewis Ludlam,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Manu Tuilagi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Marcus Smith,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Maro Itoje,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Max Malins,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Ollie Chessum,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Ollie Lawrence,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Owen Farrell,FH,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Sam Underhill,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Theo Dan,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Tom Curry,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,England,Will Stuart,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Albert Tuisue,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Api Ratuniyarawa,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Caleb Muntz,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Emosi Tuqiri,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Eroni Mawi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Frank Lomani,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Ilaisa Droasese,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Iosefo Masi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Isoa Nasilasila,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Jiuta Wainiqolo,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Jone Koroiduadua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Josua Tuisova,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Kalaveti Ravouvou,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Lekima Tagitagivalu,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Levani Botia,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Luke Tagi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Meli Derenalagi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Mesake Doge,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Peni Ravai,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Ratu Peni Matawalu,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Sam Matavesi,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Samu Tawake,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Selestino Ravutaumada,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Semi Radradra,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Simione Kuruvoli,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Sireli Maqala,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Te Ahiwaru Cirikidaveta,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Temo Mayanavanua,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Teti Tela,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Tevita Ikanivere,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Viliame Mata,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Vilimoni Botitu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Vilive Miramira,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Vinaya Habosi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Waisea Nayacalevu,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Fiji,Zuriel Togiatama,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Anthony Jelonch,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Antoine Dupont,SH,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Antoine Hastoy,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Arthur Vincent,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Baptiste Couilloud,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Bastien Chalureau,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Cameron Woki,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Charles Ollivon,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Cyril Baille,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Damian Penaud,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Dorian Aldegheri,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,François Cros,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Gabin Villière,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Gaël Fickou,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Grégory Alldritt,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Jean-Baptiste Gros,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Jonathan Danty,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Julien Marchand,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Louis Bielle-Biarrey,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Matthieu Jalibert,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Maxime Lucu,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Melvyn Jaminet,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Paul Boudehent,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Paul Willemse,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Peato Mauvaka,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Pierre Bourgarit,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Reda Wardi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Romain Taofifenua,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Sekou Macalou,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Sipili Falatea,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Thibaud Flament,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Thomas Ramos,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Uini Atonio,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,France,Yoram Moefana,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Aka Tabutsadze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Alexander Todua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Beka Gigashvili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Beka Gorgadze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Beka Saghinadze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Davit Niniashvili,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Demur Tapladze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Gela Aprasidze,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Giorgi Kveseladze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Giorgi Tsutskiridze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Guram Gogichashvili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Guram Papidze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Irakli Aptsiauri,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Konstantin Mikautadze,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Lado Chachanidze,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Lasha Jaiani,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Lasha Khmaladze,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Luka Ivanishvili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Luka Japaridze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Luka Matkava,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Luka Nioradze,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Merab Sharikadze,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Mikheil Babunashvili,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Mikheil Gachechiladze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Mikheil Nariashvili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Mirian Modebadze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Nika Abuladze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Nodar Tcheishvili,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Otar Giorgadze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Otar Lashkhi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Shalva Mamukashvili,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Tedo Abzhandadze,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Tengiz Peranidze,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Tengiz Zamtaradze,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Tornike Jalagonia,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Tornike Kakhoidze,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Vano Karkadze,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Georgia,Vasil Lobzhanidze,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Andrew Porter,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Bundee Aki,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Caelan Doris,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Conor Murray,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Craig Casey,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Dan Sheehan,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Dave Kilcoyne,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Finlay Bealham,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Garry Ringrose,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Hugo Keenan,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Iain Henderson,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Jack Conan,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Jack Crowley,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,James Lowe,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,James Ryan,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Jamison Gibson-Park,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Jeremy Loughman,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Jimmy O'Brien,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Joe McCarthy,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Johnny Sexton,FH,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Josh van der Flier,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Keith Earls,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Mack Hansen,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Peter O'Mahony,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Rob Herring,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Robbie Henshaw,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Ross Byrne,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Ryan Baird,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Rónan Kelleher,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Stuart McCloskey,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Tadhg Beirne,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Tadhg Furlong,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Ireland,Tom O'Toole,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Alessandro Fusco,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Alessandro Garbisi,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Ange Capuozzo,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Danilo Fischetti,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Dave Sisi,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Dino Lamb,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Federico Ruzza,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Federico Zani,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Giacomo Da Re,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Giacomo Nicotera,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Giovanni Pettinelli,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Hame Faiva,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Ignacio Brex,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Ivan Nemer,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Lorenzo Cannone,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Lorenzo Pani,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Luca Bigi,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Luca Morisi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Manuel Zuliani,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Marco Manfredi,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Marco Riccioni,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Martin Page-Relo,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Michele Lamaro,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Monty Ioane,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Niccolò Cannone,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Paolo Garbisi,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Paolo Odogwu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Pierre Bruno,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Pietro Ceccarelli,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Sebastian Negri,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Simone Ferrari,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Stephen Varney,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Toa Halafihi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Italy,Tommaso Allan,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Amanaki Saumaki,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Amato Fakatava,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Asaeli Ai Valu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Atsushi Sakate,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Ben Gunter,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Craig Millar,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Dylan Riley,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Jack Cornelsen,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,James Moore,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Jone Naikabula,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Jumpei Ogura,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Kanji Shimokawa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Kazuki Himeno,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Keita Inagaki,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Kenta Fukuda,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Koo Ji-won,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Kosuke Horikoshi,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Kotaro Matsushima,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Lappies Labuschagné,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Lee Seung-sin,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Lomano Lemeki,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Michael Leitch,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Naoto Saito,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Rikiya Matsuda,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Ryohei Yamanaka,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Ryoto Nakamura,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Semisi Masirewa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Shinnosuke Kakinaga,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Shota Fukui,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Shota Horie,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Shōgo Nakano,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Sione Halasili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Siosaia Fifita,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Tomoki Osada,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,"Uwe Helu 1,",LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Warner Dearns,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Japan,Yutaka Nagare,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Adriaan Booysen,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Adriaan Ludick,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Alcino Izaacs,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,André van den Berg,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Aranos Coetzee,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Casper Viviers,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Chad Plato,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Cliven Loubser,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Damian Stevens,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Danco Burger,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Des Sethie,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Divan Rossouw,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Gerswin Mouton,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Haitembu Shikufa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,JC Greyling,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Jacques Theron,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Jason Benade,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Johan Deysel,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Johan Retief,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Le Roux Malan,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Lloyd Jacobs,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Louis van der Westhuizen,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Mahepisa Tjeriko,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Max Katjijeko,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Obert Nortjé,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Oela Blaauw,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,P. J. van Lill,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Prince ǃGaoseb,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Richard Hardwick,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,TC Kisting,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Tiaan Swanepoel,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Tiaan de Klerk,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Tjiuee Uanivi,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Torsten van Jaarsveld,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Namibia,Wian Conradie,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Aaron Smith,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Anton Lienert-Brown,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Ardie Savea,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Beauden Barrett,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Brodie Retallick,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Caleb Clarke,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Cam Roigard,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Codie Taylor,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Dalton Papalii,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Damian McKenzie,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Dane Coles,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,David Havili,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Emoni Narawa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Ethan Blackadder,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Ethan de Groot,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Finlay Christie,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Fletcher Newell,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Jordie Barrett,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Leicester Fainga'anuku,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Luke Jacobson,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Mark Tele'a,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Nepo Laulala,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Ofa Tu'ungafasi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Richie Mo'unga,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Rieko Ioane,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Sam Cane,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Sam Whitelock,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Samisoni Taukei'aho,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Scott Barrett,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Shannon Frizell,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Tamaiti Williams,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Tupou Vaa'i,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Tyrel Lomax,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,New Zealand,Will Jordan,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Anthony Alves,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,António Machado Santos,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,David Costa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,David Wallis,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Diogo Hasse Ferreira,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Duarte Diniz,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Duarte Torgal,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Francisco Bruno,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Francisco Fernandes,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Jerónimo Portela,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Joris Moura,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,José Lima,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,José Madeira,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,João Bello,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,João Granate,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Lionel Campergue,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Manuel Cardoso Pinto,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Manuel Picão,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Martim Bello,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Mike Tadjer,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Nicolas Martins,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Nuno Sousa Guedes,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Pedro Bettencourt,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Pedro Lucas,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Rafael Simões,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Raffaele Storti,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Rodrigo Marta,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Samuel Marques,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Simão Bento,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Steevy Cerqueira,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Thibault de Freitas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Tomás Appleton,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Portugal,Vincent Pinto,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Adrian Moțoc,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Alexandru Bucur,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Alexandru Gordaș,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Alexandru Savin,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Alin Conache,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,André Gorin,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Costel Burțilă,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Cristi Boboc,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Cristi Chirică,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Damian Strătilă,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Dragoș Ser,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Florian Roșu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Florin Bărdașu,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Florin Surugiu,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Fonovai Tangimana,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Gabriel Pop,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Gabriel Rupanu,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Gheorghe Gajion,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Hinckley Vaovasa,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Iulian Harțig,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Jason Tomane,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Luca Nichitean,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Marius Iftimiciuc,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Marius Simionescu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Mihai Graure,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Mihai Macovei,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Mihai Mureșan,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Nicolas Onuțu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Ovidiu Cojocaru,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Paul Popoaia,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Robert Irimescu,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Sioeli Lama,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Taliaʻuli Sikuea,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Taylor Gontineac,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Tevita Manumua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Thomas Crețu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Tudor Boldor,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Vlad Neculau,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Romania,Ștefan Iancu,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Alamanda Motuga,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Ben Lam,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Brian Alainu'uese,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Charlie Faumuina,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Chris Vui,LK4,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Christian Leali'ifano,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,D'Angelo Leuila,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Danny Toala,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Duncan Paia'aua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Ed Fidow,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Ere Enari,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Fritz Lee,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,James Lay,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Jonathan Taumateine,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Jordan Lay,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Jordan Taufua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Lima Sopoaga,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Luteru Tolai,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Melani Matavao,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Michael Alaalatoa,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Miracle Faiʻilagi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Neria Fomai,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Nigel Ah Wong,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Paul Alo-Emile,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Ray Niuia,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Sam Slade,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Sama Malolo,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Seilala Lam,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,So'otala Fa'aso'o,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Steve Luatua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Taleni Seu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Theo McFarland,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,Tumua Manu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Samoa,UJ Seuteni,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Ali Price,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Ben Healy,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Ben White,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Blair Kinghorn,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Cameron Redpath,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Chris Harris,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Darcy Graham,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Dave Cherry,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Duhan van der Merwe,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Ewan Ashman,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Finn Russell,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,George Horne,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,George Turner,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Grant Gilchrist,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Hamish Watson,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Huw Jones,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Jack Dempsey,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Jamie Bhatti,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Jamie Ritchie,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Javan Sebastian,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Johnny Matthews,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Kyle Steyn,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Luke Crosbie,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Matt Fagerson,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Ollie Smith,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Pierre Schoeman,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Richie Gray,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Rory Darge,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Rory Sutherland,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Sam Skinner,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Scott Cummings,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Sione Tuipulotu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,"Stuart McInally 1,",HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,WP Nel,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Scotland,Zander Fagerson,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,André Esterhuizen,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Bongi Mbonambi,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Canan Moodie,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Cheslin Kolbe,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Cobus Reinach,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Damian Willemse,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Damian de Allende,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Deon Fourie,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Duane Vermeulen,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Eben Etzebeth,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Faf de Klerk,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Franco Mostert,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Frans Malherbe,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Grant Williams,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Handré Pollard,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Jaden Hendrikse,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Jasper Wiese,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Jean Kleyn,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Jesse Kriel,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Kurt-Lee Arendse,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Kwagga Smith,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Lukhanyo Am,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Makazole Mapimpi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Malcolm Marx,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Manie Libbok,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Marco van Staden,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Marvin Orie,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Ox Nché,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Pieter-Steph du Toit,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,RG Snyman,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Siya Kolisi,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Steven Kitshoff,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Trevor Nyakane,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Vincent Koch,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,South Africa,Willie le Roux,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Adam Coleman,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Afusipa Taumoepeau,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Anzelo Tuitavuki,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Augustine Pulu,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Ben Tameifuna,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Charles Piutau,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Feao Fotuaika,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Fine Inisi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,George Moala,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Joe Apikotoa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Kyren Taumoefolau,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Leva Fifita,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Malakai Fekitoa,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Manu Paea,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Otumaka Mausia,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Patrick Pellegrini,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Paul Ngauamo,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Paula Latu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Penitoa Finau,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Pita Ahki,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Sam Lousi,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Sam Moli,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Semisi Paea,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Siate Tokolahi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Siegfried Fisiʻihoi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Sione Angaʻaelangi,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Sione Havili Talitui,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Sione Vailanu,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Siua Maile,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Solomone Funaki,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Solomone Kata,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Sonatane Takulua,SH,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Steve Mafi,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Tanginoa Halaifonua,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Tau Koloamatangi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,Vaea Fifita,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Tonga,William Havili,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Agustín Ormaechea,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Andrés Vilaseca,TBC,,true,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Baltazar Amaya,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Bautista Basso,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Carlos Deus,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Diego Arbelo,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Eric Dosantos,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Facundo Gattas,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Felipe Aliaga,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Felipe Arcos Pérez,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Felipe Berchesi,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Felipe Etcheverry,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Gastón Mieres,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Germán Kessler,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Guillermo Pujadas,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Ignacio Dotti,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Ignacio Facciolo,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Ignacio Péculo,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Juan Manuel Alonso,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Juan Manuel Rodríguez,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Lucas Bianchi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Manuel Ardao,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Manuel Diana,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Manuel Leindekar,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Mateo Sanguinetti,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Matías Benítez,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Nicolás Freitas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Reinaldo Piussi,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Rodrigo Silva,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Santiago Arata,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Santiago Civetta,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Santiago Álvarez,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Uruguay,Tomás Inciarte,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Aaron Wainwright,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Adam Beard,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Christ Tshiunza,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Corey Domachowski,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Dafydd Jenkins,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Dan Biggar,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Dan Lydiate,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Dewi Lake ( cc ),HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Dillon Lewis,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Elliot Dee,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Gareth Anscombe,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Gareth Davies,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Gareth Thomas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,George North,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Henry Thomas,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Jac Morgan ( cc ),TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Johnny Williams,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Josh Adams,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Kieran Hardy,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Leigh Halfpenny,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Liam Williams,FB,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Louis Rees-Zammit,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Mason Grady,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Nick Tompkins,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Nicky Smith,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Rio Dyer,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Ryan Elias,HK,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Sam Costelow,FH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Taine Basham,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Taulupe Faletau,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Tomas Francis,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Tommy Reffell,TBC,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Tomos Williams,SH,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads
+2023,Wales,Will Rowlands,LK4,,false,https://en.wikipedia.org/wiki/2023_Rugby_World_Cup_squads

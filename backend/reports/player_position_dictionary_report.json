@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-01T22:46:06.327733+00:00",
+  "dictionary_file": "/Users/ronnie/Desktop/rugby-15-0/data/reference/player_positions.csv",
+  "rows_read": 133,
+  "rows_skipped": 0,
+  "players_matched": 133,
+  "squad_appearances_updated": 0,
+  "squad_appearances_unchanged": 308,
+  "spin_pool_rows_updated": 0,
+  "warnings": [],
+  "updates": []
+}

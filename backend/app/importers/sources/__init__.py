@@ -1,0 +1,4 @@
+from .allrugby import find_player_position as find_allrugby_player_position
+from .rugbypass import find_player_position as find_rugbypass_player_position
+from .theanalyst import find_player_position as find_theanalyst_player_position
+

@@ -1,0 +1,51 @@
+player_name,country,year,overall,set_piece,scrum,lineout,breakdown,carry,passing,kicking,goal_kicking,strike,defence,leadership,discipline,big_game,rugby_iq,best_position,style,source,notes
+Richie McCaw,New Zealand,2015,99,86,70,78,99,88,82,72,35,78,99,99,96,99,99,OSF,breakdown general,seed_manual,All-time openside benchmark
+Dan Carter,New Zealand,2015,98,70,40,55,78,82,96,98,98,88,86,94,95,99,99,FH,elite playmaker,seed_manual,World-class fly-half
+Jonah Lomu,New Zealand,1995,97,55,30,40,70,99,75,65,30,99,86,85,88,99,90,LW,power wing,seed_manual,Iconic World Cup wing
+Beauden Barrett,New Zealand,2019,94,62,35,42,75,82,94,95,82,95,84,86,88,92,96,FB,counter-attacking playmaker,seed_manual,Fullback/fly-half
+Aaron Smith,New Zealand,2019,95,55,30,35,82,70,99,82,45,75,88,90,94,93,98,SH,tempo scrum-half,seed_manual,Elite passing scrum-half
+Kieran Read,New Zealand,2019,94,88,68,88,91,92,84,68,35,78,90,94,92,95,94,N8,lineout number eight,seed_manual,All Blacks captain
+Ardie Savea,New Zealand,2019,95,82,55,78,97,96,82,65,30,88,94,91,91,95,94,OSF,explosive loose forward,seed_manual,Back-row star
+Bryan Habana,South Africa,2007,96,50,25,35,72,88,76,70,30,99,90,86,90,96,88,LW,finishing wing,seed_manual,Record try-scorer tier
+Siya Kolisi,South Africa,2019,93,84,55,76,92,88,78,60,25,78,93,98,93,97,90,OSF,leader flanker,seed_manual,Springboks captain
+Handre Pollard,South Africa,2019,92,62,35,42,76,80,90,94,96,74,84,90,88,95,91,FH,goal-kicking fly-half,seed_manual,World Cup final goal kicker
+Faf de Klerk,South Africa,2019,91,58,30,35,87,72,92,88,55,74,91,86,90,92,90,SH,pressure scrum-half,seed_manual,Defensive scrum-half
+Cheslin Kolbe,South Africa,2019,93,48,25,32,76,86,78,74,45,98,88,84,88,95,88,RW,electric wing,seed_manual,Elite finisher
+Eben Etzebeth,South Africa,2019,94,95,82,93,90,92,70,55,20,58,94,90,86,95,88,LK4,enforcer lock,seed_manual,World-class lock
+Victor Matfield,South Africa,2007,95,96,78,99,88,82,76,55,25,55,90,92,90,96,93,LK4,lineout lock,seed_manual,Lineout master
+John Smit,South Africa,2007,93,94,90,84,88,82,74,55,25,50,90,98,92,96,91,HK,captain hooker,seed_manual,World Cup-winning captain
+George Gregan,Australia,1999,96,58,30,35,88,72,98,84,45,72,90,96,94,97,96,SH,controlling scrum-half,seed_manual,Wallabies great
+Stephen Larkham,Australia,1999,95,62,35,42,78,82,96,90,72,82,84,90,92,96,97,FH,creative fly-half,seed_manual,World Cup-winning playmaker
+David Pocock,Australia,2015,94,82,55,75,99,88,76,60,25,72,96,90,94,95,91,OSF,jackal flanker,seed_manual,Breakdown specialist
+Michael Hooper,Australia,2019,93,80,50,72,96,90,76,58,25,78,94,94,94,92,90,OSF,high-tempo flanker,seed_manual,Wallabies captain
+Tim Horan,Australia,1999,96,55,30,35,78,86,90,78,45,84,90,92,92,97,94,IC,complete centre,seed_manual,Wallabies midfield great
+Jonny Wilkinson,England,2003,98,64,35,42,82,80,94,99,99,72,92,94,96,99,97,FH,goal-kicking fly-half,seed_manual,2003 final icon
+Martin Johnson,England,2003,96,95,82,94,90,88,72,55,20,55,94,99,92,99,92,LK4,captain lock,seed_manual,England World Cup captain
+Lawrence Dallaglio,England,2003,94,88,65,84,92,92,80,62,25,70,91,94,90,96,92,N8,power number eight,seed_manual,England back-row leader
+Owen Farrell,England,2019,92,60,35,42,80,82,90,94,96,76,88,94,90,94,91,FH,kicking playmaker,seed_manual,England captain/playmaker
+Antoine Dupont,France,2023,97,58,30,35,92,86,99,88,55,88,92,92,94,96,99,SH,world-class scrum-half,seed_manual,Modern elite halfback
+Thierry Dusautoir,France,2011,95,84,55,76,98,88,78,60,25,74,98,96,94,98,92,OSF,defensive flanker,seed_manual,2011 final performance
+Serge Blanco,France,1987,96,45,25,30,74,86,88,84,55,95,78,86,88,98,94,FB,attacking fullback,seed_manual,French great
+Brian O'Driscoll,Ireland,2007,96,55,30,35,84,88,92,78,40,86,94,95,94,96,96,OC,complete outside centre,seed_manual,Ireland legend
+Johnny Sexton,Ireland,2019,94,62,35,42,82,80,94,94,92,72,88,96,92,95,96,FH,controlling fly-half,seed_manual,Ireland playmaker
+Paul O'Connell,Ireland,2015,95,96,80,96,90,86,76,55,20,55,94,98,92,97,93,LK4,lineout leader,seed_manual,Ireland lock leader
+Alun Wyn Jones,Wales,2019,95,95,80,95,90,86,74,55,20,55,94,99,93,97,92,LK4,durable lock leader,seed_manual,Wales captain
+Shane Williams,Wales,2011,94,45,25,30,76,84,82,76,35,98,82,88,90,95,88,LW,sidestepping wing,seed_manual,Wales attacking great
+Sam Warburton,Wales,2015,94,82,55,76,98,86,78,58,25,72,96,97,94,96,92,OSF,breakdown captain,seed_manual,Wales/Lions captain
+Gareth Thomas,Wales,2003,93,50,25,32,78,88,84,75,35,90,88,92,92,94,90,FB,power back,seed_manual,Wales backline leader
+Stuart Hogg,Scotland,2019,93,45,25,30,76,84,88,88,65,94,82,88,88,93,92,FB,counter-attacking fullback,seed_manual,Scotland fullback
+Finn Russell,Scotland,2023,92,55,30,35,76,80,96,90,82,78,82,86,84,91,96,FH,creative fly-half,seed_manual,Scotland playmaker
+Sergio Parisse,Italy,2019,95,90,68,88,92,92,88,68,35,76,90,96,92,96,96,N8,skilled number eight,seed_manual,Italy great
+Michael Leitch,Japan,2019,92,84,55,78,92,88,78,58,25,72,92,96,92,94,90,OSF,leader flanker,seed_manual,Japan captain
+Agustín Pichot,Argentina,2007,93,58,30,35,88,72,94,82,45,72,88,94,92,95,94,SH,leader scrum-half,seed_manual,Argentina captain
+Felipe Contepomi,Argentina,2007,92,55,30,35,80,84,90,90,88,78,84,92,88,94,92,FH,playmaker centre/fly-half,seed_manual,Pumas great
+Pablo Matera,Argentina,2019,92,84,55,78,92,90,78,58,25,74,92,92,90,93,90,BSF,physical flanker,seed_manual,Pumas back row
+Semi Radradra,Fiji,2019,92,45,25,30,78,96,86,72,25,94,84,86,86,92,88,OC,power centre,seed_manual,Fiji strike back
+Nemani Nadolo,Fiji,2015,91,45,25,30,72,98,76,78,70,94,80,84,82,91,84,LW,power wing,seed_manual,Fiji power wing
+Leone Nakarawa,Fiji,2015,93,90,72,88,90,92,92,62,25,70,88,88,86,93,94,LK4,offloading lock,seed_manual,Fiji lock
+Mamuka Gorgodze,Georgia,2015,92,88,65,84,92,94,74,55,20,65,92,94,90,94,88,N8,physical back row,seed_manual,Georgia talisman
+D. T. H. van der Merwe,Canada,,90,42,25,30,72,88,76,70,25,92,82,84,84,90,84,LW,finishing wing,seed_manual,Canada try scorer
+Todd Clever,USA,,90,84,55,78,90,88,76,55,20,70,90,94,88,90,86,OSF,captain flanker,seed_manual,USA captain
+Chris Paterson,Scotland,2007,91,45,25,30,72,80,86,90,94,86,80,90,92,90,88,FB,goal-kicking fullback,seed_manual,Scotland points scorer
+Morné Steyn,South Africa,2011,91,55,30,35,74,78,88,94,96,70,82,88,88,92,88,FH,goal-kicking fly-half,seed_manual,Springboks fly-half
+Ma'a Nonu,New Zealand,2015,95,55,30,35,82,94,88,72,25,88,92,90,90,96,92,IC,power inside centre,seed_manual,All Blacks midfield great

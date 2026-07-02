@@ -1,0 +1,1261 @@
+{
+  "generated_at": "2026-07-01T22:17:07.812936+00:00",
+  "totals": {
+    "players": 3889,
+    "squad_appearances": 5691,
+    "spin_pool_records": 5691
+  },
+  "duplicate_player_name_country_combinations": [],
+  "players_appearing_for_multiple_countries": [
+    {
+      "player_name": "Adam Coleman",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            2019
+          ]
+        },
+        {
+          "country": "Tonga",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Adrian Garvey",
+      "countries": [
+        {
+          "country": "South Africa",
+          "years": [
+            1999
+          ]
+        },
+        {
+          "country": "Zimbabwe",
+          "years": [
+            1991
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Charlie Faumuina",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "country": "Samoa",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "David Wilson",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            1995,
+            1999
+          ]
+        },
+        {
+          "country": "England",
+          "years": [
+            2015
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Frank Bunce",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            1995
+          ]
+        },
+        {
+          "country": "Samoa",
+          "years": [
+            1991
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Graeme Bachop",
+      "countries": [
+        {
+          "country": "Japan",
+          "years": [
+            1999
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "years": [
+            1991,
+            1995
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Greg Smith",
+      "countries": [
+        {
+          "country": "Fiji",
+          "years": [
+            1999,
+            2003
+          ]
+        },
+        {
+          "country": "Japan",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Ilivasi Tabua",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            1995
+          ]
+        },
+        {
+          "country": "Fiji",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Jack Dempsey",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            2019
+          ]
+        },
+        {
+          "country": "Scotland",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Jamie Joseph",
+      "countries": [
+        {
+          "country": "Japan",
+          "years": [
+            1999
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "years": [
+            1995
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Jean Kleyn",
+      "countries": [
+        {
+          "country": "Ireland",
+          "years": [
+            2019
+          ]
+        },
+        {
+          "country": "South Africa",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Malakai Fekitoa",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "country": "Tonga",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Mark Bennett",
+      "countries": [
+        {
+          "country": "Scotland",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "country": "Wales",
+          "years": [
+            1995
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Matt Pini",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            1995
+          ]
+        },
+        {
+          "country": "Italy",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Va'aiga Tuigamala",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            1991
+          ]
+        },
+        {
+          "country": "Samoa",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    }
+  ],
+  "squad_appearances_without_spin_pool_rows": [],
+  "spin_pool_rows_without_squad_appearances": [],
+  "tbc_positions_by_year": [
+    {
+      "year": 1987,
+      "count": 221
+    },
+    {
+      "year": 1991,
+      "count": 217
+    },
+    {
+      "year": 1995,
+      "count": 227
+    },
+    {
+      "year": 1999,
+      "count": 339
+    },
+    {
+      "year": 2003,
+      "count": 322
+    },
+    {
+      "year": 2007,
+      "count": 329
+    },
+    {
+      "year": 2011,
+      "count": 299
+    },
+    {
+      "year": 2015,
+      "count": 384
+    },
+    {
+      "year": 2019,
+      "count": 376
+    },
+    {
+      "year": 2023,
+      "count": 396
+    }
+  ],
+  "player_counts_by_year_and_country": [
+    {
+      "year": 1987,
+      "country": "Argentina",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Australia",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Canada",
+      "count": 25
+    },
+    {
+      "year": 1987,
+      "country": "England",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Fiji",
+      "count": 29
+    },
+    {
+      "year": 1987,
+      "country": "France",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Ireland",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Italy",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Japan",
+      "count": 26
+    },
+    {
+      "year": 1987,
+      "country": "New Zealand",
+      "count": 25
+    },
+    {
+      "year": 1987,
+      "country": "Romania",
+      "count": 27
+    },
+    {
+      "year": 1987,
+      "country": "Scotland",
+      "count": 25
+    },
+    {
+      "year": 1987,
+      "country": "Tonga",
+      "count": 26
+    },
+    {
+      "year": 1987,
+      "country": "USA",
+      "count": 28
+    },
+    {
+      "year": 1987,
+      "country": "Wales",
+      "count": 31
+    },
+    {
+      "year": 1987,
+      "country": "Zimbabwe",
+      "count": 24
+    },
+    {
+      "year": 1991,
+      "country": "Argentina",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "Australia",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "Canada",
+      "count": 25
+    },
+    {
+      "year": 1991,
+      "country": "England",
+      "count": 24
+    },
+    {
+      "year": 1991,
+      "country": "Fiji",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "France",
+      "count": 24
+    },
+    {
+      "year": 1991,
+      "country": "Ireland",
+      "count": 24
+    },
+    {
+      "year": 1991,
+      "country": "Italy",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "Japan",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "New Zealand",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "Romania",
+      "count": 27
+    },
+    {
+      "year": 1991,
+      "country": "Samoa",
+      "count": 24
+    },
+    {
+      "year": 1991,
+      "country": "Scotland",
+      "count": 23
+    },
+    {
+      "year": 1991,
+      "country": "USA",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "Wales",
+      "count": 26
+    },
+    {
+      "year": 1991,
+      "country": "Zimbabwe",
+      "count": 25
+    },
+    {
+      "year": 1995,
+      "country": "Argentina",
+      "count": 30
+    },
+    {
+      "year": 1995,
+      "country": "Australia",
+      "count": 27
+    },
+    {
+      "year": 1995,
+      "country": "Canada",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "England",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "France",
+      "count": 27
+    },
+    {
+      "year": 1995,
+      "country": "Ireland",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "Italy",
+      "count": 31
+    },
+    {
+      "year": 1995,
+      "country": "Ivory Coast",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "Japan",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "New Zealand",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "Romania",
+      "count": 26
+    },
+    {
+      "year": 1995,
+      "country": "Samoa",
+      "count": 27
+    },
+    {
+      "year": 1995,
+      "country": "Scotland",
+      "count": 25
+    },
+    {
+      "year": 1995,
+      "country": "South Africa",
+      "count": 29
+    },
+    {
+      "year": 1995,
+      "country": "Tonga",
+      "count": 27
+    },
+    {
+      "year": 1995,
+      "country": "Wales",
+      "count": 26
+    },
+    {
+      "year": 1999,
+      "country": "Argentina",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Australia",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Canada",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "England",
+      "count": 32
+    },
+    {
+      "year": 1999,
+      "country": "Fiji",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "France",
+      "count": 29
+    },
+    {
+      "year": 1999,
+      "country": "Ireland",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Italy",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Japan",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Namibia",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "New Zealand",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Romania",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Samoa",
+      "count": 32
+    },
+    {
+      "year": 1999,
+      "country": "Scotland",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "South Africa",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Spain",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Tonga",
+      "count": 31
+    },
+    {
+      "year": 1999,
+      "country": "USA",
+      "count": 29
+    },
+    {
+      "year": 1999,
+      "country": "Uruguay",
+      "count": 30
+    },
+    {
+      "year": 1999,
+      "country": "Wales",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Argentina",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Australia",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Canada",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "England",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "Fiji",
+      "count": 32
+    },
+    {
+      "year": 2003,
+      "country": "France",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "Georgia",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Ireland",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "Italy",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Japan",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "Namibia",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "New Zealand",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "Romania",
+      "count": 33
+    },
+    {
+      "year": 2003,
+      "country": "Samoa",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "Scotland",
+      "count": 31
+    },
+    {
+      "year": 2003,
+      "country": "South Africa",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Tonga",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "USA",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Uruguay",
+      "count": 30
+    },
+    {
+      "year": 2003,
+      "country": "Wales",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "Argentina",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "Australia",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "Canada",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "England",
+      "count": 32
+    },
+    {
+      "year": 2007,
+      "country": "Fiji",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "France",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "Georgia",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "Ireland",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "Italy",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "Japan",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "Namibia",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "New Zealand",
+      "count": 30
+    },
+    {
+      "year": 2007,
+      "country": "Portugal",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "Romania",
+      "count": 32
+    },
+    {
+      "year": 2007,
+      "country": "Samoa",
+      "count": 33
+    },
+    {
+      "year": 2007,
+      "country": "Scotland",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "South Africa",
+      "count": 32
+    },
+    {
+      "year": 2007,
+      "country": "Tonga",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "USA",
+      "count": 31
+    },
+    {
+      "year": 2007,
+      "country": "Wales",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Argentina",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Australia",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Canada",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "England",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Fiji",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "France",
+      "count": 31
+    },
+    {
+      "year": 2011,
+      "country": "Georgia",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Ireland",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Italy",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Japan",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Namibia",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "New Zealand",
+      "count": 31
+    },
+    {
+      "year": 2011,
+      "country": "Romania",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Russia",
+      "count": 29
+    },
+    {
+      "year": 2011,
+      "country": "Samoa",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Scotland",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "South Africa",
+      "count": 31
+    },
+    {
+      "year": 2011,
+      "country": "Tonga",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "USA",
+      "count": 30
+    },
+    {
+      "year": 2011,
+      "country": "Wales",
+      "count": 30
+    },
+    {
+      "year": 2015,
+      "country": "Argentina",
+      "count": 33
+    },
+    {
+      "year": 2015,
+      "country": "Australia",
+      "count": 33
+    },
+    {
+      "year": 2015,
+      "country": "Canada",
+      "count": 33
+    },
+    {
+      "year": 2015,
+      "country": "England",
+      "count": 32
+    },
+    {
+      "year": 2015,
+      "country": "Fiji",
+      "count": 33
+    },
+    {
+      "year": 2015,
+      "country": "France",
+      "count": 32
+    },
+    {
+      "year": 2015,
+      "country": "Georgia",
+      "count": 32
+    },
+    {
+      "year": 2015,
+      "country": "Ireland",
+      "count": 34
+    },
+    {
+      "year": 2015,
+      "country": "Italy",
+      "count": 34
+    },
+    {
+      "year": 2015,
+      "country": "Japan",
+      "count": 31
+    },
+    {
+      "year": 2015,
+      "country": "Namibia",
+      "count": 31
+    },
+    {
+      "year": 2015,
+      "country": "New Zealand",
+      "count": 33
+    },
+    {
+      "year": 2015,
+      "country": "Romania",
+      "count": 32
+    },
+    {
+      "year": 2015,
+      "country": "Samoa",
+      "count": 31
+    },
+    {
+      "year": 2015,
+      "country": "Scotland",
+      "count": 33
+    },
+    {
+      "year": 2015,
+      "country": "South Africa",
+      "count": 32
+    },
+    {
+      "year": 2015,
+      "country": "Tonga",
+      "count": 31
+    },
+    {
+      "year": 2015,
+      "country": "USA",
+      "count": 31
+    },
+    {
+      "year": 2015,
+      "country": "Uruguay",
+      "count": 31
+    },
+    {
+      "year": 2015,
+      "country": "Wales",
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "country": "Argentina",
+      "count": 32
+    },
+    {
+      "year": 2019,
+      "country": "Australia",
+      "count": 31
+    },
+    {
+      "year": 2019,
+      "country": "Canada",
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "country": "England",
+      "count": 32
+    },
+    {
+      "year": 2019,
+      "country": "Fiji",
+      "count": 32
+    },
+    {
+      "year": 2019,
+      "country": "France",
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "country": "Georgia",
+      "count": 31
+    },
+    {
+      "year": 2019,
+      "country": "Ireland",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "country": "Italy",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "country": "Japan",
+      "count": 31
+    },
+    {
+      "year": 2019,
+      "country": "Namibia",
+      "count": 31
+    },
+    {
+      "year": 2019,
+      "country": "New Zealand",
+      "count": 32
+    },
+    {
+      "year": 2019,
+      "country": "Russia",
+      "count": 31
+    },
+    {
+      "year": 2019,
+      "country": "Samoa",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "country": "Scotland",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "country": "South Africa",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "country": "Tonga",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "country": "USA",
+      "count": 32
+    },
+    {
+      "year": 2019,
+      "country": "Uruguay",
+      "count": 31
+    },
+    {
+      "year": 2019,
+      "country": "Wales",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "country": "Argentina",
+      "count": 36
+    },
+    {
+      "year": 2023,
+      "country": "Australia",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "country": "Chile",
+      "count": 34
+    },
+    {
+      "year": 2023,
+      "country": "England",
+      "count": 36
+    },
+    {
+      "year": 2023,
+      "country": "Fiji",
+      "count": 36
+    },
+    {
+      "year": 2023,
+      "country": "France",
+      "count": 34
+    },
+    {
+      "year": 2023,
+      "country": "Georgia",
+      "count": 38
+    },
+    {
+      "year": 2023,
+      "country": "Ireland",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "country": "Italy",
+      "count": 34
+    },
+    {
+      "year": 2023,
+      "country": "Japan",
+      "count": 37
+    },
+    {
+      "year": 2023,
+      "country": "Namibia",
+      "count": 35
+    },
+    {
+      "year": 2023,
+      "country": "New Zealand",
+      "count": 34
+    },
+    {
+      "year": 2023,
+      "country": "Portugal",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "country": "Romania",
+      "count": 39
+    },
+    {
+      "year": 2023,
+      "country": "Samoa",
+      "count": 34
+    },
+    {
+      "year": 2023,
+      "country": "Scotland",
+      "count": 35
+    },
+    {
+      "year": 2023,
+      "country": "South Africa",
+      "count": 35
+    },
+    {
+      "year": 2023,
+      "country": "Tonga",
+      "count": 37
+    },
+    {
+      "year": 2023,
+      "country": "Uruguay",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "country": "Wales",
+      "count": 34
+    }
+  ],
+  "summary": {
+    "duplicate_player_name_country_combination_count": 0,
+    "players_appearing_for_multiple_countries_count": 15,
+    "squad_appearances_without_spin_pool_rows_count": 0,
+    "spin_pool_rows_without_squad_appearances_count": 0
+  }
+}

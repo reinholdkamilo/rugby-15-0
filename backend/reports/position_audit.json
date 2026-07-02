@@ -1,0 +1,935 @@
+{
+  "generated_at": "2026-07-02T21:57:52.350181+00:00",
+  "total_tbc_positions": 2623,
+  "tbc_positions_by_year": [
+    {
+      "year": 1987,
+      "count": 213
+    },
+    {
+      "year": 1991,
+      "count": 206
+    },
+    {
+      "year": 1995,
+      "count": 213
+    },
+    {
+      "year": 1999,
+      "count": 311
+    },
+    {
+      "year": 2003,
+      "count": 274
+    },
+    {
+      "year": 2007,
+      "count": 263
+    },
+    {
+      "year": 2011,
+      "count": 247
+    },
+    {
+      "year": 2015,
+      "count": 294
+    },
+    {
+      "year": 2019,
+      "count": 283
+    },
+    {
+      "year": 2023,
+      "count": 319
+    }
+  ],
+  "tbc_positions_by_country": [
+    {
+      "country": "Italy",
+      "count": 154
+    },
+    {
+      "country": "Argentina",
+      "count": 149
+    },
+    {
+      "country": "Samoa",
+      "count": 149
+    },
+    {
+      "country": "Tonga",
+      "count": 149
+    },
+    {
+      "country": "Japan",
+      "count": 148
+    },
+    {
+      "country": "Romania",
+      "count": 146
+    },
+    {
+      "country": "Fiji",
+      "count": 143
+    },
+    {
+      "country": "Canada",
+      "count": 138
+    },
+    {
+      "country": "New Zealand",
+      "count": 137
+    },
+    {
+      "country": "Scotland",
+      "count": 135
+    },
+    {
+      "country": "Wales",
+      "count": 121
+    },
+    {
+      "country": "USA",
+      "count": 118
+    },
+    {
+      "country": "Ireland",
+      "count": 116
+    },
+    {
+      "country": "France",
+      "count": 114
+    },
+    {
+      "country": "Namibia",
+      "count": 112
+    },
+    {
+      "country": "Australia",
+      "count": 104
+    },
+    {
+      "country": "Georgia",
+      "count": 97
+    },
+    {
+      "country": "England",
+      "count": 95
+    },
+    {
+      "country": "Uruguay",
+      "count": 81
+    },
+    {
+      "country": "South Africa",
+      "count": 76
+    },
+    {
+      "country": "Portugal",
+      "count": 37
+    },
+    {
+      "country": "Russia",
+      "count": 30
+    },
+    {
+      "country": "Zimbabwe",
+      "count": 24
+    },
+    {
+      "country": "Chile",
+      "count": 19
+    },
+    {
+      "country": "Spain",
+      "count": 17
+    },
+    {
+      "country": "Ivory Coast",
+      "count": 14
+    }
+  ],
+  "top_100_players_with_tbc_positions": [
+    {
+      "squad_appearance_id": 4860,
+      "player_name": "Alejandro Schiavio",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4861,
+      "player_name": "Diego Cash",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4862,
+      "player_name": "Diego Cuesta Silva",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4865,
+      "player_name": "Fabi\u00e1n Turnes",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4866,
+      "player_name": "Fernando Morel",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4871,
+      "player_name": "Hugo Torres",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4872,
+      "player_name": "Jorge Allen",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4873,
+      "player_name": "Jos\u00e9 Mostany",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4874,
+      "player_name": "Juan Lanza",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4877,
+      "player_name": "Luis Molina",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4878,
+      "player_name": "Marcelo Campo",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4881,
+      "player_name": "Pedro Lanza",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4882,
+      "player_name": "Rafael Madero",
+      "country": "Argentina",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4888,
+      "player_name": "Andrew Slack",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4889,
+      "player_name": "Andy McIntyre",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4891,
+      "player_name": "Brett Papworth",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4893,
+      "player_name": "Cameron Lillicrap",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4895,
+      "player_name": "David Codey",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4896,
+      "player_name": "Enrique Rodr\u00edguez",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4897,
+      "player_name": "Jeff Miller",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4898,
+      "player_name": "Mark Hartill",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4901,
+      "player_name": "Michael Cook",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4904,
+      "player_name": "Peter Grigg",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4907,
+      "player_name": "Simon Poidevin",
+      "country": "Australia",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4914,
+      "player_name": "Bill Handson",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4915,
+      "player_name": "Bruce Breen",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4916,
+      "player_name": "Charles Jones",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4918,
+      "player_name": "Eddie Evans",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4923,
+      "player_name": "Ian Stuart",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4924,
+      "player_name": "John Lecky",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4928,
+      "player_name": "Pat Palmer",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4929,
+      "player_name": "Paul Vaesen",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4930,
+      "player_name": "Randy McKellar",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4932,
+      "player_name": "Rob Frame",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4934,
+      "player_name": "Ross Breen",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4935,
+      "player_name": "Roy Radu",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4936,
+      "player_name": "Spence McTavish",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4937,
+      "player_name": "Steve Gray",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4938,
+      "player_name": "Tom Woods",
+      "country": "Canada",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4942,
+      "player_name": "Fran Clough",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4943,
+      "player_name": "Gareth Chilcott",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4944,
+      "player_name": "Gary Pearce",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4945,
+      "player_name": "Gary Rees",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4948,
+      "player_name": "Jamie Salmon",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4949,
+      "player_name": "Jeff Probyn",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4950,
+      "player_name": "Jon Hall",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4952,
+      "player_name": "Kevin Simms",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4954,
+      "player_name": "Mark Bailey",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4955,
+      "player_name": "Mike Harrison",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4957,
+      "player_name": "Paul Rendall",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4959,
+      "player_name": "Peter Winterbottom",
+      "country": "England",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4967,
+      "player_name": "Apisai Nagata",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4970,
+      "player_name": "Epineri Naituku",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4972,
+      "player_name": "Jimi Damu",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4976,
+      "player_name": "Kaiava Salusalu",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4977,
+      "player_name": "Kavekini Nalaga",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4979,
+      "player_name": "Livai Kididromo",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4980,
+      "player_name": "Manasa Qoro",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4985,
+      "player_name": "Peni Volavola",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4987,
+      "player_name": "Sairusi Naituku",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4989,
+      "player_name": "Samuela Vunivalu",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4990,
+      "player_name": "Serupepeli Tuvula",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4992,
+      "player_name": "Sirilo Lovokuro",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4993,
+      "player_name": "Tom Mitchell",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4994,
+      "player_name": "Tomasi Cama",
+      "country": "Fiji",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 4998,
+      "player_name": "Denis Charvet",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5000,
+      "player_name": "Dominique Erbani",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5002,
+      "player_name": "Franck Mesnel",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5005,
+      "player_name": "Jean-Baptiste Lafond",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5006,
+      "player_name": "Jean-Louis Tolot",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5007,
+      "player_name": "Jean-Luc Joinel",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5008,
+      "player_name": "Jean-Pierre Garuet-Lempirou",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5010,
+      "player_name": "Louis Armary",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5011,
+      "player_name": "Marc Andrieu",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5012,
+      "player_name": "Pascal Ondarts",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5014,
+      "player_name": "Patrick Est\u00e8ve",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5020,
+      "player_name": "\u00c9ric Bonneval",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5021,
+      "player_name": "\u00c9ric Champ",
+      "country": "France",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5022,
+      "player_name": "Brendan Mullin",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5024,
+      "player_name": "David Irwin",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5025,
+      "player_name": "Derek McGrath",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5026,
+      "player_name": "Des Fitzgerald",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5029,
+      "player_name": "J. J. McCoy",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5031,
+      "player_name": "Job Langbroek",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5033,
+      "player_name": "Keith Crossan",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5035,
+      "player_name": "Mike Kiernan",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5037,
+      "player_name": "Nigel Carr",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5038,
+      "player_name": "Paul Collins",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5040,
+      "player_name": "Philip Orr",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5042,
+      "player_name": "Phillip Matthews",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5047,
+      "player_name": "Trevor Ringland",
+      "country": "Ireland",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5053,
+      "player_name": "Fabio Gaetaniello",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5056,
+      "player_name": "Giancarlo Cucchiella",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5058,
+      "player_name": "Gianni Zanon",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5060,
+      "player_name": "Giuseppe Artuso",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5061,
+      "player_name": "Guido Rossi",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5062,
+      "player_name": "Marcello Cuttitta",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5063,
+      "player_name": "Mario Pavin",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5065,
+      "player_name": "Massimo Mascioletti",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    },
+    {
+      "squad_appearance_id": 5068,
+      "player_name": "Piergianni Farina",
+      "country": "Italy",
+      "year": 1987,
+      "current_position": "TBC"
+    }
+  ],
+  "positions_currently_used_in_squad_appearances": [
+    {
+      "position": "LH",
+      "name": "Loosehead Prop",
+      "count": 44
+    },
+    {
+      "position": "HK",
+      "name": "Hooker",
+      "count": 480
+    },
+    {
+      "position": "TH",
+      "name": "Tighthead Prop",
+      "count": 49
+    },
+    {
+      "position": "LK4",
+      "name": "Lock 4",
+      "count": 748
+    },
+    {
+      "position": "BSF",
+      "name": "Blindside Flanker",
+      "count": 14
+    },
+    {
+      "position": "OSF",
+      "name": "Openside Flanker",
+      "count": 48
+    },
+    {
+      "position": "N8",
+      "name": "Number 8",
+      "count": 282
+    },
+    {
+      "position": "SH",
+      "name": "Scrum-half",
+      "count": 465
+    },
+    {
+      "position": "FH",
+      "name": "Fly-half",
+      "count": 419
+    },
+    {
+      "position": "LW",
+      "name": "Left Wing",
+      "count": 30
+    },
+    {
+      "position": "IC",
+      "name": "Inside Centre",
+      "count": 41
+    },
+    {
+      "position": "OC",
+      "name": "Outside Centre",
+      "count": 36
+    },
+    {
+      "position": "RW",
+      "name": "Right Wing",
+      "count": 35
+    },
+    {
+      "position": "FB",
+      "name": "Fullback",
+      "count": 377
+    },
+    {
+      "position": "TBC",
+      "name": "TBC",
+      "count": 2623
+    }
+  ],
+  "invalid_position_codes": {
+    "squad_appearances": [],
+    "spin_pool_eligible_positions": []
+  }
+}

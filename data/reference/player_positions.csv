@@ -1,0 +1,134 @@
+player_name,country,primary_position,secondary_positions,source,notes
+Joe Moody,New Zealand,LH,,manual_verified,All Blacks loosehead prop
+Ethan de Groot,New Zealand,LH,,manual_verified,All Blacks loosehead prop
+Tamaiti Williams,New Zealand,LH,,manual_verified,All Blacks prop; listed primary loosehead
+Nepo Laulala,New Zealand,TH,,manual_verified,All Blacks tighthead prop
+Tyrel Lomax,New Zealand,TH,,manual_verified,All Blacks tighthead prop
+Fletcher Newell,New Zealand,TH,,manual_verified,All Blacks tighthead prop
+Sam Cane,New Zealand,OSF,,manual_verified,All Blacks openside flanker
+Shannon Frizell,New Zealand,BSF,,manual_verified,All Blacks blindside flanker
+Richie McCaw,New Zealand,OSF,,manual_verified,All Blacks openside flanker
+Jerome Kaino,New Zealand,BSF,,manual_verified,All Blacks blindside flanker
+Ardie Savea,New Zealand,OSF,N8,manual_verified,All Blacks loose forward
+Rieko Ioane,New Zealand,OC,LW,manual_verified,All Blacks centre/wing
+Anton Lienert-Brown,New Zealand,IC,OC,manual_verified,All Blacks centre
+Sonny Bill Williams,New Zealand,IC,,manual_verified,All Blacks inside centre
+Conrad Smith,New Zealand,OC,,manual_verified,All Blacks outside centre
+Julian Savea,New Zealand,LW,,manual_verified,All Blacks wing
+Cory Jane,New Zealand,RW,FB,manual_verified,All Blacks outside back
+Doug Howlett,New Zealand,RW,,manual_verified,All Blacks wing
+Ox Nché,South Africa,LH,,manual_verified,Springboks loosehead prop
+Steven Kitshoff,South Africa,LH,,manual_verified,Springboks loosehead prop
+Tendai Mtawarira,South Africa,LH,,manual_verified,Springboks loosehead prop
+Frans Malherbe,South Africa,TH,,manual_verified,Springboks tighthead prop
+Vincent Koch,South Africa,TH,,manual_verified,Springboks tighthead prop
+Trevor Nyakane,South Africa,TH,LH,manual_verified,Springboks prop
+Os du Randt,South Africa,LH,,manual_verified,Springboks loosehead prop
+Siya Kolisi,South Africa,OSF,BSF,manual_verified,Springboks flanker
+Schalk Burger,South Africa,OSF,BSF,manual_verified,Springboks flanker
+Duane Vermeulen,South Africa,N8,,manual_verified,Springboks number eight
+Jasper Wiese,South Africa,N8,,manual_verified,Springboks number eight
+Cheslin Kolbe,South Africa,RW,FB,manual_verified,Springboks wing/fullback
+Makazole Mapimpi,South Africa,LW,,manual_verified,Springboks wing
+Damian de Allende,South Africa,IC,,manual_verified,Springboks inside centre
+Jesse Kriel,South Africa,OC,,manual_verified,Springboks outside centre
+Lukhanyo Am,South Africa,OC,,manual_verified,Springboks outside centre
+Bryan Habana,South Africa,LW,,manual_verified,Springboks wing
+JP Pietersen,South Africa,RW,,manual_verified,Springboks wing
+Jean de Villiers,South Africa,IC,OC,manual_verified,Springboks centre
+Angus Bell,Australia,LH,,manual_verified,Wallabies loosehead prop
+James Slipper,Australia,LH,,manual_verified,Wallabies loosehead prop
+Scott Sio,Australia,LH,,manual_verified,Wallabies loosehead prop
+Sekope Kepu,Australia,TH,,manual_verified,Wallabies tighthead prop
+Taniela Tupou,Australia,TH,,manual_verified,Wallabies tighthead prop
+Allan Alaalatoa,Australia,TH,,manual_verified,Wallabies tighthead prop
+Michael Hooper,Australia,OSF,,manual_verified,Wallabies openside flanker
+David Pocock,Australia,OSF,N8,manual_verified,Wallabies openside flanker/number eight
+George Smith,Australia,OSF,,manual_verified,Wallabies openside flanker
+Phil Waugh,Australia,OSF,,manual_verified,Wallabies openside flanker
+Rocky Elsom,Australia,BSF,,manual_verified,Wallabies blindside flanker
+Rob Valetini,Australia,N8,BSF,manual_verified,Wallabies back row
+Marika Koroibete,Australia,LW,,manual_verified,Wallabies wing
+Samu Kerevi,Australia,IC,,manual_verified,Wallabies inside centre
+Tevita Kuridrani,Australia,OC,,manual_verified,Wallabies outside centre
+Stirling Mortlock,Australia,OC,,manual_verified,Wallabies outside centre
+Tim Horan,Australia,IC,,manual_verified,Wallabies inside centre
+David Campese,Australia,RW,LW,manual_verified,Wallabies wing
+Joe Roff,Australia,LW,FB,manual_verified,Wallabies wing/fullback
+Lote Tuqiri,Australia,RW,,manual_verified,Wallabies wing
+Adam Ashley-Cooper,Australia,OC,"RW,FB",manual_verified,Wallabies utility back
+Matt Giteau,Australia,IC,FH,manual_verified,Wallabies inside centre/fly-half
+Mako Vunipola,England,LH,,manual_verified,England loosehead prop
+Joe Marler,England,LH,,manual_verified,England loosehead prop
+Ellis Genge,England,LH,,manual_verified,England loosehead prop
+Kyle Sinckler,England,TH,,manual_verified,England tighthead prop
+Dan Cole,England,TH,,manual_verified,England tighthead prop
+Phil Vickery,England,TH,,manual_verified,England tighthead prop
+Jason Leonard,England,LH,TH,manual_verified,England prop
+Tom Curry,England,OSF,BSF,manual_verified,England flanker
+Sam Underhill,England,OSF,,manual_verified,England openside flanker
+Billy Vunipola,England,N8,,manual_verified,England number eight
+Ben Earl,England,N8,OSF,manual_verified,England back row
+Chris Robshaw,England,BSF,OSF,manual_verified,England flanker
+Lewis Moody,England,OSF,,manual_verified,England openside flanker
+Manu Tuilagi,England,IC,OC,manual_verified,England centre
+Jonny May,England,LW,,manual_verified,England wing
+Anthony Watson,England,RW,FB,manual_verified,England wing/fullback
+Joe Cokanasiga,England,RW,,manual_verified,England wing
+Will Greenwood,England,IC,,manual_verified,England inside centre
+Jeremy Guscott,England,OC,,manual_verified,England outside centre
+Rory Underwood,England,LW,,manual_verified,England wing
+Cyril Baille,France,LH,,manual_verified,France loosehead prop
+Uini Atonio,France,TH,,manual_verified,France tighthead prop
+Rabah Slimani,France,TH,,manual_verified,France tighthead prop
+Nicolas Mas,France,TH,,manual_verified,France tighthead prop
+Thierry Dusautoir,France,OSF,,manual_verified,France openside flanker
+Charles Ollivon,France,BSF,N8,manual_verified,France back row
+Gregory Alldritt,France,N8,,manual_verified,France number eight
+Serge Betsen,France,OSF,,manual_verified,France openside flanker
+Damian Penaud,France,RW,,manual_verified,France wing
+Gaël Fickou,France,OC,IC,manual_verified,France centre
+Wesley Fofana,France,IC,,manual_verified,France inside centre
+Mathieu Bastareaud,France,IC,,manual_verified,France inside centre
+Vincent Clerc,France,RW,,manual_verified,France wing
+Christophe Dominici,France,LW,,manual_verified,France wing
+Yannick Jauzion,France,IC,,manual_verified,France inside centre
+Philippe Sella,France,OC,,manual_verified,France outside centre
+Patrice Lagisquet,France,LW,,manual_verified,France wing
+Cian Healy,Ireland,LH,,manual_verified,Ireland loosehead prop
+Tadhg Furlong,Ireland,TH,,manual_verified,Ireland tighthead prop
+Andrew Porter,Ireland,LH,TH,manual_verified,Ireland prop
+Finlay Bealham,Ireland,TH,,manual_verified,Ireland tighthead prop
+Peter O'Mahony,Ireland,BSF,OSF,manual_verified,Ireland flanker
+Josh van der Flier,Ireland,OSF,,manual_verified,Ireland openside flanker
+Bundee Aki,Ireland,IC,,manual_verified,Ireland inside centre
+Garry Ringrose,Ireland,OC,,manual_verified,Ireland outside centre
+Robbie Henshaw,Ireland,IC,OC,manual_verified,Ireland centre
+Keith Earls,Ireland,RW,OC,manual_verified,Ireland outside back
+Jacob Stockdale,Ireland,LW,,manual_verified,Ireland wing
+Brian O'Driscoll,Ireland,OC,,manual_verified,Ireland outside centre
+Gordon D'Arcy,Ireland,IC,,manual_verified,Ireland inside centre
+Shane Horgan,Ireland,RW,,manual_verified,Ireland wing
+Simon Zebo,Ireland,LW,FB,manual_verified,Ireland wing/fullback
+Gethin Jenkins,Wales,LH,,manual_verified,Wales loosehead prop
+Adam Jones,Wales,TH,,manual_verified,Wales tighthead prop
+Tomas Francis,Wales,TH,,manual_verified,Wales tighthead prop
+Sam Warburton,Wales,OSF,,manual_verified,Wales openside flanker
+Justin Tipuric,Wales,OSF,,manual_verified,Wales openside flanker
+George North,Wales,RW,,manual_verified,Wales wing
+Josh Adams,Wales,LW,,manual_verified,Wales wing
+Jamie Roberts,Wales,IC,,manual_verified,Wales inside centre
+Shane Williams,Wales,LW,,manual_verified,Wales wing
+Will Carling,England,IC,,manual_verified,England centre
+WP Nel,Scotland,TH,,manual_verified,Scotland tighthead prop
+Zander Fagerson,Scotland,TH,,manual_verified,Scotland tighthead prop
+Pierre Schoeman,Scotland,LH,,manual_verified,Scotland loosehead prop
+Rory Sutherland,Scotland,LH,,manual_verified,Scotland loosehead prop
+Hamish Watson,Scotland,OSF,,manual_verified,Scotland openside flanker
+John Barclay,Scotland,OSF,N8,manual_verified,Scotland back row
+Jamie Ritchie,Scotland,BSF,OSF,manual_verified,Scotland flanker
+Duhan van der Merwe,Scotland,LW,,manual_verified,Scotland wing
+Darcy Graham,Scotland,RW,,manual_verified,Scotland wing
+Sean Maitland,Scotland,RW,FB,manual_verified,Scotland outside back
+Huw Jones,Scotland,OC,,manual_verified,Scotland outside centre
+Chris Harris,Scotland,OC,,manual_verified,Scotland outside centre

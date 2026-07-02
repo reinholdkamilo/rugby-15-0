@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-01T22:35:44.378597+00:00",
+  "dry_run": false,
+  "summary": {
+    "squad_appearance_positions_inferred": 0,
+    "spin_pool_eligible_positions_updated": 0,
+    "players_with_known_history": 1785,
+    "players_with_multiple_known_positions": 23
+  },
+  "updates": [],
+  "warnings": []
+}

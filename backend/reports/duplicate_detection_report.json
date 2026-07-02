@@ -1,0 +1,3963 @@
+{
+  "generated_at": "2026-07-01T23:00:37.560783+00:00",
+  "same_normalised_name_same_country": [
+    {
+      "normalised_name": "siegfried fisiihoi",
+      "country_id": 14,
+      "players": [
+        {
+          "player_id": 541,
+          "display_name": "Siegfried Fisi'ihoi",
+          "country": "Tonga"
+        },
+        {
+          "player_id": 1066,
+          "display_name": "Siegfried Fisi\u02bbihoi",
+          "country": "Tonga"
+        }
+      ]
+    }
+  ],
+  "same_normalised_name_different_countries": [
+    {
+      "normalised_name": "adam coleman",
+      "players": [
+        {
+          "player_id": 49,
+          "display_name": "Adam Coleman",
+          "country": "Australia"
+        },
+        {
+          "player_id": 1046,
+          "display_name": "Adam Coleman",
+          "country": "Tonga"
+        }
+      ]
+    },
+    {
+      "normalised_name": "adrian garvey",
+      "players": [
+        {
+          "player_id": 2894,
+          "display_name": "Adrian Garvey",
+          "country": "South Africa"
+        },
+        {
+          "player_id": 3871,
+          "display_name": "Adrian Garvey",
+          "country": "Zimbabwe"
+        }
+      ]
+    },
+    {
+      "normalised_name": "charlie faumuina",
+      "players": [
+        {
+          "player_id": 991,
+          "display_name": "Charlie Faumuina",
+          "country": "Samoa"
+        },
+        {
+          "player_id": 1317,
+          "display_name": "Charlie Faumuina",
+          "country": "New Zealand"
+        }
+      ]
+    },
+    {
+      "normalised_name": "christian lealiifano",
+      "players": [
+        {
+          "player_id": 992,
+          "display_name": "Christian Leali'ifano",
+          "country": "Samoa"
+        },
+        {
+          "player_id": 51,
+          "display_name": "Christian Lealiifano",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "normalised_name": "david wilson",
+      "players": [
+        {
+          "player_id": 1170,
+          "display_name": "David Wilson",
+          "country": "England"
+        },
+        {
+          "player_id": 2642,
+          "display_name": "David Wilson",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "normalised_name": "frank bunce",
+      "players": [
+        {
+          "player_id": 3205,
+          "display_name": "Frank Bunce",
+          "country": "New Zealand"
+        },
+        {
+          "player_id": 3862,
+          "display_name": "Frank Bunce",
+          "country": "Samoa"
+        }
+      ]
+    },
+    {
+      "normalised_name": "graeme bachop",
+      "players": [
+        {
+          "player_id": 2777,
+          "display_name": "Graeme Bachop",
+          "country": "Japan"
+        },
+        {
+          "player_id": 3206,
+          "display_name": "Graeme Bachop",
+          "country": "New Zealand"
+        }
+      ]
+    },
+    {
+      "normalised_name": "greg smith",
+      "players": [
+        {
+          "player_id": 2328,
+          "display_name": "Greg Smith",
+          "country": "Fiji"
+        },
+        {
+          "player_id": 2778,
+          "display_name": "Greg Smith",
+          "country": "Japan"
+        }
+      ]
+    },
+    {
+      "normalised_name": "ilivasi tabua",
+      "players": [
+        {
+          "player_id": 2698,
+          "display_name": "Ilivasi Tabua",
+          "country": "Fiji"
+        },
+        {
+          "player_id": 3056,
+          "display_name": "Ilivasi Tabua",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "normalised_name": "jack dempsey",
+      "players": [
+        {
+          "player_id": 56,
+          "display_name": "Jack Dempsey",
+          "country": "Australia"
+        },
+        {
+          "player_id": 1019,
+          "display_name": "Jack Dempsey",
+          "country": "Scotland"
+        }
+      ]
+    },
+    {
+      "normalised_name": "jamie joseph",
+      "players": [
+        {
+          "player_id": 2779,
+          "display_name": "Jamie Joseph",
+          "country": "Japan"
+        },
+        {
+          "player_id": 3207,
+          "display_name": "Jamie Joseph",
+          "country": "New Zealand"
+        }
+      ]
+    },
+    {
+      "normalised_name": "jean kleyn",
+      "players": [
+        {
+          "player_id": 253,
+          "display_name": "Jean Kleyn",
+          "country": "Ireland"
+        },
+        {
+          "player_id": 1040,
+          "display_name": "Jean Kleyn",
+          "country": "South Africa"
+        }
+      ]
+    },
+    {
+      "normalised_name": "malakai fekitoa",
+      "players": [
+        {
+          "player_id": 1056,
+          "display_name": "Malakai Fekitoa",
+          "country": "Tonga"
+        },
+        {
+          "player_id": 1327,
+          "display_name": "Malakai Fekitoa",
+          "country": "New Zealand"
+        }
+      ]
+    },
+    {
+      "normalised_name": "mark bennett",
+      "players": [
+        {
+          "player_id": 1400,
+          "display_name": "Mark Bennett",
+          "country": "Scotland"
+        },
+        {
+          "player_id": 3309,
+          "display_name": "Mark Bennett",
+          "country": "Wales"
+        }
+      ]
+    },
+    {
+      "normalised_name": "matt pini",
+      "players": [
+        {
+          "player_id": 2767,
+          "display_name": "Matt Pini",
+          "country": "Italy"
+        },
+        {
+          "player_id": 3058,
+          "display_name": "Matt Pini",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "normalised_name": "sione tuipulotu",
+      "players": [
+        {
+          "player_id": 1032,
+          "display_name": "Sione Tuipulotu",
+          "country": "Scotland"
+        },
+        {
+          "player_id": 2208,
+          "display_name": "Sione Tu\u02bbipulotu",
+          "country": "Tonga"
+        }
+      ]
+    },
+    {
+      "normalised_name": "vaaiga tuigamala",
+      "players": [
+        {
+          "player_id": 2876,
+          "display_name": "Va'aiga Tuigamala",
+          "country": "Samoa"
+        },
+        {
+          "player_id": 3809,
+          "display_name": "Va'aiga Tuigamala",
+          "country": "New Zealand"
+        }
+      ]
+    }
+  ],
+  "highly_similar_names_within_same_country": [
+    {
+      "country": "Georgia",
+      "similarity": 0.974,
+      "players": [
+        {
+          "player_id": 1987,
+          "display_name": "Besik Khamashuridze",
+          "country": "Georgia"
+        },
+        {
+          "player_id": 2364,
+          "display_name": "Bessik Khamashuridze",
+          "country": "Georgia"
+        }
+      ]
+    },
+    {
+      "country": "Georgia",
+      "similarity": 0.93,
+      "players": [
+        {
+          "player_id": 1989,
+          "display_name": "David Khinchaguishvili",
+          "country": "Georgia"
+        },
+        {
+          "player_id": 1619,
+          "display_name": "Davit Khinchagishvili",
+          "country": "Georgia"
+        }
+      ]
+    },
+    {
+      "country": "Georgia",
+      "similarity": 0.968,
+      "players": [
+        {
+          "player_id": 1623,
+          "display_name": "Ilia Zedginidze",
+          "country": "Georgia"
+        },
+        {
+          "player_id": 1994,
+          "display_name": "Ilia Zedguinidze",
+          "country": "Georgia"
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "similarity": 0.947,
+      "players": [
+        {
+          "player_id": 1292,
+          "display_name": "Kosei Ono",
+          "country": "Japan"
+        },
+        {
+          "player_id": 2041,
+          "display_name": "Kousei Ono",
+          "country": "Japan"
+        }
+      ]
+    },
+    {
+      "country": "Namibia",
+      "similarity": 0.957,
+      "players": [
+        {
+          "player_id": 896,
+          "display_name": "P. J. van Lill",
+          "country": "Namibia"
+        },
+        {
+          "player_id": 359,
+          "display_name": "PJ van Lill",
+          "country": "Namibia"
+        }
+      ]
+    },
+    {
+      "country": "Romania",
+      "similarity": 0.95,
+      "players": [
+        {
+          "player_id": 2143,
+          "display_name": "Valentin Calafateanu",
+          "country": "Romania"
+        },
+        {
+          "player_id": 1362,
+          "display_name": "Valentin Calafeteanu",
+          "country": "Romania"
+        }
+      ]
+    },
+    {
+      "country": "Russia",
+      "similarity": 0.933,
+      "players": [
+        {
+          "player_id": 1759,
+          "display_name": "Vasily Artemiev",
+          "country": "Russia"
+        },
+        {
+          "player_id": 417,
+          "display_name": "Vasily Artemyev",
+          "country": "Russia"
+        }
+      ]
+    },
+    {
+      "country": "Tonga",
+      "similarity": 0.96,
+      "players": [
+        {
+          "player_id": 3280,
+          "display_name": "Alasika Taufa",
+          "country": "Tonga"
+        },
+        {
+          "player_id": 1817,
+          "display_name": "Alaska Taufa",
+          "country": "Tonga"
+        }
+      ]
+    },
+    {
+      "country": "Uruguay",
+      "similarity": 0.97,
+      "players": [
+        {
+          "player_id": 593,
+          "display_name": "Felipe Echeverry",
+          "country": "Uruguay"
+        },
+        {
+          "player_id": 1082,
+          "display_name": "Felipe Etcheverry",
+          "country": "Uruguay"
+        }
+      ]
+    }
+  ],
+  "players_appearing_across_multiple_countries": [
+    {
+      "player_name": "Adam Coleman",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            2019
+          ]
+        },
+        {
+          "country": "Tonga",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Adrian Garvey",
+      "countries": [
+        {
+          "country": "South Africa",
+          "years": [
+            1999
+          ]
+        },
+        {
+          "country": "Zimbabwe",
+          "years": [
+            1991
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Charlie Faumuina",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "country": "Samoa",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "David Wilson",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            1995,
+            1999
+          ]
+        },
+        {
+          "country": "England",
+          "years": [
+            2015
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Frank Bunce",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            1995
+          ]
+        },
+        {
+          "country": "Samoa",
+          "years": [
+            1991
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Graeme Bachop",
+      "countries": [
+        {
+          "country": "Japan",
+          "years": [
+            1999
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "years": [
+            1991,
+            1995
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Greg Smith",
+      "countries": [
+        {
+          "country": "Fiji",
+          "years": [
+            1999,
+            2003
+          ]
+        },
+        {
+          "country": "Japan",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Ilivasi Tabua",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            1995
+          ]
+        },
+        {
+          "country": "Fiji",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Jack Dempsey",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            2019
+          ]
+        },
+        {
+          "country": "Scotland",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Jamie Joseph",
+      "countries": [
+        {
+          "country": "Japan",
+          "years": [
+            1999
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "years": [
+            1995
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Jean Kleyn",
+      "countries": [
+        {
+          "country": "Ireland",
+          "years": [
+            2019
+          ]
+        },
+        {
+          "country": "South Africa",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Malakai Fekitoa",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "country": "Tonga",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Mark Bennett",
+      "countries": [
+        {
+          "country": "Scotland",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "country": "Wales",
+          "years": [
+            1995
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Matt Pini",
+      "countries": [
+        {
+          "country": "Australia",
+          "years": [
+            1995
+          ]
+        },
+        {
+          "country": "Italy",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "player_name": "Va'aiga Tuigamala",
+      "countries": [
+        {
+          "country": "New Zealand",
+          "years": [
+            1991
+          ]
+        },
+        {
+          "country": "Samoa",
+          "years": [
+            1999
+          ]
+        }
+      ]
+    }
+  ],
+  "duplicate_aliases_pointing_to_multiple_players": [
+    {
+      "normalised_alias": "a coleman",
+      "aliases": [
+        {
+          "alias_id": 162,
+          "alias_name": "A Coleman",
+          "player": {
+            "player_id": 49,
+            "display_name": "Adam Coleman",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3280,
+          "alias_name": "A Coleman",
+          "player": {
+            "player_id": 1046,
+            "display_name": "Adam Coleman",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a davies",
+      "aliases": [
+        {
+          "alias_id": 1917,
+          "alias_name": "A Davies",
+          "player": {
+            "player_id": 618,
+            "display_name": "Aled Davies",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 10323,
+          "alias_name": "A Davies",
+          "player": {
+            "player_id": 3300,
+            "display_name": "Adrian Davies",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a garvey",
+      "aliases": [
+        {
+          "alias_id": 9043,
+          "alias_name": "A Garvey",
+          "player": {
+            "player_id": 2894,
+            "display_name": "Adrian Garvey",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 12083,
+          "alias_name": "A Garvey",
+          "player": {
+            "player_id": 3871,
+            "display_name": "Adrian Garvey",
+            "country": "Zimbabwe"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a kopaliani",
+      "aliases": [
+        {
+          "alias_id": 6229,
+          "alias_name": "A Kopaliani",
+          "player": {
+            "player_id": 1986,
+            "display_name": "Avtandil Kopaliani",
+            "country": "Georgia"
+          }
+        },
+        {
+          "alias_id": 7401,
+          "alias_name": "A Kopaliani",
+          "player": {
+            "player_id": 2362,
+            "display_name": "Avto Kopaliani",
+            "country": "Georgia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a mafi",
+      "aliases": [
+        {
+          "alias_id": 948,
+          "alias_name": "A Mafi",
+          "player": {
+            "player_id": 305,
+            "display_name": "Amanaki Mafi",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10260,
+          "alias_name": "A Mafi",
+          "player": {
+            "player_id": 3279,
+            "display_name": "Akuila Mafi",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a parker",
+      "aliases": [
+        {
+          "alias_id": 6952,
+          "alias_name": "A Parker",
+          "player": {
+            "player_id": 2216,
+            "display_name": "Alec Parker",
+            "country": "USA"
+          }
+        },
+        {
+          "alias_id": 7538,
+          "alias_name": "A Parker",
+          "player": {
+            "player_id": 2407,
+            "display_name": "Adam Parker",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a socias",
+      "aliases": [
+        {
+          "alias_id": 9124,
+          "alias_name": "A Socias",
+          "player": {
+            "player_id": 2919,
+            "display_name": "Alberto Soc\u00edas",
+            "country": "Spain"
+          }
+        },
+        {
+          "alias_id": 9134,
+          "alias_name": "A Socias",
+          "player": {
+            "player_id": 2922,
+            "display_name": "Antonio Soc\u00edas",
+            "country": "Spain"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a taufa",
+      "aliases": [
+        {
+          "alias_id": 5701,
+          "alias_name": "A Taufa",
+          "player": {
+            "player_id": 1817,
+            "display_name": "Alaska Taufa",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 10263,
+          "alias_name": "A Taufa",
+          "player": {
+            "player_id": 3280,
+            "display_name": "Alasika Taufa",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "a tuilagi",
+      "aliases": [
+        {
+          "alias_id": 4295,
+          "alias_name": "A Tuilagi",
+          "player": {
+            "player_id": 1368,
+            "display_name": "Alesana Tuilagi",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 6731,
+          "alias_name": "A Tuilagi",
+          "player": {
+            "player_id": 2145,
+            "display_name": "Anitelea Tuilagi",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "adam coleman",
+      "aliases": [
+        {
+          "alias_id": 160,
+          "alias_name": "Adam Coleman",
+          "player": {
+            "player_id": 49,
+            "display_name": "Adam Coleman",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3278,
+          "alias_name": "Adam Coleman",
+          "player": {
+            "player_id": 1046,
+            "display_name": "Adam Coleman",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 161,
+          "alias_name": "adam coleman",
+          "player": {
+            "player_id": 49,
+            "display_name": "Adam Coleman",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3279,
+          "alias_name": "adam coleman",
+          "player": {
+            "player_id": 1046,
+            "display_name": "Adam Coleman",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "adrian garvey",
+      "aliases": [
+        {
+          "alias_id": 9041,
+          "alias_name": "Adrian Garvey",
+          "player": {
+            "player_id": 2894,
+            "display_name": "Adrian Garvey",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 12081,
+          "alias_name": "Adrian Garvey",
+          "player": {
+            "player_id": 3871,
+            "display_name": "Adrian Garvey",
+            "country": "Zimbabwe"
+          }
+        },
+        {
+          "alias_id": 9042,
+          "alias_name": "adrian garvey",
+          "player": {
+            "player_id": 2894,
+            "display_name": "Adrian Garvey",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 12082,
+          "alias_name": "adrian garvey",
+          "player": {
+            "player_id": 3871,
+            "display_name": "Adrian Garvey",
+            "country": "Zimbabwe"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "avd berg",
+      "aliases": [
+        {
+          "alias_id": 2756,
+          "alias_name": "Avd Berg",
+          "player": {
+            "player_id": 884,
+            "display_name": "Andr\u00e9 van den Berg",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 6849,
+          "alias_name": "Avd Berg",
+          "player": {
+            "player_id": 2182,
+            "display_name": "Albert van den Berg",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "b botha",
+      "aliases": [
+        {
+          "alias_id": 5651,
+          "alias_name": "B Botha",
+          "player": {
+            "player_id": 1801,
+            "display_name": "Bakkies Botha",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 6859,
+          "alias_name": "B Botha",
+          "player": {
+            "player_id": 2185,
+            "display_name": "BJ Botha",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "b james",
+      "aliases": [
+        {
+          "alias_id": 5654,
+          "alias_name": "B James",
+          "player": {
+            "player_id": 1802,
+            "display_name": "Butch James",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 11478,
+          "alias_name": "B James",
+          "player": {
+            "player_id": 3674,
+            "display_name": "Billy James",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "b khamashuridze",
+      "aliases": [
+        {
+          "alias_id": 6232,
+          "alias_name": "B Khamashuridze",
+          "player": {
+            "player_id": 1987,
+            "display_name": "Besik Khamashuridze",
+            "country": "Georgia"
+          }
+        },
+        {
+          "alias_id": 7407,
+          "alias_name": "B Khamashuridze",
+          "player": {
+            "player_id": 2364,
+            "display_name": "Bessik Khamashuridze",
+            "country": "Georgia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "b robinson",
+      "aliases": [
+        {
+          "alias_id": 8252,
+          "alias_name": "B Robinson",
+          "player": {
+            "player_id": 2639,
+            "display_name": "Brett Robinson",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 11797,
+          "alias_name": "B Robinson",
+          "player": {
+            "player_id": 3778,
+            "display_name": "Brian Robinson",
+            "country": "Ireland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "b smith",
+      "aliases": [
+        {
+          "alias_id": 1149,
+          "alias_name": "B Smith",
+          "player": {
+            "player_id": 370,
+            "display_name": "Ben Smith",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 10536,
+          "alias_name": "B Smith",
+          "player": {
+            "player_id": 3368,
+            "display_name": "Brian Smith",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "b young",
+      "aliases": [
+        {
+          "alias_id": 6292,
+          "alias_name": "B Young",
+          "player": {
+            "player_id": 2007,
+            "display_name": "Bryan Young",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 7118,
+          "alias_name": "B Young",
+          "player": {
+            "player_id": 2269,
+            "display_name": "Bill Young",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "c botha",
+      "aliases": [
+        {
+          "alias_id": 4075,
+          "alias_name": "C Botha",
+          "player": {
+            "player_id": 1301,
+            "display_name": "Chrysander Botha",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 12098,
+          "alias_name": "C Botha",
+          "player": {
+            "player_id": 3876,
+            "display_name": "Chris Botha",
+            "country": "Zimbabwe"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "c faumuina",
+      "aliases": [
+        {
+          "alias_id": 3107,
+          "alias_name": "C Faumuina",
+          "player": {
+            "player_id": 991,
+            "display_name": "Charlie Faumuina",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 4124,
+          "alias_name": "C Faumuina",
+          "player": {
+            "player_id": 1317,
+            "display_name": "Charlie Faumuina",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "c lealiifano",
+      "aliases": [
+        {
+          "alias_id": 168,
+          "alias_name": "C Lealiifano",
+          "player": {
+            "player_id": 51,
+            "display_name": "Christian Lealiifano",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3111,
+          "alias_name": "C Lealiifano",
+          "player": {
+            "player_id": 992,
+            "display_name": "Christian Leali'ifano",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "c loubser",
+      "aliases": [
+        {
+          "alias_id": 1059,
+          "alias_name": "C Loubser",
+          "player": {
+            "player_id": 341,
+            "display_name": "Cliven Loubser",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 8730,
+          "alias_name": "C Loubser",
+          "player": {
+            "player_id": 2794,
+            "display_name": "Cliff Loubser",
+            "country": "Namibia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "c murray",
+      "aliases": [
+        {
+          "alias_id": 765,
+          "alias_name": "C Murray",
+          "player": {
+            "player_id": 245,
+            "display_name": "Conor Murray",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 9001,
+          "alias_name": "C Murray",
+          "player": {
+            "player_id": 2880,
+            "display_name": "Cameron Murray",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "c smith",
+      "aliases": [
+        {
+          "alias_id": 4130,
+          "alias_name": "C Smith",
+          "player": {
+            "player_id": 1319,
+            "display_name": "Conrad Smith",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 6807,
+          "alias_name": "C Smith",
+          "player": {
+            "player_id": 2168,
+            "display_name": "Craig Smith",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 8309,
+          "alias_name": "C Smith",
+          "player": {
+            "player_id": 2658,
+            "display_name": "Courtney Smith",
+            "country": "Canada"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "charlie faumuina",
+      "aliases": [
+        {
+          "alias_id": 3105,
+          "alias_name": "Charlie Faumuina",
+          "player": {
+            "player_id": 991,
+            "display_name": "Charlie Faumuina",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 4122,
+          "alias_name": "Charlie Faumuina",
+          "player": {
+            "player_id": 1317,
+            "display_name": "Charlie Faumuina",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 3106,
+          "alias_name": "charlie faumuina",
+          "player": {
+            "player_id": 991,
+            "display_name": "Charlie Faumuina",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 4123,
+          "alias_name": "charlie faumuina",
+          "player": {
+            "player_id": 1317,
+            "display_name": "Charlie Faumuina",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "christian lealiifano",
+      "aliases": [
+        {
+          "alias_id": 3108,
+          "alias_name": "Christian Leali'ifano",
+          "player": {
+            "player_id": 992,
+            "display_name": "Christian Leali'ifano",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 166,
+          "alias_name": "Christian Lealiifano",
+          "player": {
+            "player_id": 51,
+            "display_name": "Christian Lealiifano",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3110,
+          "alias_name": "Christian Lealiifano",
+          "player": {
+            "player_id": 992,
+            "display_name": "Christian Leali'ifano",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 3109,
+          "alias_name": "christian leali'ifano",
+          "player": {
+            "player_id": 992,
+            "display_name": "Christian Leali'ifano",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 167,
+          "alias_name": "christian lealiifano",
+          "player": {
+            "player_id": 51,
+            "display_name": "Christian Lealiifano",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d jones",
+      "aliases": [
+        {
+          "alias_id": 7021,
+          "alias_name": "D Jones",
+          "player": {
+            "player_id": 2239,
+            "display_name": "Duncan Jones",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 8181,
+          "alias_name": "D Jones",
+          "player": {
+            "player_id": 2617,
+            "display_name": "Dafydd Jones",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 10329,
+          "alias_name": "D Jones",
+          "player": {
+            "player_id": 3302,
+            "display_name": "Derwyn Jones",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d lougheed",
+      "aliases": [
+        {
+          "alias_id": 7178,
+          "alias_name": "D Lougheed",
+          "player": {
+            "player_id": 2289,
+            "display_name": "Dave Lougheed",
+            "country": "Canada"
+          }
+        },
+        {
+          "alias_id": 8315,
+          "alias_name": "D Lougheed",
+          "player": {
+            "player_id": 2660,
+            "display_name": "David Lougheed",
+            "country": "Canada"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d manu",
+      "aliases": [
+        {
+          "alias_id": 4956,
+          "alias_name": "D Manu",
+          "player": {
+            "player_id": 1580,
+            "display_name": "Deacon Manu",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 9559,
+          "alias_name": "D Manu",
+          "player": {
+            "player_id": 3053,
+            "display_name": "Daniel Manu",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d mateus",
+      "aliases": [
+        {
+          "alias_id": 6574,
+          "alias_name": "D Mateus",
+          "player": {
+            "player_id": 2098,
+            "display_name": "David Mateus",
+            "country": "Portugal"
+          }
+        },
+        {
+          "alias_id": 6586,
+          "alias_name": "D Mateus",
+          "player": {
+            "player_id": 2102,
+            "display_name": "Diogo Mateus",
+            "country": "Portugal"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d rossouw",
+      "aliases": [
+        {
+          "alias_id": 2765,
+          "alias_name": "D Rossouw",
+          "player": {
+            "player_id": 887,
+            "display_name": "Divan Rossouw",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 5663,
+          "alias_name": "D Rossouw",
+          "player": {
+            "player_id": 1805,
+            "display_name": "Danie Rossouw",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d vickerman",
+      "aliases": [
+        {
+          "alias_id": 4800,
+          "alias_name": "D Vickerman",
+          "player": {
+            "player_id": 1529,
+            "display_name": "Dan Vickerman",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 5927,
+          "alias_name": "D Vickerman",
+          "player": {
+            "player_id": 1889,
+            "display_name": "Daniel Vickerman",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d weir",
+      "aliases": [
+        {
+          "alias_id": 4380,
+          "alias_name": "D Weir",
+          "player": {
+            "player_id": 1395,
+            "display_name": "Duncan Weir",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 9007,
+          "alias_name": "D Weir",
+          "player": {
+            "player_id": 2882,
+            "display_name": "Doddie Weir",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "d wilson",
+      "aliases": [
+        {
+          "alias_id": 3667,
+          "alias_name": "D Wilson",
+          "player": {
+            "player_id": 1170,
+            "display_name": "David Wilson",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 4896,
+          "alias_name": "D Wilson",
+          "player": {
+            "player_id": 1560,
+            "display_name": "Dave Wilson",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 8261,
+          "alias_name": "D Wilson",
+          "player": {
+            "player_id": 2642,
+            "display_name": "David Wilson",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "david wilson",
+      "aliases": [
+        {
+          "alias_id": 3665,
+          "alias_name": "David Wilson",
+          "player": {
+            "player_id": 1170,
+            "display_name": "David Wilson",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 8259,
+          "alias_name": "David Wilson",
+          "player": {
+            "player_id": 2642,
+            "display_name": "David Wilson",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3666,
+          "alias_name": "david wilson",
+          "player": {
+            "player_id": 1170,
+            "display_name": "David Wilson",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 8260,
+          "alias_name": "david wilson",
+          "player": {
+            "player_id": 2642,
+            "display_name": "David Wilson",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "e jantjies",
+      "aliases": [
+        {
+          "alias_id": 1071,
+          "alias_name": "E Jantjies",
+          "player": {
+            "player_id": 345,
+            "display_name": "Eugene Jantjies",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 1535,
+          "alias_name": "E Jantjies",
+          "player": {
+            "player_id": 496,
+            "display_name": "Elton Jantjies",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "e taione",
+      "aliases": [
+        {
+          "alias_id": 4481,
+          "alias_name": "E Taione",
+          "player": {
+            "player_id": 1428,
+            "display_name": "Elvis Taione",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 6898,
+          "alias_name": "E Taione",
+          "player": {
+            "player_id": 2198,
+            "display_name": "Epi Taione",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "f bunce",
+      "aliases": [
+        {
+          "alias_id": 10034,
+          "alias_name": "F Bunce",
+          "player": {
+            "player_id": 3205,
+            "display_name": "Frank Bunce",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 12055,
+          "alias_name": "F Bunce",
+          "player": {
+            "player_id": 3862,
+            "display_name": "Frank Bunce",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "f tuilagi",
+      "aliases": [
+        {
+          "alias_id": 10395,
+          "alias_name": "F Tuilagi",
+          "player": {
+            "player_id": 3324,
+            "display_name": "Fereti Tuilagi",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 12058,
+          "alias_name": "F Tuilagi",
+          "player": {
+            "player_id": 3863,
+            "display_name": "Freddie Tuilagi",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "frank bunce",
+      "aliases": [
+        {
+          "alias_id": 10032,
+          "alias_name": "Frank Bunce",
+          "player": {
+            "player_id": 3205,
+            "display_name": "Frank Bunce",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 12053,
+          "alias_name": "Frank Bunce",
+          "player": {
+            "player_id": 3862,
+            "display_name": "Frank Bunce",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 10033,
+          "alias_name": "frank bunce",
+          "player": {
+            "player_id": 3205,
+            "display_name": "Frank Bunce",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 12054,
+          "alias_name": "frank bunce",
+          "player": {
+            "player_id": 3862,
+            "display_name": "Frank Bunce",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "g bachop",
+      "aliases": [
+        {
+          "alias_id": 8679,
+          "alias_name": "G Bachop",
+          "player": {
+            "player_id": 2777,
+            "display_name": "Graeme Bachop",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10037,
+          "alias_name": "G Bachop",
+          "player": {
+            "player_id": 3206,
+            "display_name": "Graeme Bachop",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "g jenkins",
+      "aliases": [
+        {
+          "alias_id": 4685,
+          "alias_name": "G Jenkins",
+          "player": {
+            "player_id": 1493,
+            "display_name": "Gethin Jenkins",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 9439,
+          "alias_name": "G Jenkins",
+          "player": {
+            "player_id": 3017,
+            "display_name": "Garin Jenkins",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "g rees",
+      "aliases": [
+        {
+          "alias_id": 8324,
+          "alias_name": "G Rees",
+          "player": {
+            "player_id": 2663,
+            "display_name": "Gareth Rees",
+            "country": "Canada"
+          }
+        },
+        {
+          "alias_id": 10659,
+          "alias_name": "G Rees",
+          "player": {
+            "player_id": 3408,
+            "display_name": "Gary Rees",
+            "country": "England"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "g smith",
+      "aliases": [
+        {
+          "alias_id": 5933,
+          "alias_name": "G Smith",
+          "player": {
+            "player_id": 1891,
+            "display_name": "George Smith",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 7295,
+          "alias_name": "G Smith",
+          "player": {
+            "player_id": 2328,
+            "display_name": "Greg Smith",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 8682,
+          "alias_name": "G Smith",
+          "player": {
+            "player_id": 2778,
+            "display_name": "Greg Smith",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "g williams",
+      "aliases": [
+        {
+          "alias_id": 3251,
+          "alias_name": "G Williams",
+          "player": {
+            "player_id": 1037,
+            "display_name": "Grant Williams",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 6745,
+          "alias_name": "G Williams",
+          "player": {
+            "player_id": 2149,
+            "display_name": "Gavin Williams",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "graeme bachop",
+      "aliases": [
+        {
+          "alias_id": 8677,
+          "alias_name": "Graeme Bachop",
+          "player": {
+            "player_id": 2777,
+            "display_name": "Graeme Bachop",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10035,
+          "alias_name": "Graeme Bachop",
+          "player": {
+            "player_id": 3206,
+            "display_name": "Graeme Bachop",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 8678,
+          "alias_name": "graeme bachop",
+          "player": {
+            "player_id": 2777,
+            "display_name": "Graeme Bachop",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10036,
+          "alias_name": "graeme bachop",
+          "player": {
+            "player_id": 3206,
+            "display_name": "Graeme Bachop",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "greg smith",
+      "aliases": [
+        {
+          "alias_id": 7293,
+          "alias_name": "Greg Smith",
+          "player": {
+            "player_id": 2328,
+            "display_name": "Greg Smith",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 8680,
+          "alias_name": "Greg Smith",
+          "player": {
+            "player_id": 2778,
+            "display_name": "Greg Smith",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 7294,
+          "alias_name": "greg smith",
+          "player": {
+            "player_id": 2328,
+            "display_name": "Greg Smith",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 8681,
+          "alias_name": "greg smith",
+          "player": {
+            "player_id": 2778,
+            "display_name": "Greg Smith",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "h jones",
+      "aliases": [
+        {
+          "alias_id": 3192,
+          "alias_name": "H Jones",
+          "player": {
+            "player_id": 1018,
+            "display_name": "Huw Jones",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 3616,
+          "alias_name": "H Jones",
+          "player": {
+            "player_id": 1153,
+            "display_name": "Harry Jones",
+            "country": "Canada"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "i evans",
+      "aliases": [
+        {
+          "alias_id": 7030,
+          "alias_name": "I Evans",
+          "player": {
+            "player_id": 2242,
+            "display_name": "Ian Evans",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 10341,
+          "alias_name": "I Evans",
+          "player": {
+            "player_id": 3306,
+            "display_name": "Ieuan Evans",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "i tabua",
+      "aliases": [
+        {
+          "alias_id": 8429,
+          "alias_name": "I Tabua",
+          "player": {
+            "player_id": 2698,
+            "display_name": "Ilivasi Tabua",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 9568,
+          "alias_name": "I Tabua",
+          "player": {
+            "player_id": 3056,
+            "display_name": "Ilivasi Tabua",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "ilivasi tabua",
+      "aliases": [
+        {
+          "alias_id": 8427,
+          "alias_name": "Ilivasi Tabua",
+          "player": {
+            "player_id": 2698,
+            "display_name": "Ilivasi Tabua",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 9566,
+          "alias_name": "Ilivasi Tabua",
+          "player": {
+            "player_id": 3056,
+            "display_name": "Ilivasi Tabua",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 8428,
+          "alias_name": "ilivasi tabua",
+          "player": {
+            "player_id": 2698,
+            "display_name": "Ilivasi Tabua",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 9567,
+          "alias_name": "ilivasi tabua",
+          "player": {
+            "player_id": 3056,
+            "display_name": "Ilivasi Tabua",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j clarke",
+      "aliases": [
+        {
+          "alias_id": 8934,
+          "alias_name": "J Clarke",
+          "player": {
+            "player_id": 2859,
+            "display_name": "John Clarke",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 11809,
+          "alias_name": "J Clarke",
+          "player": {
+            "player_id": 3782,
+            "display_name": "Jack Clarke",
+            "country": "Ireland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j davies",
+      "aliases": [
+        {
+          "alias_id": 1953,
+          "alias_name": "J Davies",
+          "player": {
+            "player_id": 630,
+            "display_name": "James Davies",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 1956,
+          "alias_name": "J Davies",
+          "player": {
+            "player_id": 631,
+            "display_name": "Jonathan Davies",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 10344,
+          "alias_name": "J Davies",
+          "player": {
+            "player_id": 3307,
+            "display_name": "John Davies",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j dempsey",
+      "aliases": [
+        {
+          "alias_id": 185,
+          "alias_name": "J Dempsey",
+          "player": {
+            "player_id": 56,
+            "display_name": "Jack Dempsey",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3195,
+          "alias_name": "J Dempsey",
+          "player": {
+            "player_id": 1019,
+            "display_name": "Jack Dempsey",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j joseph",
+      "aliases": [
+        {
+          "alias_id": 402,
+          "alias_name": "J Joseph",
+          "player": {
+            "player_id": 126,
+            "display_name": "Jonathan Joseph",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 8685,
+          "alias_name": "J Joseph",
+          "player": {
+            "player_id": 2779,
+            "display_name": "Jamie Joseph",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10040,
+          "alias_name": "J Joseph",
+          "player": {
+            "player_id": 3207,
+            "display_name": "Jamie Joseph",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j kleyn",
+      "aliases": [
+        {
+          "alias_id": 789,
+          "alias_name": "J Kleyn",
+          "player": {
+            "player_id": 253,
+            "display_name": "Jean Kleyn",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 3260,
+          "alias_name": "J Kleyn",
+          "player": {
+            "player_id": 1040,
+            "display_name": "Jean Kleyn",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j lay",
+      "aliases": [
+        {
+          "alias_id": 1352,
+          "alias_name": "J Lay",
+          "player": {
+            "player_id": 437,
+            "display_name": "James Lay",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 1355,
+          "alias_name": "J Lay",
+          "player": {
+            "player_id": 438,
+            "display_name": "Jordan Lay",
+            "country": "Samoa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j marshall",
+      "aliases": [
+        {
+          "alias_id": 4860,
+          "alias_name": "J Marshall",
+          "player": {
+            "player_id": 1548,
+            "display_name": "Jason Marshall",
+            "country": "Canada"
+          }
+        },
+        {
+          "alias_id": 7694,
+          "alias_name": "J Marshall",
+          "player": {
+            "player_id": 2459,
+            "display_name": "Justin Marshall",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j muller",
+      "aliases": [
+        {
+          "alias_id": 5683,
+          "alias_name": "J Muller",
+          "player": {
+            "player_id": 1811,
+            "display_name": "Johann Muller",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 7913,
+          "alias_name": "J Muller",
+          "player": {
+            "player_id": 2530,
+            "display_name": "Jorrie Muller",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j payne",
+      "aliases": [
+        {
+          "alias_id": 3896,
+          "alias_name": "J Payne",
+          "player": {
+            "player_id": 1244,
+            "display_name": "Jared Payne",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 7961,
+          "alias_name": "J Payne",
+          "player": {
+            "player_id": 2546,
+            "display_name": "John Payne",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j robinson",
+      "aliases": [
+        {
+          "alias_id": 6061,
+          "alias_name": "J Robinson",
+          "player": {
+            "player_id": 1933,
+            "display_name": "Jason Robinson",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 7036,
+          "alias_name": "J Robinson",
+          "player": {
+            "player_id": 2244,
+            "display_name": "Jamie Robinson",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j ryan",
+      "aliases": [
+        {
+          "alias_id": 786,
+          "alias_name": "J Ryan",
+          "player": {
+            "player_id": 252,
+            "display_name": "James Ryan",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 795,
+          "alias_name": "J Ryan",
+          "player": {
+            "player_id": 255,
+            "display_name": "John Ryan",
+            "country": "Ireland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j thomas",
+      "aliases": [
+        {
+          "alias_id": 7039,
+          "alias_name": "J Thomas",
+          "player": {
+            "player_id": 2245,
+            "display_name": "Jonathan Thomas",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 10347,
+          "alias_name": "J Thomas",
+          "player": {
+            "player_id": 3308,
+            "display_name": "Justin Thomas",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j tomane",
+      "aliases": [
+        {
+          "alias_id": 3039,
+          "alias_name": "J Tomane",
+          "player": {
+            "player_id": 970,
+            "display_name": "Jason Tomane",
+            "country": "Romania"
+          }
+        },
+        {
+          "alias_id": 3558,
+          "alias_name": "J Tomane",
+          "player": {
+            "player_id": 1134,
+            "display_name": "Joe Tomane",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j white",
+      "aliases": [
+        {
+          "alias_id": 6822,
+          "alias_name": "J White",
+          "player": {
+            "player_id": 2173,
+            "display_name": "Jason White",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 7244,
+          "alias_name": "J White",
+          "player": {
+            "player_id": 2311,
+            "display_name": "Julian White",
+            "country": "England"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "j williams",
+      "aliases": [
+        {
+          "alias_id": 3449,
+          "alias_name": "J Williams",
+          "player": {
+            "player_id": 1100,
+            "display_name": "Johnny Williams",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 8267,
+          "alias_name": "J Williams",
+          "player": {
+            "player_id": 2644,
+            "display_name": "Jim Williams",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "jack dempsey",
+      "aliases": [
+        {
+          "alias_id": 183,
+          "alias_name": "Jack Dempsey",
+          "player": {
+            "player_id": 56,
+            "display_name": "Jack Dempsey",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3193,
+          "alias_name": "Jack Dempsey",
+          "player": {
+            "player_id": 1019,
+            "display_name": "Jack Dempsey",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 184,
+          "alias_name": "jack dempsey",
+          "player": {
+            "player_id": 56,
+            "display_name": "Jack Dempsey",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3194,
+          "alias_name": "jack dempsey",
+          "player": {
+            "player_id": 1019,
+            "display_name": "Jack Dempsey",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "jamie joseph",
+      "aliases": [
+        {
+          "alias_id": 8683,
+          "alias_name": "Jamie Joseph",
+          "player": {
+            "player_id": 2779,
+            "display_name": "Jamie Joseph",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10038,
+          "alias_name": "Jamie Joseph",
+          "player": {
+            "player_id": 3207,
+            "display_name": "Jamie Joseph",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 8684,
+          "alias_name": "jamie joseph",
+          "player": {
+            "player_id": 2779,
+            "display_name": "Jamie Joseph",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10039,
+          "alias_name": "jamie joseph",
+          "player": {
+            "player_id": 3207,
+            "display_name": "Jamie Joseph",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "jd freitas",
+      "aliases": [
+        {
+          "alias_id": 4640,
+          "alias_name": "Jd Freitas",
+          "player": {
+            "player_id": 1479,
+            "display_name": "Juan de Freitas",
+            "country": "Uruguay"
+          }
+        },
+        {
+          "alias_id": 8118,
+          "alias_name": "Jd Freitas",
+          "player": {
+            "player_id": 2598,
+            "display_name": "Joaqu\u00edn de Freitas",
+            "country": "Uruguay"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "jd toit",
+      "aliases": [
+        {
+          "alias_id": 1080,
+          "alias_name": "Jd Toit",
+          "player": {
+            "player_id": 348,
+            "display_name": "Janry du Toit",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 5317,
+          "alias_name": "Jd Toit",
+          "player": {
+            "player_id": 1695,
+            "display_name": "Jan\u00e9 du Toit",
+            "country": "Namibia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "jean kleyn",
+      "aliases": [
+        {
+          "alias_id": 787,
+          "alias_name": "Jean Kleyn",
+          "player": {
+            "player_id": 253,
+            "display_name": "Jean Kleyn",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 3258,
+          "alias_name": "Jean Kleyn",
+          "player": {
+            "player_id": 1040,
+            "display_name": "Jean Kleyn",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 788,
+          "alias_name": "jean kleyn",
+          "player": {
+            "player_id": 253,
+            "display_name": "Jean Kleyn",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 3259,
+          "alias_name": "jean kleyn",
+          "player": {
+            "player_id": 1040,
+            "display_name": "Jean Kleyn",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "k ono",
+      "aliases": [
+        {
+          "alias_id": 4047,
+          "alias_name": "K Ono",
+          "player": {
+            "player_id": 1292,
+            "display_name": "Kosei Ono",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 6397,
+          "alias_name": "K Ono",
+          "player": {
+            "player_id": 2041,
+            "display_name": "Kousei Ono",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "k robertson",
+      "aliases": [
+        {
+          "alias_id": 6353,
+          "alias_name": "K Robertson",
+          "player": {
+            "player_id": 2027,
+            "display_name": "Kaine Robertson",
+            "country": "Italy"
+          }
+        },
+        {
+          "alias_id": 11292,
+          "alias_name": "K Robertson",
+          "player": {
+            "player_id": 3612,
+            "display_name": "Keith Robertson",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "l williams",
+      "aliases": [
+        {
+          "alias_id": 1974,
+          "alias_name": "L Williams",
+          "player": {
+            "player_id": 637,
+            "display_name": "Liam Williams",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 4697,
+          "alias_name": "L Williams",
+          "player": {
+            "player_id": 1497,
+            "display_name": "Lloyd Williams",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m bennett",
+      "aliases": [
+        {
+          "alias_id": 4395,
+          "alias_name": "M Bennett",
+          "player": {
+            "player_id": 1400,
+            "display_name": "Mark Bennett",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 10350,
+          "alias_name": "M Bennett",
+          "player": {
+            "player_id": 3309,
+            "display_name": "Mark Bennett",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m bergamasco",
+      "aliases": [
+        {
+          "alias_id": 3989,
+          "alias_name": "M Bergamasco",
+          "player": {
+            "player_id": 1273,
+            "display_name": "Mauro Bergamasco",
+            "country": "Italy"
+          }
+        },
+        {
+          "alias_id": 5209,
+          "alias_name": "M Bergamasco",
+          "player": {
+            "player_id": 1660,
+            "display_name": "Mirco Bergamasco",
+            "country": "Italy"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m bosch",
+      "aliases": [
+        {
+          "alias_id": 3510,
+          "alias_name": "M Bosch",
+          "player": {
+            "player_id": 1119,
+            "display_name": "Marcelo Bosch",
+            "country": "Argentina"
+          }
+        },
+        {
+          "alias_id": 11643,
+          "alias_name": "M Bosch",
+          "player": {
+            "player_id": 3728,
+            "display_name": "Mariano Bosch",
+            "country": "Argentina"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m carreras",
+      "aliases": [
+        {
+          "alias_id": 2049,
+          "alias_name": "M Carreras",
+          "player": {
+            "player_id": 660,
+            "display_name": "Mateo Carreras",
+            "country": "Argentina"
+          }
+        },
+        {
+          "alias_id": 11649,
+          "alias_name": "M Carreras",
+          "player": {
+            "player_id": 3730,
+            "display_name": "Mario Carreras",
+            "country": "Argentina"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m cuttitta",
+      "aliases": [
+        {
+          "alias_id": 9844,
+          "alias_name": "M Cuttitta",
+          "player": {
+            "player_id": 3145,
+            "display_name": "Marcello Cuttitta",
+            "country": "Italy"
+          }
+        },
+        {
+          "alias_id": 9859,
+          "alias_name": "M Cuttitta",
+          "player": {
+            "player_id": 3150,
+            "display_name": "Massimo Cuttitta",
+            "country": "Italy"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m evans",
+      "aliases": [
+        {
+          "alias_id": 3637,
+          "alias_name": "M Evans",
+          "player": {
+            "player_id": 1160,
+            "display_name": "Matt Evans",
+            "country": "Canada"
+          }
+        },
+        {
+          "alias_id": 5618,
+          "alias_name": "M Evans",
+          "player": {
+            "player_id": 1790,
+            "display_name": "Max Evans",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m fekitoa",
+      "aliases": [
+        {
+          "alias_id": 3310,
+          "alias_name": "M Fekitoa",
+          "player": {
+            "player_id": 1056,
+            "display_name": "Malakai Fekitoa",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 4155,
+          "alias_name": "M Fekitoa",
+          "player": {
+            "player_id": 1327,
+            "display_name": "Malakai Fekitoa",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m jones",
+      "aliases": [
+        {
+          "alias_id": 7045,
+          "alias_name": "M Jones",
+          "player": {
+            "player_id": 2247,
+            "display_name": "Mark Jones",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 11142,
+          "alias_name": "M Jones",
+          "player": {
+            "player_id": 3566,
+            "display_name": "Michael Jones",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m kvirikashvili",
+      "aliases": [
+        {
+          "alias_id": 3851,
+          "alias_name": "M Kvirikashvili",
+          "player": {
+            "player_id": 1229,
+            "display_name": "Merab Kvirikashvili",
+            "country": "Georgia"
+          }
+        },
+        {
+          "alias_id": 6262,
+          "alias_name": "M Kvirikashvili",
+          "player": {
+            "player_id": 1997,
+            "display_name": "Meko Kvirikashvili",
+            "country": "Georgia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m lazar",
+      "aliases": [
+        {
+          "alias_id": 4245,
+          "alias_name": "M Lazar",
+          "player": {
+            "player_id": 1353,
+            "display_name": "Mihai Laz\u0103r",
+            "country": "Romania"
+          }
+        },
+        {
+          "alias_id": 5446,
+          "alias_name": "M Lazar",
+          "player": {
+            "player_id": 1735,
+            "display_name": "Mihaita Laz\u0103r",
+            "country": "Romania"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m phillips",
+      "aliases": [
+        {
+          "alias_id": 4706,
+          "alias_name": "M Phillips",
+          "player": {
+            "player_id": 1500,
+            "display_name": "Mike Phillips",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 7522,
+          "alias_name": "M Phillips",
+          "player": {
+            "player_id": 2402,
+            "display_name": "Matthew Phillips",
+            "country": "Italy"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m pini",
+      "aliases": [
+        {
+          "alias_id": 8649,
+          "alias_name": "M Pini",
+          "player": {
+            "player_id": 2767,
+            "display_name": "Matt Pini",
+            "country": "Italy"
+          }
+        },
+        {
+          "alias_id": 9574,
+          "alias_name": "M Pini",
+          "player": {
+            "player_id": 3058,
+            "display_name": "Matt Pini",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m vunipola",
+      "aliases": [
+        {
+          "alias_id": 418,
+          "alias_name": "M Vunipola",
+          "player": {
+            "player_id": 131,
+            "display_name": "Mako Vunipola",
+            "country": "England"
+          }
+        },
+        {
+          "alias_id": 10287,
+          "alias_name": "M Vunipola",
+          "player": {
+            "player_id": 3288,
+            "display_name": "Manu Vunipola",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m williams",
+      "aliases": [
+        {
+          "alias_id": 5254,
+          "alias_name": "M Williams",
+          "player": {
+            "player_id": 1675,
+            "display_name": "Murray Williams",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 6027,
+          "alias_name": "M Williams",
+          "player": {
+            "player_id": 1922,
+            "display_name": "Morgan Williams",
+            "country": "Canada"
+          }
+        },
+        {
+          "alias_id": 7048,
+          "alias_name": "M Williams",
+          "player": {
+            "player_id": 2248,
+            "display_name": "Martyn Williams",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 9332,
+          "alias_name": "M Williams",
+          "player": {
+            "player_id": 2984,
+            "display_name": "Mark Williams",
+            "country": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "m wyatt",
+      "aliases": [
+        {
+          "alias_id": 8063,
+          "alias_name": "M Wyatt",
+          "player": {
+            "player_id": 2580,
+            "display_name": "Matt Wyatt",
+            "country": "USA"
+          }
+        },
+        {
+          "alias_id": 10614,
+          "alias_name": "M Wyatt",
+          "player": {
+            "player_id": 3393,
+            "display_name": "Mark Wyatt",
+            "country": "Canada"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "malakai fekitoa",
+      "aliases": [
+        {
+          "alias_id": 3308,
+          "alias_name": "Malakai Fekitoa",
+          "player": {
+            "player_id": 1056,
+            "display_name": "Malakai Fekitoa",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 4153,
+          "alias_name": "Malakai Fekitoa",
+          "player": {
+            "player_id": 1327,
+            "display_name": "Malakai Fekitoa",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 3309,
+          "alias_name": "malakai fekitoa",
+          "player": {
+            "player_id": 1056,
+            "display_name": "Malakai Fekitoa",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 4154,
+          "alias_name": "malakai fekitoa",
+          "player": {
+            "player_id": 1327,
+            "display_name": "Malakai Fekitoa",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "mark bennett",
+      "aliases": [
+        {
+          "alias_id": 4393,
+          "alias_name": "Mark Bennett",
+          "player": {
+            "player_id": 1400,
+            "display_name": "Mark Bennett",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 10348,
+          "alias_name": "Mark Bennett",
+          "player": {
+            "player_id": 3309,
+            "display_name": "Mark Bennett",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 4394,
+          "alias_name": "mark bennett",
+          "player": {
+            "player_id": 1400,
+            "display_name": "Mark Bennett",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 10349,
+          "alias_name": "mark bennett",
+          "player": {
+            "player_id": 3309,
+            "display_name": "Mark Bennett",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "matt pini",
+      "aliases": [
+        {
+          "alias_id": 8647,
+          "alias_name": "Matt Pini",
+          "player": {
+            "player_id": 2767,
+            "display_name": "Matt Pini",
+            "country": "Italy"
+          }
+        },
+        {
+          "alias_id": 9572,
+          "alias_name": "Matt Pini",
+          "player": {
+            "player_id": 3058,
+            "display_name": "Matt Pini",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 8648,
+          "alias_name": "matt pini",
+          "player": {
+            "player_id": 2767,
+            "display_name": "Matt Pini",
+            "country": "Italy"
+          }
+        },
+        {
+          "alias_id": 9573,
+          "alias_name": "matt pini",
+          "player": {
+            "player_id": 3058,
+            "display_name": "Matt Pini",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "n white",
+      "aliases": [
+        {
+          "alias_id": 215,
+          "alias_name": "N White",
+          "player": {
+            "player_id": 65,
+            "display_name": "Nic White",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 3908,
+          "alias_name": "N White",
+          "player": {
+            "player_id": 1248,
+            "display_name": "Nathan White",
+            "country": "Ireland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "p lambie",
+      "aliases": [
+        {
+          "alias_id": 4457,
+          "alias_name": "P Lambie",
+          "player": {
+            "player_id": 1420,
+            "display_name": "Pat Lambie",
+            "country": "South Africa"
+          }
+        },
+        {
+          "alias_id": 5695,
+          "alias_name": "P Lambie",
+          "player": {
+            "player_id": 1815,
+            "display_name": "Patrick Lambie",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "p latu",
+      "aliases": [
+        {
+          "alias_id": 3322,
+          "alias_name": "P Latu",
+          "player": {
+            "player_id": 1060,
+            "display_name": "Paula Latu",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 10293,
+          "alias_name": "P Latu",
+          "player": {
+            "player_id": 3290,
+            "display_name": "Penieli Latu",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "p wallace",
+      "aliases": [
+        {
+          "alias_id": 5154,
+          "alias_name": "P Wallace",
+          "player": {
+            "player_id": 1642,
+            "display_name": "Paddy Wallace",
+            "country": "Ireland"
+          }
+        },
+        {
+          "alias_id": 8588,
+          "alias_name": "P Wallace",
+          "player": {
+            "player_id": 2747,
+            "display_name": "Paul Wallace",
+            "country": "Ireland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "p williams",
+      "aliases": [
+        {
+          "alias_id": 5562,
+          "alias_name": "P Williams",
+          "player": {
+            "player_id": 1772,
+            "display_name": "Paul Williams",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 10695,
+          "alias_name": "P Williams",
+          "player": {
+            "player_id": 3420,
+            "display_name": "Peter Williams",
+            "country": "England"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r arnold",
+      "aliases": [
+        {
+          "alias_id": 224,
+          "alias_name": "R Arnold",
+          "player": {
+            "player_id": 68,
+            "display_name": "Rory Arnold",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 2124,
+          "alias_name": "R Arnold",
+          "player": {
+            "player_id": 684,
+            "display_name": "Richie Arnold",
+            "country": "Australia"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r gray",
+      "aliases": [
+        {
+          "alias_id": 3222,
+          "alias_name": "R Gray",
+          "player": {
+            "player_id": 1028,
+            "display_name": "Richie Gray",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 11616,
+          "alias_name": "R Gray",
+          "player": {
+            "player_id": 3720,
+            "display_name": "Rod Gray",
+            "country": "Zimbabwe"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r jones",
+      "aliases": [
+        {
+          "alias_id": 5833,
+          "alias_name": "R Jones",
+          "player": {
+            "player_id": 1861,
+            "display_name": "Ryan Jones",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 10362,
+          "alias_name": "R Jones",
+          "player": {
+            "player_id": 3313,
+            "display_name": "Robert Jones",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r kruger",
+      "aliases": [
+        {
+          "alias_id": 7649,
+          "alias_name": "R Kruger",
+          "player": {
+            "player_id": 2444,
+            "display_name": "Regardt Kruger",
+            "country": "Namibia"
+          }
+        },
+        {
+          "alias_id": 9106,
+          "alias_name": "R Kruger",
+          "player": {
+            "player_id": 2914,
+            "display_name": "Ruben Kruger",
+            "country": "South Africa"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r martin",
+      "aliases": [
+        {
+          "alias_id": 6212,
+          "alias_name": "R Martin",
+          "player": {
+            "player_id": 1981,
+            "display_name": "R\u00e9my Martin",
+            "country": "France"
+          }
+        },
+        {
+          "alias_id": 7109,
+          "alias_name": "R Martin",
+          "player": {
+            "player_id": 2266,
+            "display_name": "Rolando Mart\u00edn",
+            "country": "Argentina"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r martinez",
+      "aliases": [
+        {
+          "alias_id": 2240,
+          "alias_name": "R Martinez",
+          "player": {
+            "player_id": 718,
+            "display_name": "Raimundo Mart\u00ednez",
+            "country": "Chile"
+          }
+        },
+        {
+          "alias_id": 7529,
+          "alias_name": "R Martinez",
+          "player": {
+            "player_id": 2404,
+            "display_name": "Ramiro Mart\u00ednez",
+            "country": "Italy"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "r moriarty",
+      "aliases": [
+        {
+          "alias_id": 1993,
+          "alias_name": "R Moriarty",
+          "player": {
+            "player_id": 643,
+            "display_name": "Ross Moriarty",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 11532,
+          "alias_name": "R Moriarty",
+          "player": {
+            "player_id": 3692,
+            "display_name": "Richard Moriarty",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s davies",
+      "aliases": [
+        {
+          "alias_id": 1788,
+          "alias_name": "S Davies",
+          "player": {
+            "player_id": 578,
+            "display_name": "Shaun Davies",
+            "country": "USA"
+          }
+        },
+        {
+          "alias_id": 10371,
+          "alias_name": "S Davies",
+          "player": {
+            "player_id": 3316,
+            "display_name": "Stuart Davies",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s fisiihoi",
+      "aliases": [
+        {
+          "alias_id": 1674,
+          "alias_name": "S Fisiihoi",
+          "player": {
+            "player_id": 541,
+            "display_name": "Siegfried Fisi'ihoi",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 3340,
+          "alias_name": "S Fisi\u02bbihoi",
+          "player": {
+            "player_id": 1066,
+            "display_name": "Siegfried Fisi\u02bbihoi",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s latu",
+      "aliases": [
+        {
+          "alias_id": 10010,
+          "alias_name": "S Latu",
+          "player": {
+            "player_id": 3197,
+            "display_name": "Sinali Latu",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 10013,
+          "alias_name": "S Latu",
+          "player": {
+            "player_id": 3198,
+            "display_name": "Sione Latu",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s tawake",
+      "aliases": [
+        {
+          "alias_id": 2370,
+          "alias_name": "S Tawake",
+          "player": {
+            "player_id": 760,
+            "display_name": "Samu Tawake",
+            "country": "Fiji"
+          }
+        },
+        {
+          "alias_id": 7334,
+          "alias_name": "S Tawake",
+          "player": {
+            "player_id": 2341,
+            "display_name": "Setareki Tawake",
+            "country": "Fiji"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s tuipulotu",
+      "aliases": [
+        {
+          "alias_id": 3234,
+          "alias_name": "S Tuipulotu",
+          "player": {
+            "player_id": 1032,
+            "display_name": "Sione Tuipulotu",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 7982,
+          "alias_name": "S Tuipulotu",
+          "player": {
+            "player_id": 2553,
+            "display_name": "Sateki Tuipulotu",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 6928,
+          "alias_name": "S Tu\u02bbipulotu",
+          "player": {
+            "player_id": 2208,
+            "display_name": "Sione Tu\u02bbipulotu",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s vunivalu",
+      "aliases": [
+        {
+          "alias_id": 2133,
+          "alias_name": "S Vunivalu",
+          "player": {
+            "player_id": 687,
+            "display_name": "Suliasi Vunivalu",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 10779,
+          "alias_name": "S Vunivalu",
+          "player": {
+            "player_id": 3448,
+            "display_name": "Samuela Vunivalu",
+            "country": "Fiji"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "s williams",
+      "aliases": [
+        {
+          "alias_id": 4724,
+          "alias_name": "S Williams",
+          "player": {
+            "player_id": 1506,
+            "display_name": "Scott Williams",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 5836,
+          "alias_name": "S Williams",
+          "player": {
+            "player_id": 1862,
+            "display_name": "Shane Williams",
+            "country": "Wales"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "siegfried fisiihoi",
+      "aliases": [
+        {
+          "alias_id": 1671,
+          "alias_name": "Siegfried Fisi'ihoi",
+          "player": {
+            "player_id": 541,
+            "display_name": "Siegfried Fisi'ihoi",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 1673,
+          "alias_name": "Siegfried Fisiihoi",
+          "player": {
+            "player_id": 541,
+            "display_name": "Siegfried Fisi'ihoi",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 3338,
+          "alias_name": "Siegfried Fisi\u02bbihoi",
+          "player": {
+            "player_id": 1066,
+            "display_name": "Siegfried Fisi\u02bbihoi",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 1672,
+          "alias_name": "siegfried fisi'ihoi",
+          "player": {
+            "player_id": 541,
+            "display_name": "Siegfried Fisi'ihoi",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 3339,
+          "alias_name": "siegfried fisi\u02bbihoi",
+          "player": {
+            "player_id": 1066,
+            "display_name": "Siegfried Fisi\u02bbihoi",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "sione tuipulotu",
+      "aliases": [
+        {
+          "alias_id": 3232,
+          "alias_name": "Sione Tuipulotu",
+          "player": {
+            "player_id": 1032,
+            "display_name": "Sione Tuipulotu",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 6926,
+          "alias_name": "Sione Tu\u02bbipulotu",
+          "player": {
+            "player_id": 2208,
+            "display_name": "Sione Tu\u02bbipulotu",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 3233,
+          "alias_name": "sione tuipulotu",
+          "player": {
+            "player_id": 1032,
+            "display_name": "Sione Tuipulotu",
+            "country": "Scotland"
+          }
+        },
+        {
+          "alias_id": 6927,
+          "alias_name": "sione tu\u02bbipulotu",
+          "player": {
+            "player_id": 2208,
+            "display_name": "Sione Tu\u02bbipulotu",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "t hirose",
+      "aliases": [
+        {
+          "alias_id": 4069,
+          "alias_name": "T Hirose",
+          "player": {
+            "player_id": 1299,
+            "display_name": "Toshiaki Hirose",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 11081,
+          "alias_name": "T Hirose",
+          "player": {
+            "player_id": 3546,
+            "display_name": "Tsutomu Hirose",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "t kitagawa",
+      "aliases": [
+        {
+          "alias_id": 5285,
+          "alias_name": "T Kitagawa",
+          "player": {
+            "player_id": 1685,
+            "display_name": "Toshizumi Kitagawa",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 6434,
+          "alias_name": "T Kitagawa",
+          "player": {
+            "player_id": 2053,
+            "display_name": "Tomoki Kitagawa",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "t smith",
+      "aliases": [
+        {
+          "alias_id": 3592,
+          "alias_name": "T Smith",
+          "player": {
+            "player_id": 1145,
+            "display_name": "Toby Smith",
+            "country": "Australia"
+          }
+        },
+        {
+          "alias_id": 7873,
+          "alias_name": "T Smith",
+          "player": {
+            "player_id": 2517,
+            "display_name": "Tom Smith",
+            "country": "Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "t tuifua",
+      "aliases": [
+        {
+          "alias_id": 5572,
+          "alias_name": "T Tuifua",
+          "player": {
+            "player_id": 1775,
+            "display_name": "Taiasina Tuifu'a",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 6937,
+          "alias_name": "T Tu\u02bbifua",
+          "player": {
+            "player_id": 2211,
+            "display_name": "Tevita Tu\u02bbifua",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "t williams",
+      "aliases": [
+        {
+          "alias_id": 2002,
+          "alias_name": "T Williams",
+          "player": {
+            "player_id": 646,
+            "display_name": "Tomos Williams",
+            "country": "Wales"
+          }
+        },
+        {
+          "alias_id": 2847,
+          "alias_name": "T Williams",
+          "player": {
+            "player_id": 913,
+            "display_name": "Tamaiti Williams",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "t yoshida",
+      "aliases": [
+        {
+          "alias_id": 6437,
+          "alias_name": "T Yoshida",
+          "player": {
+            "player_id": 2054,
+            "display_name": "Tomoki Yoshida",
+            "country": "Japan"
+          }
+        },
+        {
+          "alias_id": 7592,
+          "alias_name": "T Yoshida",
+          "player": {
+            "player_id": 2425,
+            "display_name": "Takashi Yoshida",
+            "country": "Japan"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "v fifita",
+      "aliases": [
+        {
+          "alias_id": 1701,
+          "alias_name": "V Fifita",
+          "player": {
+            "player_id": 550,
+            "display_name": "Vunipola Fifita",
+            "country": "Tonga"
+          }
+        },
+        {
+          "alias_id": 3364,
+          "alias_name": "V Fifita",
+          "player": {
+            "player_id": 1074,
+            "display_name": "Vaea Fifita",
+            "country": "Tonga"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "v lucaci",
+      "aliases": [
+        {
+          "alias_id": 4286,
+          "alias_name": "V Lucaci",
+          "player": {
+            "player_id": 1365,
+            "display_name": "Viorel Lucaci",
+            "country": "Romania"
+          }
+        },
+        {
+          "alias_id": 10137,
+          "alias_name": "V Lucaci",
+          "player": {
+            "player_id": 3238,
+            "display_name": "Vasile Lucaci",
+            "country": "Romania"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "v tuigamala",
+      "aliases": [
+        {
+          "alias_id": 8989,
+          "alias_name": "V Tuigamala",
+          "player": {
+            "player_id": 2876,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 11892,
+          "alias_name": "V Tuigamala",
+          "player": {
+            "player_id": 3809,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    },
+    {
+      "normalised_alias": "vaaiga tuigamala",
+      "aliases": [
+        {
+          "alias_id": 8986,
+          "alias_name": "Va'aiga Tuigamala",
+          "player": {
+            "player_id": 2876,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 11889,
+          "alias_name": "Va'aiga Tuigamala",
+          "player": {
+            "player_id": 3809,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 8988,
+          "alias_name": "Vaaiga Tuigamala",
+          "player": {
+            "player_id": 2876,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 11891,
+          "alias_name": "Vaaiga Tuigamala",
+          "player": {
+            "player_id": 3809,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "New Zealand"
+          }
+        },
+        {
+          "alias_id": 8987,
+          "alias_name": "va'aiga tuigamala",
+          "player": {
+            "player_id": 2876,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "Samoa"
+          }
+        },
+        {
+          "alias_id": 11890,
+          "alias_name": "va'aiga tuigamala",
+          "player": {
+            "player_id": 3809,
+            "display_name": "Va'aiga Tuigamala",
+            "country": "New Zealand"
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "same_normalised_name_same_country": 1,
+    "same_normalised_name_different_countries": 17,
+    "highly_similar_names_within_same_country": 9,
+    "players_appearing_across_multiple_countries": 15,
+    "duplicate_aliases_pointing_to_multiple_players": 123
+  }
+}
