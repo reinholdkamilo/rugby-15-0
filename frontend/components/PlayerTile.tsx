@@ -1,4 +1,10 @@
+import Image from "next/image";
+
 import { getCountryFlag } from "@/lib/countryFlags";
+import {
+  EMPTY_SLOT_PLACEHOLDER_SRC,
+  SHOW_EMPTY_SLOT_PLACEHOLDER,
+} from "@/lib/uiConfig";
 
 export type PlayerTilePick = {
   country: string;
@@ -51,11 +57,36 @@ export function PlayerTile({
           </div>
         </>
       ) : (
-        <span className="flex h-full w-full items-center justify-center text-2xl font-black text-white/50">
-          {displayCode}
-        </span>
+        <EmptyTileContent displayCode={displayCode} />
       )}
     </div>
+  );
+}
+
+function EmptyTileContent({ displayCode }: { displayCode: string }) {
+  if (!SHOW_EMPTY_SLOT_PLACEHOLDER) {
+    return (
+      <span className="flex h-full w-full items-center justify-center text-2xl font-black text-white/50">
+        {displayCode}
+      </span>
+    );
+  }
+
+  return (
+    <>
+      <Image
+        src={EMPTY_SLOT_PLACEHOLDER_SRC}
+        alt=""
+        fill
+        aria-hidden
+        sizes="128px"
+        className="object-cover"
+      />
+      <span className="pointer-events-none absolute inset-0 bg-black/42" />
+      <span className="relative z-10 flex h-full w-full items-center justify-center text-2xl font-black text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">
+        {displayCode}
+      </span>
+    </>
   );
 }
 
