@@ -10,6 +10,7 @@ import {
 import { SpinRevealAnimation } from "@/components/SpinRevealAnimation";
 import {
   addDraftPick,
+  buildSpinSquadUrl,
   createDraftSession,
   getDraftSessionRating,
   simulateDraftSession,
@@ -311,6 +312,8 @@ export default function Home() {
     country: string;
     year: number;
   } | null>(null);
+  const [spinRevealActive, setSpinRevealActive] = useState(false);
+  const [lastSpinSquadUrl, setLastSpinSquadUrl] = useState<string | null>(null);
   const [expandedPlayerId, setExpandedPlayerId] = useState<number | null>(null);
   const [squad, setSquad] = useState<SquadPlayer[]>([]);
   const [rating, setRating] = useState<DraftSessionRating | null>(null);
@@ -373,33 +376,41 @@ export default function Home() {
 
     await runAction("start", async () => {
       const startedAt = Date.now();
+      const spinParams = {
+        year_min: yearMin,
+        year_max: yearMax,
+        needed_positions: getRemainingNeededPositions([]),
+      };
+      const spinUrl = buildSpinSquadUrl(spinParams);
+      setLastSpinSquadUrl(spinUrl);
+      console.info(`[spin-squad] ${spinUrl}`);
       setSpinRevealTarget(null);
+      setSpinRevealActive(true);
       setSpunSquad(null);
       setExpandedPlayerId(null);
       setActivePositionFilter(null);
       setSquad([]);
       setRating(null);
       setSimulation(null);
-      const session = await createDraftSession();
-      setDraftSession(session);
-      const squadPromise = spinSquad({
-        year_min: yearMin,
-        year_max: yearMax,
-        needed_positions: getRemainingNeededPositions([]),
-      });
-      const squadResult = await squadPromise;
-      setSpinRevealTarget({
-        country: squadResult.country,
-        year: squadResult.year,
-      });
-      const elapsed = Date.now() - startedAt;
-      if (elapsed < MIN_SPIN_REVEAL_MS) {
-        await new Promise((resolve) => {
-          window.setTimeout(resolve, MIN_SPIN_REVEAL_MS - elapsed);
+      try {
+        const session = await createDraftSession();
+        setDraftSession(session);
+        const squadResult = await spinSquad(spinParams);
+        setSpinRevealTarget({
+          country: squadResult.country,
+          year: squadResult.year,
         });
+        const elapsed = Date.now() - startedAt;
+        if (elapsed < MIN_SPIN_REVEAL_MS) {
+          await new Promise((resolve) => {
+            window.setTimeout(resolve, MIN_SPIN_REVEAL_MS - elapsed);
+          });
+        }
+        setSpunSquad(squadResult);
+      } finally {
+        setSpinRevealActive(false);
+        setSpinRevealTarget(null);
       }
-      setSpunSquad(squadResult);
-      setSpinRevealTarget(null);
     });
   }
 
@@ -420,29 +431,36 @@ export default function Home() {
 
     await runAction("spin", async () => {
       const startedAt = Date.now();
-      setSpinRevealTarget(null);
-      setSpunSquad(null);
-      setExpandedPlayerId(null);
-      setActivePositionFilter(null);
-      setSimulation(null);
-      const squadPromise = spinSquad({
+      const spinParams = {
         year_min: yearMin,
         year_max: yearMax,
         needed_positions: neededPositions,
-      });
-      const squadResult = await squadPromise;
-      setSpinRevealTarget({
-        country: squadResult.country,
-        year: squadResult.year,
-      });
-      const elapsed = Date.now() - startedAt;
-      if (elapsed < MIN_SPIN_REVEAL_MS) {
-        await new Promise((resolve) => {
-          window.setTimeout(resolve, MIN_SPIN_REVEAL_MS - elapsed);
-        });
-      }
-      setSpunSquad(squadResult);
+      };
+      const spinUrl = buildSpinSquadUrl(spinParams);
+      setLastSpinSquadUrl(spinUrl);
+      console.info(`[spin-squad] ${spinUrl}`);
       setSpinRevealTarget(null);
+      setSpinRevealActive(true);
+      setExpandedPlayerId(null);
+      setActivePositionFilter(null);
+      setSimulation(null);
+      try {
+        const squadResult = await spinSquad(spinParams);
+        setSpinRevealTarget({
+          country: squadResult.country,
+          year: squadResult.year,
+        });
+        const elapsed = Date.now() - startedAt;
+        if (elapsed < MIN_SPIN_REVEAL_MS) {
+          await new Promise((resolve) => {
+            window.setTimeout(resolve, MIN_SPIN_REVEAL_MS - elapsed);
+          });
+        }
+        setSpunSquad(squadResult);
+      } finally {
+        setSpinRevealActive(false);
+        setSpinRevealTarget(null);
+      }
     });
   }
 
@@ -616,9 +634,11 @@ export default function Home() {
             activePositionFilter={activePositionFilter}
             draftSession={draftSession}
             finalSpinTarget={spinRevealTarget}
+            lastSpinSquadUrl={lastSpinSquadUrl}
             loadingAction={loadingAction}
             picks={squad}
             picksMade={picksMade}
+            spinRevealActive={spinRevealActive}
             expandedPlayerId={expandedPlayerId}
             spunSquad={spunSquad}
             visiblePlayers={visibleSquadPlayers}
@@ -642,9 +662,11 @@ function DraftRoom({
   activePositionFilter,
   draftSession,
   finalSpinTarget,
+  lastSpinSquadUrl,
   loadingAction,
   picks,
   picksMade,
+  spinRevealActive,
   expandedPlayerId,
   spunSquad,
   visiblePlayers,
@@ -661,9 +683,11 @@ function DraftRoom({
   activePositionFilter: ActivePositionFilter;
   draftSession: DraftSession | null;
   finalSpinTarget: { country: string; year: number } | null;
+  lastSpinSquadUrl: string | null;
   loadingAction: string | null;
   picks: SquadPlayer[];
   picksMade: number;
+  spinRevealActive: boolean;
   expandedPlayerId: number | null;
   spunSquad: SpinSquadResult | null;
   visiblePlayers: SpinSquadPlayer[];
@@ -741,6 +765,12 @@ function DraftRoom({
           {mainActionLabel}
         </button>
 
+        {process.env.NODE_ENV === "development" && lastSpinSquadUrl ? (
+          <div className="break-all rounded-md border border-cyan-400/30 bg-cyan-950/30 px-3 py-2 text-xs text-cyan-100">
+            API URL: {lastSpinSquadUrl}
+          </div>
+        ) : null}
+
         {activeFilledPick ? (
           <div className="rounded-md border border-yellow-300/40 bg-yellow-950 px-3 py-2 text-sm text-yellow-100">
             Slot {activeFilledPick.slotNumber} is filled by{" "}
@@ -755,6 +785,7 @@ function DraftRoom({
           finalSpinTarget={finalSpinTarget}
           loadingAction={loadingAction}
           picks={picks}
+          spinRevealActive={spinRevealActive}
           spunSquad={spunSquad}
           visiblePlayers={visiblePlayers}
           onChoosePlayerPosition={onChoosePlayerPosition}
@@ -772,6 +803,7 @@ function SquadSelection({
   finalSpinTarget,
   loadingAction,
   picks,
+  spinRevealActive,
   spunSquad,
   visiblePlayers,
   onChoosePlayerPosition,
@@ -783,6 +815,7 @@ function SquadSelection({
   finalSpinTarget: { country: string; year: number } | null;
   loadingAction: string | null;
   picks: SquadPlayer[];
+  spinRevealActive: boolean;
   spunSquad: SpinSquadResult | null;
   visiblePlayers: SpinSquadPlayer[];
   onChoosePlayerPosition: (
@@ -791,17 +824,17 @@ function SquadSelection({
   ) => void;
   onSelectPlayer: (player: SpinSquadPlayer) => void;
 }) {
-  if (!spunSquad) {
-    if (loadingAction === "start" || loadingAction === "spin") {
-      return (
-        <SpinRevealAnimation
-          isSpinning
-          finalCountry={finalSpinTarget?.country}
-          finalYear={finalSpinTarget?.year}
-        />
-      );
-    }
+  if (spinRevealActive) {
+    return (
+      <SpinRevealAnimation
+        isSpinning
+        finalCountry={finalSpinTarget?.country}
+        finalYear={finalSpinTarget?.year}
+      />
+    );
+  }
 
+  if (!spunSquad) {
     return (
       <div className="rounded-md border border-dashed border-neutral-700 bg-neutral-950 px-4 py-8 text-center text-sm text-neutral-400">
         Spin a World Cup squad to choose your next pick.

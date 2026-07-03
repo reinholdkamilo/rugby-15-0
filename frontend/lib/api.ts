@@ -1,33 +1,68 @@
+const DEFAULT_API_BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://rugby-15-0.onrender.com"
+    : "http://127.0.0.1:8000";
+
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://127.0.0.1:8000";
+  process.env.NEXT_PUBLIC_API_BASE_URL || DEFAULT_API_BASE_URL;
+
+const RETRYABLE_FETCH_ATTEMPTS = 3;
+const RETRY_DELAY_MS = 700;
 
 async function apiRequest<T>(
   path: string,
   options: RequestInit = {},
   fallbackMessage = "Request failed.",
+  retryAttempts = 1,
 ): Promise<T> {
-  const response = await fetch(`${API_BASE_URL}${path}`, {
-    ...options,
-    headers: {
-      "Content-Type": "application/json",
-      ...options.headers,
-    },
-  });
+  const url = `${API_BASE_URL}${path}`;
+  let lastError: unknown;
 
-  if (!response.ok) {
-    let message = fallbackMessage;
-
+  for (let attempt = 1; attempt <= retryAttempts; attempt += 1) {
     try {
-      const body = (await response.json()) as { detail?: string };
-      message = body.detail ?? message;
-    } catch {
-      message = response.statusText || message;
-    }
+      console.info(`[api] ${options.method ?? "GET"} ${url}`);
+      const response = await fetch(url, {
+        ...options,
+        headers: {
+          "Content-Type": "application/json",
+          ...options.headers,
+        },
+      });
 
-    throw new Error(message);
+      if (!response.ok) {
+        let message = fallbackMessage;
+
+        try {
+          const body = (await response.json()) as { detail?: string };
+          message = body.detail ?? message;
+        } catch {
+          message = response.statusText || message;
+        }
+
+        throw new Error(message);
+      }
+
+      return response.json() as Promise<T>;
+    } catch (caughtError) {
+      lastError = caughtError;
+      console.error(`[api] request failed: ${url}`, caughtError);
+      if (attempt < retryAttempts) {
+        await delay(RETRY_DELAY_MS);
+      }
+    }
   }
 
-  return response.json() as Promise<T>;
+  if (lastError instanceof Error && retryAttempts === 1) {
+    throw lastError;
+  }
+
+  throw new Error(fallbackMessage);
+}
+
+function delay(ms: number): Promise<void> {
+  return new Promise((resolve) => {
+    window.setTimeout(resolve, ms);
+  });
 }
 
 export type SpinResult = {
@@ -125,9 +160,24 @@ function buildQueryString(params: SpinParams): string {
     if (value === undefined || value === null || value === "") {
       return;
     }
-    query.set(key, Array.isArray(value) ? value.join(",") : String(value));
+    const cleanValue = Array.isArray(value)
+      ? value
+          .filter((item) => item !== undefined && item !== null && item !== "")
+          .join(",")
+      : String(value);
+    if (!cleanValue) {
+      return;
+    }
+    query.set(key, cleanValue);
   });
-  return query.toString() ? `?${query.toString()}` : "";
+  const suffix = query.toString().replaceAll("%2C", ",");
+  return suffix ? `?${suffix}` : "";
+}
+
+export function buildSpinSquadUrl(
+  params: Omit<SpinParams, "position"> = {},
+): string {
+  return `${API_BASE_URL}/spin-squad${buildQueryString(params)}`;
 }
 
 export async function spinPlayer(params: SpinParams = {}): Promise<SpinResult> {
@@ -142,7 +192,8 @@ export async function spinSquad(
   return apiRequest<SpinSquadResult>(
     `/spin-squad${suffix}`,
     {},
-    "Unable to spin a squad.",
+    "Could not load squad. Please try again.",
+    RETRYABLE_FETCH_ATTEMPTS,
   );
 }
 
