@@ -1,12 +1,19 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .importers.schema_utils import ensure_database_schema
 from .routes import router
+from .startup import initialise_database_on_startup
 
-ensure_database_schema()
 
-app = FastAPI(title="Rugby 15-0 API")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    initialise_database_on_startup()
+    yield
+
+
+app = FastAPI(title="Rugby 15-0 API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[

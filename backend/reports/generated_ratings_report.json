@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-02T00:11:50.529063+00:00",
+  "generated_at": "2026-07-03T00:13:59.797734+00:00",
   "source": "Generated Baseline v1",
   "overwrite_generated_only": false,
-  "ratings_created": 0,
+  "ratings_created": 1,
   "ratings_updated": 0,
   "manual_ratings_preserved": 48,
-  "generated_rating_count": 5643,
+  "generated_rating_count": 5644,
   "ratings_by_band": {
     "74-79 lower-tier/fringe squad player": 1654,
-    "80-84 regular World Cup squad player": 2187,
+    "80-84 regular World Cup squad player": 2188,
     "85-89 strong test player": 1620,
     "90-93 world-class international": 204,
     "94-96 elite tournament-defining player": 23,
@@ -36,7 +36,7 @@
     "Scotland": 296,
     "South Africa": 252,
     "Spain": 30,
-    "Tonga": 276,
+    "Tonga": 277,
     "USA": 237,
     "Uruguay": 155,
     "Wales": 305,
@@ -52,7 +52,7 @@
     "2011": 602,
     "2015": 647,
     "2019": 647,
-    "2023": 700
+    "2023": 701
   },
   "unrated_squad_appearances_remaining": 0
 }
