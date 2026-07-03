@@ -173,6 +173,9 @@ class DraftAutoSelectResponse(BaseModel):
     high_rated_count: int
     below_90_count: int
     average_rating: float
+    tbc_players_used: int = 0
+    tbc_players_used_as_fallback: int = 0
+    known_position_players_used: int = 0
     warnings: List[str] = Field(default_factory=list)
 
 

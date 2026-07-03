@@ -1,3 +1,5 @@
+import logging
+import os
 import random
 from typing import List, Optional
 
@@ -21,6 +23,7 @@ from .rating_engine import calculate_draft_session_rating
 from .simulator import simulate_season
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 DRAFT_POSITION_SLOTS = [
     "LH",
@@ -67,6 +70,15 @@ def eligible_position_codes(
     squad_appearance: models.SquadAppearance,
     allow_tbc_any: bool = True,
 ) -> List[str]:
+    cache_name = (
+        "_eligible_position_codes_cache"
+        if allow_tbc_any
+        else "_eligible_position_codes_strict_cache"
+    )
+    cached = getattr(squad_appearance, cache_name, None)
+    if cached is not None:
+        return cached
+
     position_codes: List[str] = []
     if squad_appearance.position is not None:
         position_codes.append(squad_appearance.position.code)
@@ -76,8 +88,11 @@ def eligible_position_codes(
             position_codes.append(code)
 
     if allow_tbc_any:
-        return expand_position_codes_for_draft(position_codes)
-    return expand_position_codes(position_codes)
+        expanded = expand_position_codes_for_draft(position_codes)
+    else:
+        expanded = expand_position_codes(position_codes)
+    setattr(squad_appearance, cache_name, expanded)
+    return expanded
 
 
 def primary_position_code(
@@ -125,6 +140,66 @@ def country_matches(country: models.Country, requested_countries: set[str]) -> b
 
 def spin_pool_rating(db: Session, spin_pool: models.SpinPool) -> float:
     return float(rating_for_squad_appearance(db, spin_pool.squad_appearance) or 80)
+
+
+def spin_pool_rating_map(
+    db: Session,
+    spin_pools: List[models.SpinPool],
+) -> dict[int, float]:
+    ratings = db.scalars(select(models.Rating)).all()
+    rating_by_appearance_id = {
+        rating.squad_appearance_id: float(rating.overall)
+        for rating in ratings
+        if rating.squad_appearance_id is not None
+    }
+    rating_by_player_tournament = {
+        (rating.player_id, rating.tournament_id): float(rating.overall)
+        for rating in ratings
+        if rating.tournament_id is not None
+    }
+    return {
+        spin_pool.id: rating_by_appearance_id.get(
+            spin_pool.squad_appearance_id,
+            rating_by_player_tournament.get(
+                (
+                    spin_pool.squad_appearance.player_id,
+                    spin_pool.squad_appearance.tournament_id,
+                ),
+                80,
+            ),
+        )
+        for spin_pool in spin_pools
+    }
+
+
+def spin_pool_best_position_map(
+    db: Session,
+    spin_pools: List[models.SpinPool],
+) -> dict[int, str]:
+    ratings = db.scalars(select(models.Rating)).all()
+    position_by_appearance_id = {
+        rating.squad_appearance_id: rating.best_position
+        for rating in ratings
+        if rating.squad_appearance_id is not None and rating.best_position
+    }
+    position_by_player_tournament = {
+        (rating.player_id, rating.tournament_id): rating.best_position
+        for rating in ratings
+        if rating.tournament_id is not None and rating.best_position
+    }
+    return {
+        spin_pool.id: position_by_appearance_id.get(
+            spin_pool.squad_appearance_id,
+            position_by_player_tournament.get(
+                (
+                    spin_pool.squad_appearance.player_id,
+                    spin_pool.squad_appearance.tournament_id,
+                ),
+                "",
+            ),
+        )
+        for spin_pool in spin_pools
+    }
 
 
 def admin_player_detail(player: models.Player) -> schemas.AdminPlayerDetail:
@@ -186,6 +261,19 @@ def validate_selected_position(
     squad_appearance: models.SquadAppearance,
     draft_session: models.DraftSession,
 ) -> str:
+    normalized_position = validate_selected_position_for_open_positions(
+        selected_position,
+        squad_appearance,
+        draft_open_positions(draft_session),
+    )
+    return normalized_position
+
+
+def validate_selected_position_for_open_positions(
+    selected_position: str,
+    squad_appearance: models.SquadAppearance,
+    open_positions: List[str],
+) -> str:
     normalized_position = normalize_position_code(selected_position)
     if not normalized_position:
         raise HTTPException(
@@ -200,7 +288,7 @@ def validate_selected_position(
             detail="selected_position must be a valid XV position.",
         )
 
-    if normalized_game_position not in draft_open_positions(draft_session):
+    if normalized_game_position not in open_positions:
         raise HTTPException(
             status_code=400,
             detail="selected_position must be one of the currently open positions.",
@@ -219,9 +307,74 @@ def validate_selected_position(
     return normalized_position
 
 
+def can_select_position_for_open_positions(
+    selected_position: str,
+    squad_appearance: models.SquadAppearance,
+    open_positions: List[str],
+) -> bool:
+    try:
+        validate_selected_position_for_open_positions(
+            selected_position,
+            squad_appearance,
+            open_positions,
+        )
+    except HTTPException:
+        return False
+    return True
+
+
+def can_auto_select_known_position_for_open_positions(
+    selected_position: str,
+    squad_appearance: models.SquadAppearance,
+    open_positions: List[str],
+    best_position: str = "",
+) -> bool:
+    normalized_game_position = to_game_position_code(selected_position)
+    if normalized_game_position not in open_positions:
+        return False
+
+    return normalized_game_position in auto_select_known_position_codes(
+        squad_appearance,
+        best_position,
+    )
+
+
+def auto_select_known_position_codes(
+    squad_appearance: models.SquadAppearance,
+    best_position: str = "",
+) -> List[str]:
+    strict_positions = eligible_position_codes(
+        squad_appearance,
+        allow_tbc_any=False,
+    )
+    known_positions = [position for position in strict_positions if position != "TBC"]
+    best_position_code = to_game_position_code(best_position)
+    if best_position_code and best_position_code != "TBC":
+        known_positions.append(best_position_code)
+    return expand_position_codes(known_positions)
+
+
+def is_tbc_squad_appearance(
+    squad_appearance: models.SquadAppearance,
+    best_position: str = "",
+) -> bool:
+    strict_positions = auto_select_known_position_codes(
+        squad_appearance,
+        best_position,
+    )
+    return not strict_positions or strict_positions == ["TBC"]
+
+
 def draft_open_positions(draft_session: models.DraftSession) -> List[str]:
+    selected_positions = [
+        to_game_position_code(pick.selected_position)
+        for pick in draft_session.picks
+    ]
+    return open_positions_from_selected_positions(selected_positions)
+
+
+def open_positions_from_selected_positions(selected_positions: List[str]) -> List[str]:
     remaining = list(DRAFT_POSITION_SLOTS)
-    selected_positions = [to_game_position_code(pick.selected_position) for pick in draft_session.picks]
     for position in selected_positions:
         if position in remaining:
             remaining.remove(position)
@@ -234,13 +387,286 @@ def storage_position_for_draft_slot(game_position: str, slot_number: int) -> str
     return normalize_position_code(game_position)
 
 
-def spin_pool_can_fill_slot(
-    spin_pool: models.SpinPool,
-    game_position: str,
-) -> bool:
-    return to_game_position_code(game_position) in eligible_position_codes(
-        spin_pool.squad_appearance,
+def auto_select_debug_enabled() -> bool:
+    return (
+        os.getenv("RUGBY_AUTO_SELECT_DEBUG") == "1"
+        or os.getenv("APP_ENV") == "development"
     )
+
+
+def log_auto_select_validation(
+    slot_number: int,
+    required_position: str,
+    spin_pool: models.SpinPool,
+    selected_position: str,
+    passed: bool,
+) -> None:
+    if not auto_select_debug_enabled():
+        return
+    logger.info(
+        "Auto-Select Validation | Slot: %s | Required Position: %s | "
+        "Player: %s | Eligible: %s | %s",
+        slot_number,
+        required_position,
+        spin_pool.squad_appearance.player.display_name,
+        ", ".join(eligible_position_codes(spin_pool.squad_appearance)),
+        "PASS" if passed else "FAIL",
+    )
+
+
+def build_auto_selected_xv(
+    db: Session,
+    candidates: List[models.SpinPool],
+    target_high: int,
+    target_low: int,
+    rating_by_spin_pool_id: Optional[dict[int, float]] = None,
+    best_position_by_spin_pool_id: Optional[dict[int, str]] = None,
+) -> Optional[list[tuple[int, str, models.SpinPool]]]:
+    if rating_by_spin_pool_id is None:
+        rating_by_spin_pool_id = spin_pool_rating_map(db, candidates)
+    if best_position_by_spin_pool_id is None:
+        best_position_by_spin_pool_id = spin_pool_best_position_map(db, candidates)
+    for _attempt in range(100):
+        shuffled_candidates = candidates.copy()
+        random.shuffle(shuffled_candidates)
+        selected = backtrack_auto_select(
+            candidates=shuffled_candidates,
+            selected=[],
+            used_squad_appearance_ids=set(),
+            target_high=target_high,
+            target_low=target_low,
+            rating_by_spin_pool_id=rating_by_spin_pool_id,
+            best_position_by_spin_pool_id=best_position_by_spin_pool_id,
+        )
+        if selected and validate_auto_selected_xv(
+            selected,
+            best_position_by_spin_pool_id,
+        ):
+            return selected
+    return None
+
+
+def backtrack_auto_select(
+    candidates: List[models.SpinPool],
+    selected: list[tuple[int, str, models.SpinPool]],
+    used_squad_appearance_ids: set[int],
+    target_high: int,
+    target_low: int,
+    rating_by_spin_pool_id: dict[int, float],
+    best_position_by_spin_pool_id: dict[int, str],
+) -> Optional[list[tuple[int, str, models.SpinPool]]]:
+    if len(selected) == len(DRAFT_POSITION_SLOTS):
+        return selected
+
+    slot_number = len(selected) + 1
+    required_position = DRAFT_POSITION_SLOTS[slot_number - 1]
+    selected_position = storage_position_for_draft_slot(
+        required_position,
+        slot_number,
+    )
+    open_positions = open_positions_from_selected_positions(
+        [to_game_position_code(position) for _, position, _ in selected],
+    )
+    high_rated = sum(
+        1
+        for _, _, spin_pool in selected
+        if rating_by_spin_pool_id.get(spin_pool.id, 80) >= 90
+    )
+    below_ninety = len(selected) - high_rated
+
+    slot_candidates = [
+        candidate
+        for candidate in candidates
+        if candidate.squad_appearance_id not in used_squad_appearance_ids
+        and can_select_position_for_open_positions(
+            selected_position,
+            candidate.squad_appearance,
+            open_positions,
+        )
+    ]
+    if not slot_candidates:
+        return None
+
+    known_position_candidates = [
+        candidate
+        for candidate in slot_candidates
+        if can_auto_select_known_position_for_open_positions(
+            selected_position,
+            candidate.squad_appearance,
+            open_positions,
+            best_position_by_spin_pool_id.get(candidate.id, ""),
+        )
+    ]
+    fallback_tbc_candidates = [
+        candidate
+        for candidate in slot_candidates
+        if candidate not in known_position_candidates
+        and is_tbc_squad_appearance(
+            candidate.squad_appearance,
+            best_position_by_spin_pool_id.get(candidate.id, ""),
+        )
+    ]
+
+    candidate_groups = (
+        (known_position_candidates, 300),
+        (fallback_tbc_candidates, 80),
+    )
+    for candidate_group, candidate_limit in candidate_groups:
+        result = try_auto_select_candidates_for_slot(
+            candidates=candidates,
+            slot_candidates=candidate_group,
+            selected=selected,
+            used_squad_appearance_ids=used_squad_appearance_ids,
+            slot_number=slot_number,
+            selected_position=selected_position,
+            high_rated=high_rated,
+            below_ninety=below_ninety,
+            target_high=target_high,
+            target_low=target_low,
+            rating_by_spin_pool_id=rating_by_spin_pool_id,
+            best_position_by_spin_pool_id=best_position_by_spin_pool_id,
+            candidate_limit=candidate_limit,
+        )
+        if result is not None:
+            return result
+    return None
+
+
+def try_auto_select_candidates_for_slot(
+    candidates: List[models.SpinPool],
+    slot_candidates: List[models.SpinPool],
+    selected: list[tuple[int, str, models.SpinPool]],
+    used_squad_appearance_ids: set[int],
+    slot_number: int,
+    selected_position: str,
+    high_rated: int,
+    below_ninety: int,
+    target_high: int,
+    target_low: int,
+    rating_by_spin_pool_id: dict[int, float],
+    best_position_by_spin_pool_id: dict[int, str],
+    candidate_limit: int,
+) -> Optional[list[tuple[int, str, models.SpinPool]]]:
+    if not slot_candidates:
+        return None
+
+    random.shuffle(slot_candidates)
+    slot_candidates.sort(
+        key=lambda candidate: auto_select_candidate_score(
+            candidate,
+            high_rated,
+            below_ninety,
+            target_high,
+            target_low,
+            rating_by_spin_pool_id,
+        ),
+        reverse=True,
+    )
+
+    for candidate in slot_candidates[:candidate_limit]:
+        next_selected = [
+            *selected,
+            (slot_number, selected_position, candidate),
+        ]
+        result = backtrack_auto_select(
+            candidates=candidates,
+            selected=next_selected,
+            used_squad_appearance_ids={
+                *used_squad_appearance_ids,
+                candidate.squad_appearance_id,
+            },
+            target_high=target_high,
+            target_low=target_low,
+            rating_by_spin_pool_id=rating_by_spin_pool_id,
+            best_position_by_spin_pool_id=best_position_by_spin_pool_id,
+        )
+        if result is not None:
+            return result
+    return None
+
+
+def auto_select_candidate_score(
+    candidate: models.SpinPool,
+    high_rated: int,
+    below_ninety: int,
+    target_high: int,
+    target_low: int,
+    rating_by_spin_pool_id: dict[int, float],
+) -> float:
+    rating = rating_by_spin_pool_id.get(candidate.id, 80)
+    if high_rated < target_high and rating >= 90:
+        return rating + 1000
+    if below_ninety < target_low and rating < 90:
+        return rating + 900
+    return rating + random.random()
+
+
+def auto_select_tbc_usage(
+    selected: list[tuple[int, str, models.SpinPool]],
+    best_position_by_spin_pool_id: dict[int, str],
+) -> tuple[int, int, int]:
+    tbc_players_used = 0
+    tbc_players_used_as_fallback = 0
+    known_position_players_used = 0
+
+    for _slot_number, selected_position, spin_pool in selected:
+        squad_appearance = spin_pool.squad_appearance
+        best_position = best_position_by_spin_pool_id.get(spin_pool.id, "")
+        if is_tbc_squad_appearance(squad_appearance, best_position):
+            tbc_players_used += 1
+            tbc_players_used_as_fallback += 1
+            continue
+
+        if can_auto_select_known_position_for_open_positions(
+            selected_position,
+            squad_appearance,
+            PLAYABLE_POSITION_CODES,
+            best_position,
+        ):
+            known_position_players_used += 1
+
+    return (
+        tbc_players_used,
+        tbc_players_used_as_fallback,
+        known_position_players_used,
+    )
+
+
+def validate_auto_selected_xv(
+    selected: list[tuple[int, str, models.SpinPool]],
+    best_position_by_spin_pool_id: Optional[dict[int, str]] = None,
+) -> bool:
+    if best_position_by_spin_pool_id is None:
+        best_position_by_spin_pool_id = {}
+    if len(selected) != len(DRAFT_POSITION_SLOTS):
+        return False
+    if len({spin_pool.squad_appearance_id for _, _, spin_pool in selected}) != 15:
+        return False
+
+    selected_positions: list[str] = []
+    for slot_number, selected_position, spin_pool in selected:
+        required_position = DRAFT_POSITION_SLOTS[slot_number - 1]
+        open_positions = open_positions_from_selected_positions(selected_positions)
+        passed = (
+            to_game_position_code(selected_position)
+            == to_game_position_code(required_position)
+            and can_select_position_for_open_positions(
+                selected_position,
+                spin_pool.squad_appearance,
+                open_positions,
+            )
+        )
+        log_auto_select_validation(
+            slot_number=slot_number,
+            required_position=required_position,
+            spin_pool=spin_pool,
+            selected_position=selected_position,
+            passed=passed,
+        )
+        if not passed:
+            return False
+        selected_positions.append(to_game_position_code(selected_position))
+    return True
 
 
 @router.get("/countries", response_model=List[schemas.CountryResponse])
@@ -434,21 +860,18 @@ def auto_select_draft_session(
             detail="No players found for the selected draft setup.",
         )
 
-    used_squad_appearance_ids: set[int] = set()
-    high_rated = 0
-    below_ninety = 0
-    rating_values: list[float] = []
+    rating_by_spin_pool_id = spin_pool_rating_map(db, candidates)
+    best_position_by_spin_pool_id = spin_pool_best_position_map(db, candidates)
     warnings: list[str] = []
-    selected: list[tuple[int, str, models.SpinPool]] = []
     available_high = {
         candidate.squad_appearance_id
         for candidate in candidates
-        if spin_pool_rating(db, candidate) >= 90
+        if rating_by_spin_pool_id.get(candidate.id, 80) >= 90
     }
     available_low = {
         candidate.squad_appearance_id
         for candidate in candidates
-        if spin_pool_rating(db, candidate) < 90
+        if rating_by_spin_pool_id.get(candidate.id, 80) < 90
     }
     target_high = min(4, len(available_high))
     target_low = min(5, len(available_low))
@@ -457,61 +880,36 @@ def auto_select_draft_session(
     if target_low < 5:
         warnings.append("Fewer than 5 players rated below 90 were available.")
 
-    for slot_number, game_position in enumerate(DRAFT_POSITION_SLOTS, start=1):
-        slot_candidates = [
-            candidate
-            for candidate in candidates
-            if candidate.squad_appearance_id not in used_squad_appearance_ids
-            and spin_pool_can_fill_slot(candidate, game_position)
-        ]
-        if not slot_candidates:
-            raise HTTPException(
-                status_code=404,
-                detail=f"No eligible players available for {game_position}.",
-            )
-
-        preferred = slot_candidates
-        if high_rated < target_high:
-            high_candidates = [
-                candidate
-                for candidate in slot_candidates
-                if spin_pool_rating(db, candidate) >= 90
-            ]
-            if high_candidates:
-                preferred = high_candidates
-        elif below_ninety < target_low:
-            lower_candidates = [
-                candidate
-                for candidate in slot_candidates
-                if spin_pool_rating(db, candidate) < 90
-            ]
-            if lower_candidates:
-                preferred = lower_candidates
-
-        random.shuffle(preferred)
-        preferred.sort(
-            key=lambda candidate: spin_pool_rating(db, candidate),
-            reverse=True,
+    selected = build_auto_selected_xv(
+        db=db,
+        candidates=candidates,
+        target_high=target_high,
+        target_low=target_low,
+        rating_by_spin_pool_id=rating_by_spin_pool_id,
+        best_position_by_spin_pool_id=best_position_by_spin_pool_id,
+    )
+    if selected is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Unable to auto-select a valid XV for the selected filters.",
         )
-        top_window = preferred[: min(18, len(preferred))]
-        chosen = random.choice(top_window[: max(4, len(top_window) // 2)])
-        rating = spin_pool_rating(db, chosen)
-        if rating >= 90:
-            high_rated += 1
-        else:
-            below_ninety += 1
-        rating_values.append(rating)
-        used_squad_appearance_ids.add(chosen.squad_appearance_id)
-        selected_position = storage_position_for_draft_slot(
-            game_position,
-            slot_number,
+    rating_values = [
+        rating_by_spin_pool_id.get(spin_pool.id, 80)
+        for _, _, spin_pool in selected
+    ]
+    high_rated = sum(1 for rating in rating_values if rating >= 90)
+    below_ninety = len(rating_values) - high_rated
+    (
+        tbc_players_used,
+        tbc_players_used_as_fallback,
+        known_position_players_used,
+    ) = auto_select_tbc_usage(selected, best_position_by_spin_pool_id)
+    if tbc_players_used_as_fallback:
+        warnings.append(
+            f"Auto-select used {tbc_players_used_as_fallback} TBC player(s) "
+            "as fallback because known-position candidates could not complete "
+            "the XV.",
         )
-        if to_game_position_code(selected_position) != to_game_position_code(game_position):
-            raise HTTPException(
-                status_code=500,
-                detail="Auto-select generated a mismatched position.",
-            )
-        selected.append((slot_number, selected_position, chosen))
 
     for pick_number, (slot_number, selected_position, chosen) in enumerate(
         selected,
@@ -565,6 +963,9 @@ def auto_select_draft_session(
             if rating_values
             else 0
         ),
+        tbc_players_used=tbc_players_used,
+        tbc_players_used_as_fallback=tbc_players_used_as_fallback,
+        known_position_players_used=known_position_players_used,
         warnings=warnings,
     )
 

@@ -157,6 +157,9 @@ export type DraftAutoSelectResponse = {
   high_rated_count: number;
   below_90_count: number;
   average_rating: number;
+  tbc_players_used: number;
+  tbc_players_used_as_fallback: number;
+  known_position_players_used: number;
   warnings: string[];
 };
 
