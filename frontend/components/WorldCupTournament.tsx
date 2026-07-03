@@ -103,6 +103,9 @@ const POOL_ACCENTS = [
   "from-violet-500 to-indigo-500",
 ];
 
+const POOL_NAMES = ["A", "B", "C", "D", "E", "F"];
+const USER_HIGHLIGHT_CLASS = "bg-yellow-300 text-neutral-950 font-black";
+
 export function WorldCupTournament({
   teamRating,
   teamName,
@@ -115,9 +118,8 @@ export function WorldCupTournament({
   onStartNewDraft: () => void;
 }) {
   const userTeamName = teamName.trim() || "Your XV";
-  const teams = useMemo(
-    () => createTeams(teamRating, userTeamName),
-    [teamRating, userTeamName],
+  const [teams] = useState(() =>
+    createTeamsWithRandomUserPool(teamRating, userTeamName),
   );
   const [poolMatches, setPoolMatches] = useState(() => createPoolMatches(teams));
   const [knockoutMatches, setKnockoutMatches] = useState<Match[]>([]);
@@ -410,6 +412,7 @@ export function WorldCupTournament({
               knockoutMatches={knockoutMatches}
               poolComplete={poolComplete}
               stageView={stageView}
+              userTeamName={userTeamName}
             />
           </div>
         </div>
@@ -519,7 +522,7 @@ function PoolGrid({ standings }: { standings: Record<string, Standing[]> }) {
                 key={row.team.name}
                 className={
                   row.team.isUser
-                    ? "grid grid-cols-[minmax(120px,1fr)_28px_28px_38px_38px_38px] gap-2 rounded-lg bg-yellow-300 px-2 py-2 text-sm font-black text-neutral-950"
+                    ? `grid grid-cols-[minmax(120px,1fr)_28px_28px_38px_38px_38px] gap-2 rounded-lg px-2 py-2 text-sm ${USER_HIGHLIGHT_CLASS}`
                     : "grid grid-cols-[minmax(120px,1fr)_28px_28px_38px_38px_38px] gap-2 rounded-lg px-2 py-2 text-sm font-semibold text-white/86"
                 }
               >
@@ -568,11 +571,13 @@ function KnockoutBracket({
   knockoutMatches,
   poolComplete,
   stageView,
+  userTeamName,
 }: {
   qualifiers: Team[];
   knockoutMatches: Match[];
   poolComplete: boolean;
   stageView: StageView;
+  userTeamName: string;
 }) {
   const visibleRounds = visibleKnockoutRounds(knockoutMatches, stageView);
   return (
@@ -589,7 +594,11 @@ function KnockoutBracket({
           {qualifiers.map((team, index) => (
             <div
               key={team.name}
-              className="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm font-semibold"
+              className={
+                team.isUser
+                  ? `rounded-lg border border-yellow-300 px-3 py-2 text-sm ${USER_HIGHLIGHT_CLASS}`
+                  : "rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm font-semibold"
+              }
             >
               {index + 1}. {team.name}
             </div>
@@ -606,7 +615,11 @@ function KnockoutBracket({
                 {knockoutMatches
                   .filter((match) => match.stage === round)
                   .map((match) => (
-                    <BracketMatch key={match.id} match={match} />
+                    <BracketMatch
+                      key={match.id}
+                      match={match}
+                      userTeamName={userTeamName}
+                    />
                   ))}
               </div>
             </div>
@@ -617,17 +630,48 @@ function KnockoutBracket({
   );
 }
 
-function BracketMatch({ match }: { match: Match }) {
+function BracketMatch({
+  match,
+  userTeamName,
+}: {
+  match: Match;
+  userTeamName: string;
+}) {
+  const homeIsUser = isSameTeam(match.home, userTeamName);
+  const awayIsUser = isSameTeam(match.away, userTeamName);
+  const matchHasUser = homeIsUser || awayIsUser;
   return (
-    <div className="rounded-lg border border-cyan-300/15 bg-black/20 px-3 py-2">
+    <div
+      className={
+        matchHasUser
+          ? `rounded-lg border border-yellow-300 px-3 py-2 ${USER_HIGHLIGHT_CLASS}`
+          : "rounded-lg border border-cyan-300/15 bg-black/20 px-3 py-2"
+      }
+    >
       <div className="flex items-center justify-between gap-3 text-sm">
-        <span className={match.winner === match.home ? "font-black text-yellow-300" : "text-white"}>
+        <span
+          className={
+            matchHasUser
+              ? "font-black"
+              : match.winner === match.home
+                ? "font-black text-yellow-300"
+                : "text-white"
+          }
+        >
           {match.home}
         </span>
-        <span className="font-black text-white/80">
+        <span className={matchHasUser ? "font-black" : "font-black text-white/80"}>
           {match.played ? `${match.homeScore}-${match.awayScore}` : "v"}
         </span>
-        <span className={match.winner === match.away ? "font-black text-yellow-300" : "text-white"}>
+        <span
+          className={
+            matchHasUser
+              ? "font-black"
+              : match.winner === match.away
+                ? "font-black text-yellow-300"
+                : "text-white"
+          }
+        >
           {match.away}
         </span>
       </div>
@@ -658,7 +702,11 @@ function ChampionScreen({
         <h3 className="mt-5 text-center text-4xl font-black uppercase">
           World Cup Champions
         </h3>
-        <p className="mt-2 text-center text-2xl font-black">{teamName}</p>
+        <p className="mt-2 text-center text-2xl font-black">
+          <span className={`inline-flex rounded-lg px-3 py-1 ${USER_HIGHLIGHT_CLASS}`}>
+            {teamName}
+          </span>
+        </p>
         <p className="mt-2 text-center text-lg font-bold">
           Final: {finalMatch.home} {finalMatch.homeScore} - {finalMatch.awayScore}{" "}
           {finalMatch.away}
@@ -701,7 +749,11 @@ function EliminatedScreen({
           Tournament Over
         </p>
         <h3 className="mt-2 text-3xl font-black text-white">{outcome}</h3>
-        <p className="mt-2 text-xl font-black text-rose-100">{teamName}</p>
+        <p className="mt-2 text-xl font-black">
+          <span className={`inline-flex rounded-lg px-3 py-1 ${USER_HIGHLIGHT_CLASS}`}>
+            {teamName}
+          </span>
+        </p>
         <p className="mt-3 text-lg font-bold text-white">
           {match.home} {match.homeScore} - {match.awayScore} {match.away}
         </p>
@@ -848,15 +900,25 @@ function ActionButton({
   );
 }
 
-function createTeams(teamRating: number, teamName: string) {
-  return POOLS.flat().map((team) =>
-    team.isUser ? { ...team, name: teamName, rating: teamRating } : team,
-  );
+function createTeamsWithRandomUserPool(teamRating: number, teamName: string) {
+  const userPool = POOL_NAMES[Math.floor(Math.random() * POOL_NAMES.length)];
+  const teams = POOLS.flat()
+    .filter((team) => !team.isUser)
+    .map((team) => ({ ...team }));
+  const targetPoolTeams = teams.filter((team) => team.pool === userPool);
+  if (userPool !== "A" && targetPoolTeams.length >= 4) {
+    const movedTeam = targetPoolTeams[targetPoolTeams.length - 1];
+    movedTeam.pool = "A";
+  }
+  return [
+    ...teams,
+    { name: teamName, rating: teamRating, pool: userPool, isUser: true },
+  ];
 }
 
 function createPoolMatches(teams: Team[]) {
   const matches: Match[] = [];
-  for (const pool of ["A", "B", "C", "D", "E", "F"]) {
+  for (const pool of POOL_NAMES) {
     const poolTeams = teams.filter((team) => team.pool === pool);
     for (let left = 0; left < poolTeams.length; left += 1) {
       for (let right = left + 1; right < poolTeams.length; right += 1) {
@@ -1115,9 +1177,13 @@ function isUserMatch(match: Match | null | undefined, userTeamName: string) {
     return false;
   }
   return (
-    normaliseTeamName(match.home) === user ||
-    normaliseTeamName(match.away) === user
+    isSameTeam(match.home, user) ||
+    isSameTeam(match.away, user)
   );
+}
+
+function isSameTeam(left?: string | null, right?: string | null) {
+  return normaliseTeamName(left) === normaliseTeamName(right);
 }
 
 function tournamentRecord(matches: Match[], teamName: string) {

@@ -414,6 +414,59 @@ def log_auto_select_validation(
     )
 
 
+def log_auto_select_filter_audit(
+    spin_pool: models.SpinPool,
+    year_min: Optional[int],
+    year_max: Optional[int],
+    requested_countries: set[str],
+    passed: bool,
+) -> None:
+    if not auto_select_debug_enabled():
+        return
+    era = f"{year_min or 'any'}-{year_max or 'any'}"
+    region = "filtered" if requested_countries else "all"
+    logger.info(
+        "Auto-Select Filter Audit | Player: %s | Country: %s | Year: %s | "
+        "Era: %s | Region: %s | %s",
+        spin_pool.squad_appearance.player.display_name,
+        spin_pool.country.name,
+        spin_pool.tournament.year,
+        era,
+        region,
+        "PASS" if passed else "FAIL",
+    )
+
+
+def validate_auto_select_filters(
+    selected: list[tuple[int, str, models.SpinPool]],
+    year_min: Optional[int],
+    year_max: Optional[int],
+    requested_countries: set[str],
+) -> bool:
+    passed_all = True
+    for _slot_number, _selected_position, spin_pool in selected:
+        passed = True
+        if year_min is not None and spin_pool.tournament.year < year_min:
+            passed = False
+        if year_max is not None and spin_pool.tournament.year > year_max:
+            passed = False
+        if requested_countries and not country_matches(
+            spin_pool.country,
+            requested_countries,
+        ):
+            passed = False
+        log_auto_select_filter_audit(
+            spin_pool=spin_pool,
+            year_min=year_min,
+            year_max=year_max,
+            requested_countries=requested_countries,
+            passed=passed,
+        )
+        if not passed:
+            passed_all = False
+    return passed_all
+
+
 def build_auto_selected_xv(
     db: Session,
     candidates: List[models.SpinPool],
@@ -880,14 +933,26 @@ def auto_select_draft_session(
     if target_low < 5:
         warnings.append("Fewer than 5 players rated below 90 were available.")
 
-    selected = build_auto_selected_xv(
-        db=db,
-        candidates=candidates,
-        target_high=target_high,
-        target_low=target_low,
-        rating_by_spin_pool_id=rating_by_spin_pool_id,
-        best_position_by_spin_pool_id=best_position_by_spin_pool_id,
-    )
+    selected = None
+    for _attempt in range(5):
+        possible_selection = build_auto_selected_xv(
+            db=db,
+            candidates=candidates,
+            target_high=target_high,
+            target_low=target_low,
+            rating_by_spin_pool_id=rating_by_spin_pool_id,
+            best_position_by_spin_pool_id=best_position_by_spin_pool_id,
+        )
+        if possible_selection is None:
+            break
+        if validate_auto_select_filters(
+            possible_selection,
+            payload.year_min,
+            payload.year_max,
+            requested_countries,
+        ):
+            selected = possible_selection
+            break
     if selected is None:
         raise HTTPException(
             status_code=404,
