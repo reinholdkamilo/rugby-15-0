@@ -311,7 +311,7 @@ export function WorldCupTournament({
           .filter((match) => match.stage === currentKnockoutStage)
           .every((match) => match.played)
       : false;
-    if (roundComplete) {
+    if (currentKnockoutStage && roundComplete) {
       setStageView(completedStageForMatchStage(currentKnockoutStage));
       setMessage(`${currentKnockoutStage} complete. Review results before continuing.`);
       return;
