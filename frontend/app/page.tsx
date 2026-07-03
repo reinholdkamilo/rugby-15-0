@@ -8,16 +8,16 @@ import {
   type FieldPick,
 } from "@/components/RugbyFieldLayout";
 import { SpinRevealAnimation } from "@/components/SpinRevealAnimation";
+import { WorldCupTournament } from "@/components/WorldCupTournament";
 import {
   addDraftPick,
+  autoSelectDraftSession,
   buildSpinSquadUrl,
   createDraftSession,
   getDraftSessionRating,
-  simulateDraftSession,
   spinSquad,
   type DraftSession,
   type DraftSessionRating,
-  type SeasonSimulation,
   type SpinSquadPlayer,
   type SpinSquadResult,
 } from "@/lib/api";
@@ -83,6 +83,49 @@ const YEAR_PRESETS = [
 ];
 
 const MIN_SPIN_REVEAL_MS = 1900;
+
+const REGION_OPTIONS = [
+  { label: "All Regions", countries: [] },
+  {
+    label: "Southern Hemisphere",
+    countries: [
+      "Australia",
+      "New Zealand",
+      "South Africa",
+      "Argentina",
+      "Fiji",
+      "Samoa",
+      "Tonga",
+      "Uruguay",
+      "Chile",
+      "Namibia",
+      "Zimbabwe",
+    ],
+  },
+  {
+    label: "Northern Hemisphere",
+    countries: [
+      "England",
+      "Ireland",
+      "Wales",
+      "Scotland",
+      "France",
+      "Italy",
+      "Georgia",
+      "Romania",
+      "Spain",
+      "Portugal",
+      "United States",
+      "Canada",
+      "Russia",
+      "Japan",
+    ],
+  },
+  {
+    label: "Pasifika",
+    countries: ["Samoa", "Tonga", "Fiji", "New Zealand"],
+  },
+];
 
 function getFilledSlots(picks: SquadPlayer[]) {
   return new Set(picks.map((pick) => pick.slotNumber));
@@ -293,8 +336,8 @@ function getMainActionLabel(
   if (loadingAction === "spin") {
     return "Spinning...";
   }
-  if (loadingAction === "simulate") {
-    return "Starting World Cup...";
+  if (loadingAction === "auto-select") {
+    return "Auto-selecting...";
   }
   if (!draftSession) {
     return "Start Draft";
@@ -317,7 +360,9 @@ export default function Home() {
   const [expandedPlayerId, setExpandedPlayerId] = useState<number | null>(null);
   const [squad, setSquad] = useState<SquadPlayer[]>([]);
   const [rating, setRating] = useState<DraftSessionRating | null>(null);
-  const [simulation, setSimulation] = useState<SeasonSimulation | null>(null);
+  const [worldCupStarted, setWorldCupStarted] = useState(false);
+  const [teamName, setTeamName] = useState("Your XV");
+  const [regionLabel, setRegionLabel] = useState("All Regions");
   const [error, setError] = useState<string | null>(null);
   const [warning, setWarning] = useState<string | null>(null);
   const [loadingAction, setLoadingAction] = useState<string | null>(null);
@@ -327,6 +372,10 @@ export default function Home() {
     useState<ActivePositionFilter>(null);
 
   const picksMade = draftSession?.picks.length ?? 0;
+  const setupLocked = draftSession !== null;
+  const selectedRegion =
+    REGION_OPTIONS.find((region) => region.label === regionLabel) ??
+    REGION_OPTIONS[0];
   const activeFilledPick = activePositionFilter
     ? squad.find((pick) => pick.slotNumber === activePositionFilter.slotNumber)
     : null;
@@ -379,6 +428,7 @@ export default function Home() {
       const spinParams = {
         year_min: yearMin,
         year_max: yearMax,
+        countries: selectedRegion.countries,
         needed_positions: getRemainingNeededPositions([]),
       };
       const spinUrl = buildSpinSquadUrl(spinParams);
@@ -391,7 +441,7 @@ export default function Home() {
       setActivePositionFilter(null);
       setSquad([]);
       setRating(null);
-      setSimulation(null);
+      setWorldCupStarted(false);
       try {
         const session = await createDraftSession();
         setDraftSession(session);
@@ -434,6 +484,7 @@ export default function Home() {
       const spinParams = {
         year_min: yearMin,
         year_max: yearMax,
+        countries: selectedRegion.countries,
         needed_positions: neededPositions,
       };
       const spinUrl = buildSpinSquadUrl(spinParams);
@@ -443,7 +494,6 @@ export default function Home() {
       setSpinRevealActive(true);
       setExpandedPlayerId(null);
       setActivePositionFilter(null);
-      setSimulation(null);
       try {
         const squadResult = await spinSquad(spinParams);
         setSpinRevealTarget({
@@ -565,17 +615,76 @@ export default function Home() {
       setSpunSquad(null);
       setExpandedPlayerId(null);
       setActivePositionFilter(null);
-      setSimulation(null);
+      setWorldCupStarted(false);
     });
   }
 
-  async function handleSimulate() {
-    if (!draftSession) {
+  function handleStartWorldCup() {
+    setError(null);
+    setWarning(null);
+    setSpunSquad(null);
+    setExpandedPlayerId(null);
+    setActivePositionFilter(null);
+    setWorldCupStarted(true);
+  }
+
+  async function handleAutoSelect() {
+    if (yearMin > yearMax) {
+      setError("Year From must be earlier than or equal to Year To.");
       return;
     }
-    await runAction("simulate", async () => {
-      setSimulation(await simulateDraftSession(draftSession.id));
+    await runAction("auto-select", async () => {
+      setSpunSquad(null);
+      setExpandedPlayerId(null);
+      setActivePositionFilter(null);
+      setSquad([]);
+      setRating(null);
+      setWorldCupStarted(false);
+      const session = await createDraftSession();
+      const result = await autoSelectDraftSession(session.id, {
+        year_min: yearMin,
+        year_max: yearMax,
+        countries: selectedRegion.countries,
+        team_name: teamName,
+      });
+      setDraftSession(result.draft_session);
+      setRating(result.rating);
+      setSquad(
+        result.picks.map((pick) => ({
+          pickNumber: pick.pick_number,
+          slotNumber: pick.slot_number,
+          selectedPosition: pick.selected_position,
+          country: pick.country,
+          year: pick.year,
+          player: {
+            player_id: pick.player_id,
+            squad_appearance_id: pick.squad_appearance_id,
+            player_name: pick.player_name,
+            position: pick.position,
+            eligible_positions: pick.eligible_positions,
+            rating: pick.rating,
+          },
+        })),
+      );
     });
+  }
+
+  function handleStartNewDraft() {
+    setDraftSession(null);
+    setSpunSquad(null);
+    setSpinRevealTarget(null);
+    setSpinRevealActive(false);
+    setLastSpinSquadUrl(null);
+    setExpandedPlayerId(null);
+    setSquad([]);
+    setRating(null);
+    setWorldCupStarted(false);
+    setTeamName("Your XV");
+    setRegionLabel("All Regions");
+    setError(null);
+    setWarning(null);
+    setLoadingAction(null);
+    setActivePositionFilter(null);
   }
 
   async function handleMainAction() {
@@ -587,7 +696,7 @@ export default function Home() {
       return;
     }
     if (picksMade >= 15) {
-      await handleSimulate();
+      handleStartWorldCup();
       return;
     }
     await handleSpin();
@@ -619,38 +728,63 @@ export default function Home() {
         ) : null}
 
         <section className="grid gap-6 xl:grid-cols-[minmax(640px,1fr)_430px]">
-          <div className="flex flex-col gap-6">
-            <RatingPanel rating={rating} />
-            {simulation ? <SeasonResult simulation={simulation} /> : null}
-            <RugbyFieldLayout
-              picks={fieldPicks}
-              activePositionFilter={activePositionFilter}
-              onPositionClick={handleFieldPositionClick}
-            />
-          </div>
+          {worldCupStarted ? (
+            <div className="xl:col-span-2">
+              <WorldCupTournament
+                teamRating={rating?.overall_rating ?? 80}
+                teamName={teamName}
+                draftedPlayers={squad.map((pick) => ({
+                  pickNumber: pick.pickNumber,
+                  selectedPosition: pick.selectedPosition,
+                  playerName: pick.player.player_name,
+                  country: pick.country,
+                  year: pick.year,
+                  rating: pick.player.rating,
+                }))}
+                onStartNewDraft={handleStartNewDraft}
+              />
+            </div>
+          ) : (
+            <>
+              <div className="flex flex-col gap-6">
+                <RatingPanel rating={rating} />
+                <RugbyFieldLayout
+                  picks={fieldPicks}
+                  activePositionFilter={activePositionFilter}
+                  onPositionClick={handleFieldPositionClick}
+                />
+              </div>
 
-          <DraftRoom
-            activeFilledPick={activeFilledPick}
-            activePositionFilter={activePositionFilter}
-            draftSession={draftSession}
-            finalSpinTarget={spinRevealTarget}
-            lastSpinSquadUrl={lastSpinSquadUrl}
-            loadingAction={loadingAction}
-            picks={squad}
-            picksMade={picksMade}
-            spinRevealActive={spinRevealActive}
-            expandedPlayerId={expandedPlayerId}
-            spunSquad={spunSquad}
-            visiblePlayers={visibleSquadPlayers}
-            yearMax={yearMax}
-            yearMin={yearMin}
-            onChoosePlayerPosition={addPlayerToXV}
-            onSelectPlayer={handleSelectSquadPlayer}
-            onMainAction={handleMainAction}
-            onYearMaxChange={setYearMax}
-            onYearMinChange={setYearMin}
-            onClearError={() => setError(null)}
-          />
+              <DraftRoom
+                activeFilledPick={activeFilledPick}
+                activePositionFilter={activePositionFilter}
+                draftSession={draftSession}
+                finalSpinTarget={spinRevealTarget}
+                lastSpinSquadUrl={lastSpinSquadUrl}
+                loadingAction={loadingAction}
+                picks={squad}
+                picksMade={picksMade}
+                spinRevealActive={spinRevealActive}
+                setupLocked={setupLocked}
+                expandedPlayerId={expandedPlayerId}
+                spunSquad={spunSquad}
+                teamName={teamName}
+                visiblePlayers={visibleSquadPlayers}
+                yearMax={yearMax}
+                yearMin={yearMin}
+                regionLabel={regionLabel}
+                onChoosePlayerPosition={addPlayerToXV}
+                onAutoSelect={handleAutoSelect}
+                onSelectPlayer={handleSelectSquadPlayer}
+                onMainAction={handleMainAction}
+                onRegionChange={setRegionLabel}
+                onTeamNameChange={setTeamName}
+                onYearMaxChange={setYearMax}
+                onYearMinChange={setYearMin}
+                onClearError={() => setError(null)}
+              />
+            </>
+          )}
         </section>
       </div>
     </main>
@@ -667,15 +801,21 @@ function DraftRoom({
   picks,
   picksMade,
   spinRevealActive,
+  setupLocked,
   expandedPlayerId,
   spunSquad,
+  teamName,
   visiblePlayers,
   yearMax,
   yearMin,
+  regionLabel,
   onChoosePlayerPosition,
+  onAutoSelect,
   onClearError,
   onMainAction,
+  onRegionChange,
   onSelectPlayer,
+  onTeamNameChange,
   onYearMaxChange,
   onYearMinChange,
 }: {
@@ -688,18 +828,24 @@ function DraftRoom({
   picks: SquadPlayer[];
   picksMade: number;
   spinRevealActive: boolean;
+  setupLocked: boolean;
   expandedPlayerId: number | null;
   spunSquad: SpinSquadResult | null;
+  teamName: string;
   visiblePlayers: SpinSquadPlayer[];
   yearMax: number;
   yearMin: number;
+  regionLabel: string;
   onChoosePlayerPosition: (
     player: SpinSquadPlayer,
     position: string,
   ) => void;
+  onAutoSelect: () => void;
   onClearError: () => void;
   onMainAction: () => void;
+  onRegionChange: (regionLabel: string) => void;
   onSelectPlayer: (player: SpinSquadPlayer) => void;
+  onTeamNameChange: (teamName: string) => void;
   onYearMaxChange: (year: number) => void;
   onYearMinChange: (year: number) => void;
 }) {
@@ -721,17 +867,31 @@ function DraftRoom({
           </p>
         </div>
 
+        <label className="flex flex-col gap-1">
+          <span className="text-xs font-semibold uppercase text-neutral-500">
+            Team Name
+          </span>
+          <input
+            value={teamName}
+            disabled={setupLocked}
+            onChange={(event) => onTeamNameChange(event.target.value)}
+            className="h-11 rounded-md border border-neutral-700 bg-neutral-950 px-3 text-sm font-medium text-white outline-none transition disabled:cursor-not-allowed disabled:border-neutral-800 disabled:bg-neutral-900 disabled:text-neutral-500 focus:border-emerald-500"
+          />
+        </label>
+
         <div className="grid gap-3 sm:grid-cols-2">
           <YearSelect
             id="year-min"
             label="Year From"
             value={yearMin}
+            disabled={setupLocked}
             onChange={onYearMinChange}
           />
           <YearSelect
             id="year-max"
             label="Year To"
             value={yearMax}
+            disabled={setupLocked}
             onChange={onYearMaxChange}
           />
         </div>
@@ -743,18 +903,40 @@ function DraftRoom({
               <button
                 key={preset.label}
                 type="button"
+                disabled={setupLocked}
                 onClick={() => {
                   onYearMinChange(preset.yearMin);
                   onYearMaxChange(preset.yearMax);
                   onClearError();
                 }}
-                className="rounded-md border border-neutral-700 bg-neutral-950 px-3 py-1.5 text-xs font-semibold text-neutral-200 transition hover:border-emerald-400 hover:text-emerald-200"
+                className="rounded-md border border-neutral-700 bg-neutral-950 px-3 py-1.5 text-xs font-semibold text-neutral-200 transition hover:border-emerald-400 hover:text-emerald-200 disabled:cursor-not-allowed disabled:border-neutral-800 disabled:bg-neutral-900 disabled:text-neutral-600"
               >
                 {preset.label}
               </button>
             ))}
           </div>
         </div>
+
+        <label className="flex flex-col gap-1">
+          <span className="text-xs font-semibold uppercase text-neutral-500">
+            Region
+          </span>
+          <select
+            value={regionLabel}
+            disabled={setupLocked}
+            onChange={(event) => {
+              onRegionChange(event.target.value);
+              onClearError();
+            }}
+            className="h-11 rounded-md border border-neutral-700 bg-neutral-950 px-3 text-sm font-medium text-white outline-none transition disabled:cursor-not-allowed disabled:border-neutral-800 disabled:bg-neutral-900 disabled:text-neutral-500 focus:border-emerald-500"
+          >
+            {REGION_OPTIONS.map((region) => (
+              <option key={region.label} value={region.label}>
+                {region.label}
+              </option>
+            ))}
+          </select>
+        </label>
 
         <button
           type="button"
@@ -764,6 +946,17 @@ function DraftRoom({
         >
           {mainActionLabel}
         </button>
+
+        {!draftSession ? (
+          <button
+            type="button"
+            onClick={onAutoSelect}
+            disabled={loadingAction !== null}
+            className="inline-flex h-10 items-center justify-center rounded-md border border-cyan-300/40 bg-cyan-950 px-5 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200 hover:bg-cyan-900 disabled:cursor-not-allowed disabled:border-neutral-800 disabled:bg-neutral-900 disabled:text-neutral-500"
+          >
+            {loadingAction === "auto-select" ? "Auto-selecting..." : "Auto-Select"}
+          </button>
+        ) : null}
 
         {process.env.NODE_ENV === "development" && lastSpinSquadUrl ? (
           <div className="break-all rounded-md border border-cyan-400/30 bg-cyan-950/30 px-3 py-2 text-xs text-cyan-100">
@@ -1021,11 +1214,13 @@ function YearSelect({
   id,
   label,
   value,
+  disabled = false,
   onChange,
 }: {
   id: string;
   label: string;
   value: number;
+  disabled?: boolean;
   onChange: (value: number) => void;
 }) {
   return (
@@ -1036,8 +1231,9 @@ function YearSelect({
       <select
         id={id}
         value={value}
+        disabled={disabled}
         onChange={(event) => onChange(Number(event.target.value))}
-        className="h-11 rounded-md border border-neutral-700 bg-neutral-950 px-3 text-sm font-medium text-white outline-none focus:border-emerald-500"
+        className="h-11 rounded-md border border-neutral-700 bg-neutral-950 px-3 text-sm font-medium text-white outline-none transition disabled:cursor-not-allowed disabled:border-neutral-800 disabled:bg-neutral-900 disabled:text-neutral-500 focus:border-emerald-500"
       >
         {WORLD_CUP_YEARS.map((year) => (
           <option key={year} value={year}>
@@ -1067,23 +1263,6 @@ function RatingPanel({ rating }: { rating: DraftSessionRating | null }) {
           Add a player to calculate your first team rating.
         </p>
       )}
-    </section>
-  );
-}
-
-function SeasonResult({ simulation }: { simulation: SeasonSimulation }) {
-  return (
-    <section className="rounded-lg border border-neutral-800 bg-neutral-900 p-5 shadow-sm">
-      <div className="rounded-md bg-emerald-500 px-4 py-3 text-neutral-950">
-        <p className="text-sm font-semibold text-emerald-950">Season result</p>
-        <p className="mt-1 text-2xl font-bold">
-          {simulation.wins}-{simulation.losses}
-          {simulation.undefeated ? " undefeated" : ""}
-        </p>
-        <p className="mt-1 text-sm text-emerald-950">
-          Team rating {simulation.team_rating.toFixed(1)}
-        </p>
-      </div>
     </section>
   );
 }

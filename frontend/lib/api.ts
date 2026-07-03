@@ -81,6 +81,7 @@ export type SpinParams = {
   year_min?: number;
   year_max?: number;
   country?: string;
+  countries?: string | string[];
   position?: string;
   needed_positions?: string | string[];
 };
@@ -133,6 +134,30 @@ export type DraftSessionRating = {
   missing_positions: string[];
   position_count: Record<string, number>;
   is_complete: boolean;
+};
+
+export type AutoSelectedPick = {
+  pick_number: number;
+  slot_number: number;
+  selected_position: string;
+  player_id: number;
+  squad_appearance_id: number;
+  player_name: string;
+  country: string;
+  year: number;
+  position: string | null;
+  eligible_positions: string[];
+  rating: number | null;
+};
+
+export type DraftAutoSelectResponse = {
+  draft_session: DraftSession;
+  rating: DraftSessionRating;
+  picks: AutoSelectedPick[];
+  high_rated_count: number;
+  below_90_count: number;
+  average_rating: number;
+  warnings: string[];
 };
 
 export type SimulatedMatch = {
@@ -228,6 +253,31 @@ export async function addDraftPick(
       }),
     },
     "Unable to add player to squad.",
+  );
+}
+
+export async function autoSelectDraftSession(
+  sessionId: number,
+  payload: {
+    year_min?: number;
+    year_max?: number;
+    countries?: string | string[];
+    team_name?: string;
+  },
+): Promise<DraftAutoSelectResponse> {
+  const countries = Array.isArray(payload.countries)
+    ? payload.countries.join(",")
+    : payload.countries;
+  return apiRequest<DraftAutoSelectResponse>(
+    `/draft-sessions/${sessionId}/auto-select`,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        ...payload,
+        countries,
+      }),
+    },
+    "Unable to auto-select a squad.",
   );
 }
 

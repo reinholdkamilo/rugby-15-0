@@ -107,6 +107,13 @@ class DraftPickCreate(BaseModel):
     selected_position: str
 
 
+class DraftAutoSelectCreate(BaseModel):
+    year_min: Optional[int] = None
+    year_max: Optional[int] = None
+    countries: Optional[str] = None
+    team_name: Optional[str] = None
+
+
 class DraftPickResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -143,6 +150,30 @@ class DraftSessionRatingResponse(BaseModel):
     missing_positions: List[str]
     position_count: Dict[str, int]
     is_complete: bool
+
+
+class AutoSelectedPick(BaseModel):
+    pick_number: int
+    slot_number: int
+    selected_position: str
+    player_id: int
+    squad_appearance_id: int
+    player_name: str
+    country: str
+    year: int
+    position: Optional[str] = None
+    eligible_positions: List[str]
+    rating: Optional[float] = None
+
+
+class DraftAutoSelectResponse(BaseModel):
+    draft_session: DraftSessionResponse
+    rating: DraftSessionRatingResponse
+    picks: List[AutoSelectedPick]
+    high_rated_count: int
+    below_90_count: int
+    average_rating: float
+    warnings: List[str] = Field(default_factory=list)
 
 
 class SimulatedMatchResponse(BaseModel):

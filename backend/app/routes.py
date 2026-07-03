@@ -103,6 +103,30 @@ def rating_for_squad_appearance(
     return rating.overall if rating is not None else None
 
 
+def parse_requested_countries(raw_countries: Optional[str]) -> set[str]:
+    if not raw_countries:
+        return set()
+    return {
+        country.strip().lower()
+        for country in raw_countries.split(",")
+        if country.strip()
+    }
+
+
+def country_matches(country: models.Country, requested_countries: set[str]) -> bool:
+    if not requested_countries:
+        return True
+    return bool(
+        requested_countries.intersection(
+            {country.name.lower(), country.code.lower()},
+        ),
+    )
+
+
+def spin_pool_rating(db: Session, spin_pool: models.SpinPool) -> float:
+    return float(rating_for_squad_appearance(db, spin_pool.squad_appearance) or 80)
+
+
 def admin_player_detail(player: models.Player) -> schemas.AdminPlayerDetail:
     return schemas.AdminPlayerDetail(
         id=player.id,
@@ -202,6 +226,21 @@ def draft_open_positions(draft_session: models.DraftSession) -> List[str]:
         if position in remaining:
             remaining.remove(position)
     return remaining
+
+
+def storage_position_for_draft_slot(game_position: str, slot_number: int) -> str:
+    if to_game_position_code(game_position) == "WG":
+        return "RW" if slot_number == 14 else "LW"
+    return normalize_position_code(game_position)
+
+
+def spin_pool_can_fill_slot(
+    spin_pool: models.SpinPool,
+    game_position: str,
+) -> bool:
+    return to_game_position_code(game_position) in eligible_position_codes(
+        spin_pool.squad_appearance,
+    )
 
 
 @router.get("/countries", response_model=List[schemas.CountryResponse])
@@ -336,6 +375,200 @@ def create_draft_pick(
     return refresh_draft_session(db, draft_session)
 
 
+@router.post(
+    "/draft-sessions/{session_id}/auto-select",
+    response_model=schemas.DraftAutoSelectResponse,
+)
+def auto_select_draft_session(
+    session_id: int,
+    payload: schemas.DraftAutoSelectCreate,
+    db: Session = Depends(get_db),
+):
+    draft_session = get_draft_session_or_404(db, session_id)
+    if draft_session.picks:
+        raise HTTPException(
+            status_code=400,
+            detail="Auto-select requires an empty draft session.",
+        )
+
+    requested_countries = parse_requested_countries(payload.countries)
+    candidates = db.scalars(
+        select(models.SpinPool)
+        .join(models.SpinPool.country)
+        .join(models.SpinPool.tournament)
+        .join(models.SpinPool.squad_appearance)
+        .options(
+            selectinload(models.SpinPool.country),
+            selectinload(models.SpinPool.tournament),
+            selectinload(models.SpinPool.squad_appearance)
+            .selectinload(models.SquadAppearance.player),
+            selectinload(models.SpinPool.squad_appearance)
+            .selectinload(models.SquadAppearance.position),
+        )
+        .where(models.SpinPool.is_active.is_(True))
+        .order_by(models.SpinPool.id),
+    ).all()
+
+    if payload.year_min is not None:
+        candidates = [
+            candidate
+            for candidate in candidates
+            if candidate.tournament.year >= payload.year_min
+        ]
+    if payload.year_max is not None:
+        candidates = [
+            candidate
+            for candidate in candidates
+            if candidate.tournament.year <= payload.year_max
+        ]
+    if requested_countries:
+        candidates = [
+            candidate
+            for candidate in candidates
+            if country_matches(candidate.country, requested_countries)
+        ]
+
+    if not candidates:
+        raise HTTPException(
+            status_code=404,
+            detail="No players found for the selected draft setup.",
+        )
+
+    used_squad_appearance_ids: set[int] = set()
+    high_rated = 0
+    below_ninety = 0
+    rating_values: list[float] = []
+    warnings: list[str] = []
+    selected: list[tuple[int, str, models.SpinPool]] = []
+    available_high = {
+        candidate.squad_appearance_id
+        for candidate in candidates
+        if spin_pool_rating(db, candidate) >= 90
+    }
+    available_low = {
+        candidate.squad_appearance_id
+        for candidate in candidates
+        if spin_pool_rating(db, candidate) < 90
+    }
+    target_high = min(4, len(available_high))
+    target_low = min(5, len(available_low))
+    if target_high < 4:
+        warnings.append("Fewer than 4 players rated 90+ were available.")
+    if target_low < 5:
+        warnings.append("Fewer than 5 players rated below 90 were available.")
+
+    for slot_number, game_position in enumerate(DRAFT_POSITION_SLOTS, start=1):
+        slot_candidates = [
+            candidate
+            for candidate in candidates
+            if candidate.squad_appearance_id not in used_squad_appearance_ids
+            and spin_pool_can_fill_slot(candidate, game_position)
+        ]
+        if not slot_candidates:
+            raise HTTPException(
+                status_code=404,
+                detail=f"No eligible players available for {game_position}.",
+            )
+
+        preferred = slot_candidates
+        if high_rated < target_high:
+            high_candidates = [
+                candidate
+                for candidate in slot_candidates
+                if spin_pool_rating(db, candidate) >= 90
+            ]
+            if high_candidates:
+                preferred = high_candidates
+        elif below_ninety < target_low:
+            lower_candidates = [
+                candidate
+                for candidate in slot_candidates
+                if spin_pool_rating(db, candidate) < 90
+            ]
+            if lower_candidates:
+                preferred = lower_candidates
+
+        random.shuffle(preferred)
+        preferred.sort(
+            key=lambda candidate: spin_pool_rating(db, candidate),
+            reverse=True,
+        )
+        top_window = preferred[: min(18, len(preferred))]
+        chosen = random.choice(top_window[: max(4, len(top_window) // 2)])
+        rating = spin_pool_rating(db, chosen)
+        if rating >= 90:
+            high_rated += 1
+        else:
+            below_ninety += 1
+        rating_values.append(rating)
+        used_squad_appearance_ids.add(chosen.squad_appearance_id)
+        selected_position = storage_position_for_draft_slot(
+            game_position,
+            slot_number,
+        )
+        if to_game_position_code(selected_position) != to_game_position_code(game_position):
+            raise HTTPException(
+                status_code=500,
+                detail="Auto-select generated a mismatched position.",
+            )
+        selected.append((slot_number, selected_position, chosen))
+
+    for pick_number, (slot_number, selected_position, chosen) in enumerate(
+        selected,
+        start=1,
+    ):
+        db.add(
+            models.DraftPick(
+                draft_session=draft_session,
+                pick_number=pick_number,
+                player=chosen.squad_appearance.player,
+                squad_appearance=chosen.squad_appearance,
+                selected_position=selected_position,
+            ),
+        )
+
+    draft_session.current_pick_number = draft_session.max_picks
+    draft_session.status = "completed"
+    db.commit()
+    refreshed = get_draft_session_or_404(db, draft_session.id)
+    rating = calculate_draft_session_rating(refreshed)
+
+    return schemas.DraftAutoSelectResponse(
+        draft_session=refreshed,
+        rating=rating,
+        picks=[
+            schemas.AutoSelectedPick(
+                pick_number=pick_number,
+                slot_number=slot_number,
+                selected_position=selected_position,
+                player_id=spin_pool.squad_appearance.player_id,
+                squad_appearance_id=spin_pool.squad_appearance_id,
+                player_name=spin_pool.squad_appearance.player.display_name,
+                country=spin_pool.country.name,
+                year=spin_pool.tournament.year,
+                position=primary_position_code(spin_pool.squad_appearance),
+                eligible_positions=eligible_position_codes(
+                    spin_pool.squad_appearance,
+                ),
+                rating=rating_for_squad_appearance(
+                    db,
+                    spin_pool.squad_appearance,
+                ),
+            )
+            for pick_number, (slot_number, selected_position, spin_pool)
+            in enumerate(selected, start=1)
+        ],
+        high_rated_count=high_rated,
+        below_90_count=below_ninety,
+        average_rating=(
+            sum(rating_values) / len(rating_values)
+            if rating_values
+            else 0
+        ),
+        warnings=warnings,
+    )
+
+
 @router.get("/spin", response_model=schemas.SpinResult)
 def spin(
     year_min: Optional[int] = Query(default=None),
@@ -409,6 +642,7 @@ def spin_squad(
     year_min: Optional[int] = Query(default=None),
     year_max: Optional[int] = Query(default=None),
     country: Optional[str] = Query(default=None),
+    countries: Optional[str] = Query(default=None),
     needed_positions: Optional[str] = Query(default=None),
     db: Session = Depends(get_db),
 ):
@@ -440,6 +674,13 @@ def spin_squad(
             for spin_pool in spin_pools
             if requested_country
             in {spin_pool.country.name.lower(), spin_pool.country.code.lower()}
+        ]
+    requested_countries = parse_requested_countries(countries)
+    if requested_countries:
+        spin_pools = [
+            spin_pool
+            for spin_pool in spin_pools
+            if country_matches(spin_pool.country, requested_countries)
         ]
 
     requested_needed_positions = set(parse_needed_positions(needed_positions))
