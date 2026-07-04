@@ -7,7 +7,7 @@ export const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || DEFAULT_API_BASE_URL;
 
 const RETRYABLE_FETCH_ATTEMPTS = 3;
-const RETRY_DELAY_MS = 700;
+const RETRY_DELAY_MS = 800;
 
 async function apiRequest<T>(
   path: string,
@@ -217,11 +217,34 @@ export async function spinSquad(
   params: Omit<SpinParams, "position"> = {},
 ): Promise<SpinSquadResult> {
   const suffix = buildQueryString(params);
-  return apiRequest<SpinSquadResult>(
-    `/spin-squad${suffix}`,
+  const url = buildSpinSquadUrl(params);
+  const startedAt = performance.now();
+  console.info(`[spin-squad] request started: ${url}`);
+  try {
+    const result = await apiRequest<SpinSquadResult>(
+      `/spin-squad${suffix}`,
+      {},
+      "Could not load squad. Please try again.",
+      RETRYABLE_FETCH_ATTEMPTS,
+    );
+    console.info(
+      `[spin-squad] response received: ${Math.round(performance.now() - startedAt)}ms`,
+    );
+    return result;
+  } catch (error) {
+    console.error(
+      `[spin-squad] failed after ${Math.round(performance.now() - startedAt)}ms: ${url}`,
+      error,
+    );
+    throw error;
+  }
+}
+
+export async function warmupApi(): Promise<{ status: string; warmed: boolean }> {
+  return apiRequest<{ status: string; warmed: boolean }>(
+    "/warmup",
     {},
-    "Could not load squad. Please try again.",
-    RETRYABLE_FETCH_ATTEMPTS,
+    "Warm-up failed.",
   );
 }
 

@@ -21,9 +21,14 @@ from .position_eligibility import (
 from .rating_generator import build_rating_summary, generate_baseline_ratings
 from .rating_engine import calculate_draft_session_rating
 from .simulator import simulate_season
+from .startup import initialise_database_on_startup
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
+SpinSquadCacheKey = tuple[Optional[int], Optional[int], Optional[str], Optional[str], str]
+SquadKey = tuple[int, int]
+SPIN_SQUAD_KEYS_CACHE: dict[SpinSquadCacheKey, list[SquadKey]] = {}
+SPIN_SQUAD_RESPONSE_CACHE: dict[SquadKey, schemas.SpinSquadResult] = {}
 
 DRAFT_POSITION_SLOTS = [
     "LH",
@@ -136,6 +141,17 @@ def country_matches(country: models.Country, requested_countries: set[str]) -> b
             {country.name.lower(), country.code.lower()},
         ),
     )
+
+
+def normalised_country_filter(raw_countries: Optional[str]) -> Optional[str]:
+    requested_countries = parse_requested_countries(raw_countries)
+    if not requested_countries:
+        return None
+    return ",".join(sorted(requested_countries))
+
+
+def normalised_needed_positions(raw_positions: Optional[str]) -> str:
+    return ",".join(parse_needed_positions(raw_positions))
 
 
 def spin_pool_rating(db: Session, spin_pool: models.SpinPool) -> float:
@@ -1112,11 +1128,60 @@ def spin_squad(
     needed_positions: Optional[str] = Query(default=None),
     db: Session = Depends(get_db),
 ):
+    squad_keys = get_cached_spin_squad_keys(
+        db=db,
+        year_min=year_min,
+        year_max=year_max,
+        country=country,
+        countries=countries,
+        needed_positions=needed_positions,
+    )
+    if not squad_keys:
+        requested_needed_positions = set(parse_needed_positions(needed_positions))
+        raise HTTPException(
+            status_code=404,
+            detail=(
+                "No available squads can fill your remaining positions for "
+                "this era."
+            )
+            if requested_needed_positions
+            else "No matching squads found for the requested spin filters.",
+        )
+
+    country_id, tournament_id = random.choice(squad_keys)
+    return build_spin_squad_response(db, country_id, tournament_id)
+
+
+def get_cached_spin_squad_keys(
+    db: Session,
+    year_min: Optional[int],
+    year_max: Optional[int],
+    country: Optional[str],
+    countries: Optional[str],
+    needed_positions: Optional[str],
+) -> list[SquadKey]:
+    cache_key = (
+        year_min,
+        year_max,
+        country.strip().lower() if country else None,
+        normalised_country_filter(countries),
+        normalised_needed_positions(needed_positions),
+    )
+    cached_keys = SPIN_SQUAD_KEYS_CACHE.get(cache_key)
+    if cached_keys is not None:
+        return cached_keys
+
     spin_pools = db.scalars(
         select(models.SpinPool)
         .join(models.SpinPool.country)
         .join(models.SpinPool.tournament)
         .join(models.SpinPool.squad_appearance)
+        .options(
+            selectinload(models.SpinPool.country),
+            selectinload(models.SpinPool.tournament),
+            selectinload(models.SpinPool.squad_appearance)
+            .selectinload(models.SquadAppearance.position),
+        )
         .where(models.SpinPool.is_active.is_(True))
         .order_by(models.SpinPool.id),
     ).all()
@@ -1150,7 +1215,7 @@ def spin_squad(
         ]
 
     requested_needed_positions = set(parse_needed_positions(needed_positions))
-    squad_keys = sorted(
+    squad_keys: list[SquadKey] = sorted(
         {
             (spin_pool.country_id, spin_pool.tournament_id)
             for spin_pool in spin_pools
@@ -1160,28 +1225,47 @@ def spin_squad(
             )
         },
     )
-    if not squad_keys:
-        raise HTTPException(
-            status_code=404,
-            detail=(
-                "No available squads can fill your remaining positions for "
-                "this era."
-            )
-            if requested_needed_positions
-            else "No matching squads found for the requested spin filters.",
-        )
+    SPIN_SQUAD_KEYS_CACHE[cache_key] = squad_keys
+    return squad_keys
 
-    country_id, tournament_id = random.choice(squad_keys)
-    squad_spin_pools = [
-        spin_pool
-        for spin_pool in spin_pools
-        if spin_pool.country_id == country_id
-        and spin_pool.tournament_id == tournament_id
-    ]
+
+def build_spin_squad_response(
+    db: Session,
+    country_id: int,
+    tournament_id: int,
+) -> schemas.SpinSquadResult:
+    cache_key = (country_id, tournament_id)
+    cached_response = SPIN_SQUAD_RESPONSE_CACHE.get(cache_key)
+    if cached_response is not None:
+        return cached_response
+
+    squad_spin_pools = db.scalars(
+        select(models.SpinPool)
+        .join(models.SpinPool.country)
+        .join(models.SpinPool.tournament)
+        .join(models.SpinPool.squad_appearance)
+        .options(
+            selectinload(models.SpinPool.country),
+            selectinload(models.SpinPool.tournament),
+            selectinload(models.SpinPool.squad_appearance)
+            .selectinload(models.SquadAppearance.player),
+            selectinload(models.SpinPool.squad_appearance)
+            .selectinload(models.SquadAppearance.position),
+        )
+        .where(
+            models.SpinPool.is_active.is_(True),
+            models.SpinPool.country_id == country_id,
+            models.SpinPool.tournament_id == tournament_id,
+        )
+        .order_by(models.SpinPool.id),
+    ).all()
+    if not squad_spin_pools:
+        raise HTTPException(status_code=404, detail="Squad not found.")
+
     squad_spin_pools.sort(key=lambda spin_pool: spin_pool.squad_appearance.player.display_name)
 
     first_spin_pool = squad_spin_pools[0]
-    return schemas.SpinSquadResult(
+    response = schemas.SpinSquadResult(
         country=first_spin_pool.country.name,
         year=first_spin_pool.tournament.year,
         tournament_id=first_spin_pool.tournament_id,
@@ -1202,6 +1286,28 @@ def spin_squad(
             for spin_pool in squad_spin_pools
         ],
     )
+    SPIN_SQUAD_RESPONSE_CACHE[cache_key] = response
+    return response
+
+
+@router.get("/warmup")
+def warmup(db: Session = Depends(get_db)):
+    initialise_database_on_startup()
+    common_filters = [
+        (None, None, None, None),
+        (1995, 2023, None, None),
+        (2015, 2023, None, None),
+    ]
+    for year_min, year_max, countries, needed_positions in common_filters:
+        get_cached_spin_squad_keys(
+            db=db,
+            year_min=year_min,
+            year_max=year_max,
+            country=None,
+            countries=countries,
+            needed_positions=needed_positions,
+        )
+    return {"status": "ok", "warmed": True}
 
 
 @router.get("/admin/players", response_model=List[schemas.AdminPlayerDetail])

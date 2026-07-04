@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import {
   RugbyFieldLayout,
@@ -16,6 +16,7 @@ import {
   createDraftSession,
   getDraftSessionRating,
   spinSquad,
+  warmupApi,
   type DraftSession,
   type DraftSessionRating,
   type SpinSquadPlayer,
@@ -365,6 +366,7 @@ export default function Home() {
   const [regionLabel, setRegionLabel] = useState("All Regions");
   const [error, setError] = useState<string | null>(null);
   const [warning, setWarning] = useState<string | null>(null);
+  const [slowSpinMessage, setSlowSpinMessage] = useState<string | null>(null);
   const [loadingAction, setLoadingAction] = useState<string | null>(null);
   const [yearMin, setYearMin] = useState(1987);
   const [yearMax, setYearMax] = useState(2023);
@@ -399,10 +401,17 @@ export default function Home() {
     );
   }, [activeFilledPick, activePositionFilter, spunSquad]);
 
+  useEffect(() => {
+    warmupApi().catch((caughtError) => {
+      console.info("[warmup] background warm-up failed", caughtError);
+    });
+  }, []);
+
   async function runAction(action: string, callback: () => Promise<void>) {
     setLoadingAction(action);
     setError(null);
     setWarning(null);
+    setSlowSpinMessage(null);
 
     try {
       await callback();
@@ -432,6 +441,7 @@ export default function Home() {
         needed_positions: getRemainingNeededPositions([]),
       };
       const spinUrl = buildSpinSquadUrl(spinParams);
+      console.info(`[spin-squad] UI spin started: ${spinUrl}`);
       setLastSpinSquadUrl(spinUrl);
       console.info(`[spin-squad] ${spinUrl}`);
       setSpinRevealTarget(null);
@@ -442,10 +452,16 @@ export default function Home() {
       setSquad([]);
       setRating(null);
       setWorldCupStarted(false);
+      const slowTimer = window.setTimeout(() => {
+        setSlowSpinMessage("Warming up server... first spin may take a moment");
+      }, 2000);
       try {
         const session = await createDraftSession();
         setDraftSession(session);
         const squadResult = await spinSquad(spinParams);
+        console.info(
+          `[spin-squad] UI spin response received after ${Date.now() - startedAt}ms`,
+        );
         setSpinRevealTarget({
           country: squadResult.country,
           year: squadResult.year,
@@ -458,6 +474,8 @@ export default function Home() {
         }
         setSpunSquad(squadResult);
       } finally {
+        window.clearTimeout(slowTimer);
+        setSlowSpinMessage(null);
         setSpinRevealActive(false);
         setSpinRevealTarget(null);
       }
@@ -488,14 +506,21 @@ export default function Home() {
         needed_positions: neededPositions,
       };
       const spinUrl = buildSpinSquadUrl(spinParams);
+      console.info(`[spin-squad] UI spin started: ${spinUrl}`);
       setLastSpinSquadUrl(spinUrl);
       console.info(`[spin-squad] ${spinUrl}`);
       setSpinRevealTarget(null);
       setSpinRevealActive(true);
       setExpandedPlayerId(null);
       setActivePositionFilter(null);
+      const slowTimer = window.setTimeout(() => {
+        setSlowSpinMessage("Warming up server... first spin may take a moment");
+      }, 2000);
       try {
         const squadResult = await spinSquad(spinParams);
+        console.info(
+          `[spin-squad] UI spin response received after ${Date.now() - startedAt}ms`,
+        );
         setSpinRevealTarget({
           country: squadResult.country,
           year: squadResult.year,
@@ -508,6 +533,8 @@ export default function Home() {
         }
         setSpunSquad(squadResult);
       } finally {
+        window.clearTimeout(slowTimer);
+        setSlowSpinMessage(null);
         setSpinRevealActive(false);
         setSpinRevealTarget(null);
       }
@@ -724,6 +751,11 @@ export default function Home() {
         {warning ? (
           <div className="rounded-md border border-yellow-300/50 bg-yellow-950 px-4 py-3 text-sm text-yellow-100">
             {warning}
+          </div>
+        ) : null}
+        {slowSpinMessage ? (
+          <div className="rounded-md border border-cyan-300/50 bg-cyan-950 px-4 py-3 text-sm text-cyan-100">
+            {slowSpinMessage}
           </div>
         ) : null}
 
